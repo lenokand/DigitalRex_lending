@@ -1,6 +1,7 @@
 
-import './style/style.scss'
+// import './style/style.scss'
 import 'bootstrap'
+// import './wow.min.js'
 
 const burger = document.getElementById('burger-menu')
 const shadow = document.getElementById('shadow')
