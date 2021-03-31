@@ -6,13 +6,26 @@ body {
     font-family: Gilroy, sans-serif;
     background-color: #fff;
     background-position: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    
 }
 
 // first screen
 .screen1 {
     padding: 1.5*$gap;
     height: 100vh;
+    overflow: hidden;
+
+    .cloud {
+        // display: inline-block;
+        // display: none;
+        position: absolute;
+        bottom: -220px;
+        left: 0px;
+        width: 99vw;
+        max-width: 100vw;
+        height: 350px;
+    }
 
     .logo_hide {
         display: none;
@@ -88,14 +101,14 @@ body {
                 font-weight: 800;
                 font-size: 36px;
                 line-height: 134.7%;
-                /* or 48px */
+
 
 
                 color: #000
             }
 
             .subtittle {
-                // в Москве и области
+
                 font-weight: normal;
 
             }
@@ -283,6 +296,11 @@ body {
     overflow: hidden;
     padding-bottom: 7*$gap;
 
+    .cloud {
+        position: absolute;
+        top: -150px;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -394,29 +412,33 @@ body {
 }
 
 .screen3 {
+
     position: relative;
-    
-    .stages-img{
+
+    .stages-img {
         display: block;
         position: absolute;
         top: -50px;
         right: 0;
     }
+
     h3 {
         font-style: normal;
         font-weight: 800;
         font-size: 40px;
         line-height: 134.7%;
-                color: #000
+        color: #000
     }
-    
-    .stages{
+
+    .stages {
         margin-top: 4.5*$gap;
         max-width: 800px;
-        .stage-row{
+
+        .stage-row {
             margin-bottom: 3.7*$gap;
         }
     }
+
     .stage-img {
         width: 70px;
         height: 70px;
@@ -448,7 +470,7 @@ body {
                 font-weight: normal;
                 font-size: 14px;
                 line-height: 134.7%;
-              
+
 
                 color: #000
             }
@@ -456,4 +478,154 @@ body {
     }
 }
 
+.screen4 {
+    margin-top: 6.5*$gap;
 
+    background-repeat: no-repeat;
+    background-position: 15% 60%;
+
+    .tittle {
+        margin-bottom: 5*$gap;
+
+        h3 {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 120.7%;
+
+
+            text-align: center;
+
+            color: #000
+        }
+
+        h4 {
+            font-weight: normal;
+            font-style: normal;
+
+            font-size: 48px;
+            line-height: 120.7%;
+
+
+            text-align: center;
+
+            color: #000
+        }
+    }
+
+    // .alpinist{
+    //     position: absolute;
+    //     left: 210px;
+    //     z-index: -1;
+    // }
+    .numbers {
+        display: flex;
+        max-width: 775px;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        padding-right: 25px;
+
+        .number-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .numper-item {
+                margin-bottom: 3*$gap;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    margin-top: $gap;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 134.7%;
+                    text-align: center;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+.screen5 {
+    margin-top: 4*$gap;
+    position: relative;
+    // overflow: hidden;
+    .cable{
+        position: absolute;
+        top: -140px;
+        right: 0px;
+    }
+
+    h4 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 120.7%;
+        text-align: center;
+        color: #000
+    }
+
+    h3 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 120.7%;
+        text-align: center;
+        color: #000
+    }
+
+    .guarantee {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7*$gap;
+        padding: 9.6*$gap;
+    }
+.guarantee-item{
+    max-width: 222px;
+    max-height: 150px;
+    position: absolute;
+    .item-number{
+        margin-bottom: 2*$gap;
+    }
+}
+    .item-text {
+        
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 134.7%;
+        color: #000;
+        
+    }
+    .bold-text{
+        font-weight: 800;
+    }
+    .centred-img{
+        position: relative;
+        .roup{
+            position: absolute;
+            left: calc( 50% - 230px);
+            top:calc( 50% - 230px) ;
+        }
+        .drill{
+            position: absolute;
+            left: 50%;
+            top:calc( 50% - 230px) ;
+        }
+        .stopwatch{
+            position: absolute;
+            left: 0;
+            bottom: 26% ;
+        }
+    }
+    
+
+
+}
