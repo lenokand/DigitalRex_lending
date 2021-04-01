@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="animate.css">
 </head>
 
-<body style="background-image: url(img/fon1.png);">
+<body>
 
-    <section class="screen1">
+    <section class="screen1" style="background-image: url(img/fon1.png);">
         <div class="logo_hide">
             <img src="img/logo.png" alt="logo">
         </div>
@@ -341,15 +341,18 @@
 
     </section>
     <section class="screen5">
-        <img class="cable" src="img/cable.png" alt="cable">
+        <div class="cable" data-relative-input="true" data-invert-y="false" id="scene6">
+            <img class="" data-depth="0.2" src="img/cable.png" alt="cable">
+        </div>
+
         <div class="container">
             <h3>Нашим клиентам
             </h3>
             <h4>мы гарантируем</h4>
 
             <div class="guarantee">
-
-                <div class="guarantee-item">
+                <!-- 1 карточка -->
+                <div class="guarantee-item wow fadeInDown">
                     <div class="item-number">
                         <img src="img/01.svg" alt="01">
                     </div>
@@ -358,8 +361,8 @@
                         <span class="bold-text"> точно в срок </span>
                     </div>
                 </div>
-
-                <div class="guarantee-item">
+                <!-- 2 карточка -->
+                <div class="guarantee-item wow fadeInDown" data-wow-delay=".2s">
                     <div class="item-number">
                         <img src="img/02.svg" alt="01">
                     </div>
@@ -369,8 +372,8 @@
                         <span class="bold-text"> в течение часа </span>
                     </div>
                 </div>
-
-                <div class="guarantee-item">
+                <!-- 3 карточка -->
+                <div class="guarantee-item wow fadeInDown" data-wow-delay=".4s">
                     <div class="item-number">
                         <img src="img/03.svg" alt="01">
                     </div>
@@ -380,7 +383,8 @@
 
                     </div>
                 </div>
-                <div class="guarantee-item">
+                <!-- 4 карточка -->
+                <div class="guarantee-item wow fadeInDown" data-wow-delay=".6s">
                     <div class="item-number">
                         <img src="img/04.svg" alt="01">
                     </div>
@@ -390,7 +394,8 @@
                         <span class="bold-text"> качество наших услуг </span>
                     </div>
                 </div>
-                <div class="guarantee-item">
+                <!-- 5 карточка -->
+                <div class="guarantee-item wow fadeInDown" data-wow-delay=".8s">
                     <div class="item-number">
                         <img src="img/05.svg" alt="01">
                     </div>
@@ -402,18 +407,257 @@
                 </div>
 
                 <div class="centred-img">
-                    <img    class="ellips" src="img/ellips.png" alt="ellips">
+                    <img class="ellips" src="img/ellips.png" alt="ellips">
 
-                    <img class="roup" src="img/roup.png" alt="roup">
-                    <img class="drill" src="img/drill.png" alt="drill">
-                    <img class="stopwatch" src="img/stopwatch.png" alt="stopwatch">
+                    <div class="roup" data-relative-input="true" id="scene3">
+                        <img data-depth="0.2" src="img/roup.png" alt="roup">
+                    </div>
+
+
+
+                    <div class="drill" data-relative-input="true" id="scene4">
+                        <img class="" data-depth="0.3" src="img/drill.png" alt="drill">
+                    </div>
+
+
+                    <div class="stopwatch" data-relative-input="true" id="scene5">
+                        <img class="" data-depth="0.4" src="img/stopwatch.png" alt="stopwatch">
+                    </div>
+
                 </div>
 
             </div>
         </div>
+        <div class="carabine" data-relative-input="true" id="scene7">
+            <img data-depth="0.4" src="img/carabine.png" alt="carabine">
+        </div>
 
     </section>
 
+
+    <section class="screen6" style="background-image: url(img/gray-bg.png);">
+        <div class="container">
+            <h3>Отзывы клиентов</h3>
+            <div class="reviews">
+                <!-- управление лево/право -->
+                <div class="arrow-left wow fadeInLeft ">
+                    <img src="img/arrow-left.svg" alt="arrow left">
+                </div>
+                <div class="arrow-right wow fadeInRight">
+                    <img src="img/arrow-right.svg" alt="arrow right">
+                </div>
+
+                <div class="review-item wow fadeInLeft ">
+                    <img class="mark" src="img/pins.png" alt="mark">
+                    <div class="item-left">
+                        <p>Нам было приято сотрудничать с высокопрофессиональными и добросовестными специалистами этой
+                            компании, имеющими большой опыт работы в своей области.
+                            Настоящим письмом МУП Г.о Подольск «ДЕЗ» выражает благодарность компании «Альпсфера» за
+                            проведение работ по очистке кровли от снега и наледи. В числе несомненных преимуществ
+                            компании «Альпсфера»]: индивидуальный подход к решению поставленных задач.
+                            Мы довольны качеством работ, выполненных в оговоренные сроки. Предлагаем и в дальнейшем
+                            сотрудничать.</p>
+                        <div class="sighn">
+                            <span class="bold-text">С уважением,</span> Зайцева Н.В.
+                        </div>
+                    </div>
+                    <div class="item-right ">
+                        <img src="img/certeficate.png" alt="certeficate">
+
+                        <button class="btn btn-reviews">
+                            <p>посмотреть </p>
+                            <img src="img/loop.svg" alt="search">
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+                <div class="review-item wow fadeInRight ">
+                    <img class="mark" src="img/pins.png" alt="mark">
+                    <div class="item-left">
+                        <p>Компания ООО «Чистый Град» выражает благодарность компании ООО «Альпсфера» за профессионализм
+                            и оперативность в оказании работ по мытью фасадного остекления и цокольного этажа здания.
+                            Наша организация заинтересована в дальнейшем сотрудничестве и рекомендует ООО «Альпсфера»
+                            как надежного партнера.</p>
+                        <div class="sighn">
+                            <span class="bold-text">С уважением,</span> Сергей Королев
+                        </div>
+                    </div>
+                    <div class="item-right">
+                        <img src="img/certeficate2.png" alt="certeficate">
+
+                        <button class="btn btn-reviews">
+                            <p>посмотреть </p>
+                            <img src="img/loop.svg" alt="search">
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <section class="screen7" style="background-image: url(img/bottom-bg.png);">
+        <div class="container">
+            <h3> <span class="bold-text"> Блок</span> CEO текста</h3>
+            <div class="seo-text">
+                Совершенно естественно, что при разработке сайта почти никогда не используется тот контент, который там
+                будет — зачастую, это контента ещё просто не существует. Поэтому дизайнеры (да и верстальщики тоже)
+                используют «рыбу» — произвольный текст, который вписывается в контентные блоки. Совершенно естественно,
+                что при разработке сайта почти никогда не используется тот контент, который там будет — зачастую, это
+                контента ещё просто не существует. Поэтому дизайнеры (да и верстальщики тоже) используют «рыбу» —
+                произвольный текст, который вписывается в контентные блоки. Совершенно естественно, что при разработке
+                сайта почти никогда не используется тот контент, который там будет — зачастую, это контента ещё просто
+                не существует. Поэтому дизайнеры (да и верстальщики тоже) используют «рыбу» — произвольный текст,
+                который вписывается в контентные блоки. Поэтому дизайнеры (да и верстальщики тоже) используют «рыбу» —
+                произвольный текст., который вписывается в контентные блоки.
+
+
+
+
+                <div id="contentSpoiler" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis saepe eius assumenda laboriosam doloribus rerum incidunt quas. Vitae nihil aspernatur
+                    ullam harum cumque, dicta optio quibusdam repellendus et culpa quia.
+                    Sunt sequi dolorum atque error, laboriosam suscipit quam iure facere enim eum dolore dignissimos at
+                    eos iste aliquid. Inventore saepe nesciunt suscipit fuga tempore voluptates sequi iure labore
+                    reprehenderit architecto.
+                    Repellat, quia exercitationem? Vel ratione quam incidunt, neque accusantium harum architecto
+                    veritatis explicabo ducimus eius molestias excepturi illo consequuntur hic rerum blanditiis facere!
+                    Eaque mollitia labore eligendi illum laborum quod!
+                    Expedita distinctio id doloribus perferendis sapiente, doloremque ducimus quia, voluptatibus
+                    architecto modi dolorem quidem veniam corporis corrupti unde praesentium quam exercitationem.
+                    Praesentium magnam itaque quos mollitia deleniti, aut saepe qui?
+                    Voluptatum saepe id fugit ducimus est. Sapiente adipisci quia id, aut accusantium ut nam accusamus
+                    incidunt sint veniam perspiciatis, temporibus itaque, unde suscipit odio! Sapiente dolore incidunt
+                    quasi reprehenderit placeat.
+                    Fugit molestias modi unde iure eligendi, quo ducimus error rerum laboriosam est aliquid earum?
+                    Cumque est repudiandae, ea molestias quis omnis eius quae facilis doloribus voluptas voluptatem.
+                    Iste, mollitia alias.
+                    Similique natus excepturi accusantium provident facilis voluptatem. Nisi ratione aliquam porro,
+                    recusandae laudantium tempora nostrum quod totam necessitatibus. Eligendi quibusdam totam placeat
+                    quia, doloremque quae laborum ducimus minus earum deleniti.
+                    Nulla, molestiae excepturi? Id atque, aspernatur est libero deleniti consequatur ab exercitationem
+                    ipsa aut quas fugiat aliquid provident. Ab, doloremque deserunt deleniti numquam tempore laborum
+                    voluptates architecto ex fuga est?
+                    Maiores, fugit accusantium quis aliquam distinctio explicabo facere optio officiis magnam, neque
+                    iusto modi expedita. Ex veniam quis sed dolorem maxime blanditiis quam, nostrum nulla, consectetur
+                    ducimus incidunt, alias culpa?
+                    Aliquid temporibus sequi et dolorum inventore vel. Nihil consequuntur autem eveniet repellat,
+                    debitis deleniti ad minima maiores, exercitationem atque ullam repellendus laboriosam inventore
+                    quisquam, commodi temporibus ratione reiciendis adipisci iusto?
+                </div>
+                <div> <a href="#" id="linkSpoiler">подробнее...</a></div>
+            </div>
+            <div class="form wow fadeInDown">
+                <h4>Остались вопросы?
+                </h4>
+                <p>Получите бесплатную консультацию</p>
+                <form action="">
+                    <input type="text" minlength="1" name="name" id="name" placeholder="Ваше имя" required>
+                    <input type="tel" minlength="10" name="telephone" id="telephone" placeholder="Ваш номер телефона"
+                        required>
+                    <input type="email" name="email" id="email" placeholder="Адрес электронной почты" required>
+                    <input class="input-msg" type="text" name="comment" id="comment" placeholder="Сообщение">
+                    <!-- <textarea cols="32" name="message" rows="5" placeholder="Сообщение"></textarea> -->
+                    <button type="submit" class="btn btn-submit">
+                        отправить заявку
+                    </button>
+                    <input type="checkbox" checked>
+                    Принимаю <a href="#">условия обработки информации</a>
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <footer>
+        <div class="container">
+
+            <div class="logo">
+                <div class="logo-img"> 
+                    <img src="img/logo.png" alt="logo">
+                </div>
+               
+
+
+                <div class="description">
+                    Высотные работы по москве и
+                    московской области
+                </div>
+                <div class="">Политика конфидециальности</div>
+                <div class="">Не оферта</div>
+            </div>
+            <div class="nav">
+
+                <h5>Навигация по сайту</h5>
+                <div class="">Услуги</div>
+                <div class="">Цены</div>
+                <div class="">О компании</div>
+                <div class="">Юридическим лицам</div>
+                <div class="">Вопрос - овтет</div>
+                <div class="">Контакты</div>
+
+            </div>
+
+            <div class="contacts">
+
+                <h5>Контактные телефоны:</h5>
+
+                <div class="row ">
+                    <div class="telephone">
+                        <a href="tel:74957983214" class="text-decoration-none ">+7 (495) 798-32-14 </a>
+                    </div>
+
+                    <div class="row-links">
+                        <div class=""><a href="#" class="social-link text-decoration-none">
+                            
+                            <img src="img/tg.svg" alt="telegram">
+                        </a></div>
+                        <div class="">
+                            <a href="#" class="social-link text-decoration-none">
+                            <img src="img/wb.png" alt="wiber">
+                        </a>
+                    </div>
+                        <div class="">
+                            <a href="#" class="social-link text-decoration-none ">
+                            <img src="img/wapp.png" alt="watsapp">
+                        </a>
+                    </div>
+                        
+                        
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="mail">
+                <h5>Электронная почта:</h5>
+                <div class="row">
+                    <a href="mailto:zakaz-alp@yandex.ru" class="text-decoration-none ">zakaz-alp@yandex.ru</a>
+                </div>
+            </div>
+            <div class="adress">
+                <h5>Адрес и график работы:</h5>
+                <div class="">г. Москва, ул. Тестовская, д. 10</div>
+                <div class="">Пн - Сб с 9.00 - 18.00</div>
+            </div>
+
+        </div>
+
+
+    </footer>
 
     <script src="wow.min.js"></script>
     <script>
