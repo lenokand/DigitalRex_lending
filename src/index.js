@@ -1,4 +1,4 @@
-
+// import 'owl.carousel';
 // import './style/style.scss'
 import 'bootstrap'
 // import './wow.min.js'
@@ -45,5 +45,8 @@ link.addEventListener('click', function(e){
 
 })
 
+// $(function() {
+//     $(".owl-carousel").owlCarousel();
+//    });
 
 

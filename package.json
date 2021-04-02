@@ -33,6 +33,7 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "bootstrap": "^5.0.0-beta2",
+    "owl.carousel": "^2.3.4",
     "wow.js": "^1.2.2"
   }
 }
