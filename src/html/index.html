@@ -10,8 +10,14 @@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="fonts/gilroy.css">
-    <!-- <link rel="stylesheet" href="owl.carousel.min.css"> -->
-    <!-- <link rel="stylesheet" href="owl.theme.default.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="animate.css">
 </head>
 
@@ -29,25 +35,22 @@
                 <div class="logo">
                     <img src="img/logo.png" alt="logo">
                 </div>
-                <div class="menu-item services  " id="services">
-                    
-                    <a href="#" role="button" >Услуги  </a>
+                <div class="menu-item services" id="services">
 
-
+                    <a href="#">Услуги </a>
                     <div class="services-items">
                         <div class="services-item"><a href="#">Клининг</a> </div>
                         <div class="services-item"><a href="#">Фасадные работы</a> </div>
                         <div class="services-item"><a href="#">Металлоконструкции</a></div>
                         <div class="services-item"><a href="#">Кровельные работы</a></div>
                     </div>
-                    
-                
+
                 </div>
 
 
                 <div class="menu-item"><a href="#">Цены</a> </div>
                 <div class="menu-item about" id="about"> <a href="#">О компании </a>
-                  <div class="about-items">
+                    <div class="about-items">
                         <div class="about-item"><a href="#">Клининг</a> </div>
                         <div class="about-item"><a href="#">Фасадные работы</a> </div>
                         <div class="about-item"><a href="#">Металлоконструкции</a></div>
@@ -226,7 +229,7 @@
 
         </div>
         <!-- Modal requerModal -->
-        <!-- Modal call-->
+
         <div class="modal fade" id="requerModal" tabindex="-1" aria-labelledby="requerModal" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -239,7 +242,7 @@
                             <input type="text" minlength="1" name="name" id="name" placeholder="Ваше имя" required>
                             <input type="tel" minlength="10" name="telephone" id="telephone"
                                 placeholder="Ваш номер телефона" required>
-                                <input type="email" name="email" id="email" placeholder="Адрес электронной почты" required>
+                            <input type="email" name="email" id="email" placeholder="Адрес электронной почты" required>
                             <textarea cols="32" name="message" rows="3" placeholder="Сообщение"></textarea>
                             <button type="submit" class="btn btn-submit">
                                 отправить заявку
@@ -250,7 +253,8 @@
                                     <img src="img/check-ltl.svg" alt=""></span>
 
                                 Принимаю &nbsp <a href="#" data-bs-toggle="modal"
-                                    data-bs-target="#licenseModal">условия обработки информации</a>
+                                    data-bs-target="#licenseModal2">условия
+                                    обработки информации</a>
                             </label>
 
                             <!--  -->
@@ -267,8 +271,8 @@
         </div>
         <!-- // -->
         <!-- Условия лиц соглашения -->
-        <div class="modal fade licenseModal" id="licenseModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="licenseModal" aria-hidden="true">
+        <div class="modal fade licenseModal" id="licenseModal2" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="licenseModal" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable ">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -341,7 +345,7 @@
             </div>
         </div>
         <!--  -->
-     <!--  -->
+        <!--  -->
 
     </section>
 
@@ -707,63 +711,124 @@
                     <img src="img/arrow-right.svg" alt="arrow right">
                 </div>
 
+                <div class="reviews-carusel owl-carousel owl-theme" id="slider">
 
 
-                <!-- отзыв1 -->
-                <div class="review-item wow fadeInLeft ">
-                    <img class="mark" src="img/pins.png" alt="mark">
-                    <div class="item-left">
-                        <p>Нам было приято сотрудничать с высокопрофессиональными и добросовестными специалистами
-                            этой
-                            компании, имеющими большой опыт работы в своей области.
-                            Настоящим письмом МУП Г.о Подольск «ДЕЗ» выражает благодарность компании «Альпсфера» за
-                            проведение работ по очистке кровли от снега и наледи. В числе несомненных преимуществ
-                            компании «Альпсфера»]: индивидуальный подход к решению поставленных задач.
-                            Мы довольны качеством работ, выполненных в оговоренные сроки. Предлагаем и в дальнейшем
-                            сотрудничать.</p>
-                        <div class="sighn">
-                            <span class="bold-text">С уважением,</span> Зайцева Н.В.
+                    <!-- отзыв1 -->
+                    <div class="review-item wow fadeInLeft slide">
+                        <img class="mark" src="img/pins.png" alt="mark">
+                        <div class="item-left">
+                            <p>Нам было приято сотрудничать с высокопрофессиональными и добросовестными специалистами
+                                этой
+                                компании, имеющими большой опыт работы в своей области.
+                                Настоящим письмом МУП Г.о Подольск «ДЕЗ» выражает благодарность компании «Альпсфера» за
+                                проведение работ по очистке кровли от снега и наледи. В числе несомненных преимуществ
+                                компании «Альпсфера»]: индивидуальный подход к решению поставленных задач.
+                                Мы довольны качеством работ, выполненных в оговоренные сроки. Предлагаем и в дальнейшем
+                                сотрудничать.</p>
+                            <div class="sighn">
+                                <span class="bold-text">С уважением,</span> Зайцева Н.В.
+                            </div>
                         </div>
-                    </div>
-                    <div class="item-right ">
-                        <img class="certeficate-img" src="img/certeficate.png" alt="certeficate">
+                        <div class="item-right ">
+                            <img class="certeficate-img" src="img/certeficate.png" alt="certeficate">
 
-                        <button class="btn btn-reviews">
-                            <p>посмотреть </p>
-                            <img src="img/loop.svg" alt="search">
-                        </button>
+                            <button class="btn btn-reviews">
+                                <p>посмотреть </p>
+                                <img src="img/loop.svg" alt="search">
+                            </button>
+
+                        </div>
+
+
+                    </div>
+                    <!-- отзыв2 -->
+                    <div class="review-item wow fadeInRight slide">
+                        <img class="mark" src="img/pins.png" alt="mark">
+                        <div class="item-left">
+                            <p>Компания ООО «Чистый Град» выражает благодарность компании ООО «Альпсфера» за
+                                профессионализм
+                                и оперативность в оказании работ по мытью фасадного остекления и цокольного этажа
+                                здания.
+                                Наша организация заинтересована в дальнейшем сотрудничестве и рекомендует ООО
+                                «Альпсфера»
+                                как надежного партнера.</p>
+                            <div class="sighn">
+                                <span class="bold-text">С уважением,</span> Сергей Королев
+                            </div>
+                        </div>
+                        <div class="item-right">
+                            <img class="certeficate-img" src="img/certeficate2.png" alt="certeficate">
+
+                            <button class="btn btn-reviews">
+                                <p>посмотреть </p>
+                                <img src="img/loop.svg" alt="search">
+                            </button>
+
+                        </div>
+
+
+                    </div>
+                    <!-- отзыв3 -->
+                    <div class="review-item wow fadeInLeft slide">
+                        <img class="mark" src="img/pins.png" alt="mark">
+                        <div class="item-left">
+                            <p>Нам было приято сотрудничать с высокопрофессиональными и добросовестными специалистами
+                                этой
+                                компании, имеющими большой опыт работы в своей области.
+                                Настоящим письмом МУП Г.о Подольск «ДЕЗ» выражает благодарность компании «Альпсфера» за
+                                проведение работ по очистке кровли от снега и наледи. В числе несомненных преимуществ
+                                компании «Альпсфера»]: индивидуальный подход к решению поставленных задач.
+                                Мы довольны качеством работ, выполненных в оговоренные сроки. Предлагаем и в дальнейшем
+                                сотрудничать.</p>
+                            <div class="sighn">
+                                <span class="bold-text">С уважением,</span> Зайцева Н.В.
+                            </div>
+                        </div>
+                        <div class="item-right ">
+                            <img class="certeficate-img" src="img/certeficate.png" alt="certeficate">
+
+                            <button class="btn btn-reviews">
+                                <p>посмотреть </p>
+                                <img src="img/loop.svg" alt="search">
+                            </button>
+
+                        </div>
+
+
+                    </div>
+                    <!-- отзыв4 -->
+                    <div class="review-item wow fadeInRight slide">
+                        <img class="mark" src="img/pins.png" alt="mark">
+                        <div class="item-left">
+                            <p>Компания ООО «Чистый Град» выражает благодарность компании ООО «Альпсфера» за
+                                профессионализм
+                                и оперативность в оказании работ по мытью фасадного остекления и цокольного этажа
+                                здания.
+                                Наша организация заинтересована в дальнейшем сотрудничестве и рекомендует ООО
+                                «Альпсфера»
+                                как надежного партнера.</p>
+                            <div class="sighn">
+                                <span class="bold-text">С уважением,</span> Сергей Королев
+                            </div>
+                        </div>
+                        <div class="item-right">
+                            <img class="certeficate-img" src="img/certeficate2.png" alt="certeficate">
+
+                            <button class="btn btn-reviews">
+                                <p>посмотреть </p>
+                                <img src="img/loop.svg" alt="search">
+                            </button>
+
+                        </div>
+
 
                     </div>
 
 
                 </div>
-                <!-- отзыв2 -->
-                <div class="review-item wow fadeInRight ">
-                    <img class="mark" src="img/pins.png" alt="mark">
-                    <div class="item-left">
-                        <p>Компания ООО «Чистый Град» выражает благодарность компании ООО «Альпсфера» за
-                            профессионализм
-                            и оперативность в оказании работ по мытью фасадного остекления и цокольного этажа
-                            здания.
-                            Наша организация заинтересована в дальнейшем сотрудничестве и рекомендует ООО
-                            «Альпсфера»
-                            как надежного партнера.</p>
-                        <div class="sighn">
-                            <span class="bold-text">С уважением,</span> Сергей Королев
-                        </div>
-                    </div>
-                    <div class="item-right">
-                        <img src="img/certeficate2.png" alt="certeficate">
-
-                        <button class="btn btn-reviews">
-                            <p>посмотреть </p>
-                            <img src="img/loop.svg" alt="search">
-                        </button>
-
-                    </div>
 
 
-                </div>
 
 
 
@@ -952,13 +1017,47 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- <script src="owl.carousel.min.js"></script> -->
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
 
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            // autoplay: true,
+            autoplayTimeout: 3000,
+            stagePadding: 0,
+            // center:true,
+            nav: true,
+            navText: [$('.arrow-left '), $('.arrow-right')],
+            dots: false,
 
-
-
-    <script src="owl-carousel/js/owl.carousel.js"></script>
+            responsive: {
+                0: {
+                    items: 1,
+                    center: true,
+                },
+                1330: {
+                    items: 1,
+                    center: true,
+                },
+                1330: {
+                    items: 2,
+                    center: false
+                }
+            }
+        })
+    </script>
+    <style>
+               .owl-stage {
+            left: -15px;
+        }
+    </style>
 </body>
 
 </html>

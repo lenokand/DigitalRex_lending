@@ -21,23 +21,29 @@ shadow.addEventListener('click', toggleMenu)
 
 
 
-const services = document.getElementById("services")
-const toggleItem = () => {
+// const services = document.getElementById("services")
+// const toggleItem = () => {
     
-    services.classList.toggle('open')
-    // toggleAbout()
-}
-services.addEventListener('click', toggleItem)
-
-
-
-const about = document.getElementById("about")
-const toggleAbout = () => {
+//     services.classList.toggle('open')
     
-    about.classList.toggle('open')
-    // toggleItem()
-}
-about.addEventListener('click', toggleAbout)
+// }
+// services.addEventListener('click', toggleItem)
+
+
+
+// const about = document.getElementById("about")
+// const toggleAbout = () => {
+    
+//     about.classList.toggle('open')
+
+//     if services.classList.contains('open') {
+       
+//         services.classList.remove('open');
+      
+//     }
+    
+// }
+// about.addEventListener('click', toggleAbout)
 
 
 
@@ -74,13 +80,4 @@ link.addEventListener('click', function(e){
     }
 
 })
-
-
-// services.addEventListener('click', function(){
-    
-//     services.classList.add('open')
-
-// }
-
-
 

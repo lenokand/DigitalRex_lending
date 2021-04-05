@@ -65,74 +65,39 @@ body {
                     color: #E04100;
                 }
             }
-           
+
         }
 
-       
+
 
 
         .services {
             position: relative;
 
-            >a::after {
-                content: '';
-                // background-image: url(img/arrow-menu.svg);
-                display: inline-block;
-            }
-            .services-items{
+            // >a::after {
+            //     content: '';
+            //     background-image: url(img/arrow-menu.svg);
+            //     display: inline-block;
+            // }
+            .services-items {
                 display: none;
-                               
             }
-            &.open{
-                .services-items{
-                    display: block;
-                }
-               
-            }
-                      
         }
-        .about{
-            position: relative;
-            &.open{
-                .about-items{
-                    display: block;
-                }
-               
-            }
-            .about-items{
-                display: none; 
-            }
 
-            .about-items {
-                position: absolute;
-                left: 529px;
-                top: 87px;
-                background: #FFFFFF;
-                padding: 1.5*$gap 1.5*$gap 0;
-                top: 44px;
-                left:-20px;
-    
-                .about-item {
-                    margin-bottom: 1.5*$gap;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 14px;
-                    line-height: 16px;
-                    color: #000000;
-                }
-    
+        .services:hover {
+            .services-items {
+                display: block;
             }
-
         }
 
         .services-items {
             position: absolute;
             left: 529px;
-            top: 87px;
+            top: 100px;
             background: #FFFFFF;
-            padding: 1.5*$gap 1.5*$gap 0;
+            padding: 2*$gap 1.5*$gap 0;
             top: 44px;
-            left:-20px;
+            left: -20px;
 
             .services-item {
                 margin-bottom: 1.5*$gap;
@@ -142,8 +107,44 @@ body {
                 line-height: 16px;
                 color: #000000;
             }
+        }
+
+        .about:hover {
+            .about-items {
+                display: block;
+            }
+        }
+
+        .about {
+            position: relative;
+
+            .about-items {
+                display: none;
+            }
+
+            .about-items {
+                position: absolute;
+                left: 529px;
+                top: 87px;
+                background: #FFFFFF;
+                padding: 1.5*$gap 1.5*$gap 0;
+                top: 44px;
+                left: -20px;
+
+                .about-item {
+                    margin-bottom: 1.5*$gap;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #000000;
+                }
+
+            }
 
         }
+
+
 
         .contacts {
             .mail a {
@@ -786,7 +787,9 @@ body {
 
     .container {
         position: relative;
-
+        .owl-next{
+            position: absolute;
+        }
     }
 
     .reviews {
@@ -794,7 +797,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-
+        margin: auto;
         .arrow-left {
             display: flex;
             align-items: center;
@@ -834,12 +837,24 @@ body {
             }
         }
 
+        .reviews-carusel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // padding: 2*$gap;
+            margin: auto;
+
+        }
+
         .review-item {
-            width: 570px;
+            // width: 570px;
+            width: 550px;
             height: 415px;
             display: flex;
-            margin: 0 18px;
+            // margin: 0 18px;
             padding: 3*$gap 3*$gap 2*$gap;
+            // padding: 4*$gap 4*$gap 3*$gap;
+            margin: 2*$gap;
             background: #FFF;
             border-radius: 12px;
             box-shadow: 0px 10px 52px rgba(0, 0, 0, 0.1), 0 0 0 6px #FFF;
@@ -851,6 +866,8 @@ body {
                 top: -25px;
                 left: 2.5*$gap;
                 background-color: rgba(255, 255, 255, 0);
+                width: 46px;
+                height: 44px;
             }
 
             .item-left {
@@ -886,7 +903,8 @@ body {
                     line-height: 16px;
                     text-transform: uppercase;
                     color: #FFF;
-
+                    width: 180px;
+                height: 48px;
                     p {
                         margin: 0 9px 0 0;
                     }
@@ -1377,12 +1395,17 @@ footer {
             z-index: 1;
         }
 
-        .review-item:last-child {
-            // background-color: rgb(153, 0, 0);
-            display: none;
+        .review-item {
+         justify-content: center;
+        //  margin: auto;
+        // align-items: center;
 
         }
 
+    }
+    .reviews-carusel .owl-carousel .owl-item {
+        display: flex;
+        justify-content: center;
     }
 
 }
@@ -1475,6 +1498,23 @@ footer {
     }
 }
 
+@media screen and (max-width: 750px) {
+    .owl-stage {
+        left: 0px;
+    }
+    .reviews{
+        // margin: 0;
+    }
+    .screen6 .reviews .review-item{
+        // margin: 0;
+        .item-left{
+            max-width:none;
+            // margin-left: $gap;
+            // margin-right: $gap;
+        }
+    } 
+}
+
 @media screen and (max-width: 720px) {
     .screen1 {
         height: auto;
@@ -1527,23 +1567,31 @@ footer {
         }
 
         .certeficate-img {
-            display: none;
+            display: none!important;
         }
 
     }
 
+    .modal-dialog .form {
+        width: auto !important;
+        height: auto !important;
+        padding: $gap !important;
+    }
+
     .screen7 {
         padding: 0;
+        padding-bottom: $gap;
 
+        .form {
+            height: auto;
+            padding-left: $gap;
+            padding-right: $gap;
+
+        }
 
     }
 
-    .form {
-        height: auto;
-        padding-left: $gap;
-        padding-right: $gap;
 
-    }
 
     #requerModal {
         .modal-dialog {
