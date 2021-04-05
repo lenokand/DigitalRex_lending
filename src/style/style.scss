@@ -1325,17 +1325,7 @@ footer {
         .stage-item {
             margin-bottom: 55.5px;
 
-            .stage-img {
-                img {
-                    // position: absolute;
-                    // top: 50%;
-                    // margin: auto;
-                }
-
-                // position: relative;
-                // display: block;  
-
-            }
+          
         }
 
     }
@@ -1385,6 +1375,12 @@ footer {
     .wrapper-right {
         flex-direction: column;
     }
+    .screen7 {
+        .form {
+            width: auto;
+        }
+
+    }
 }
 @media screen and (max-width: 720px) {
     .screen1{
@@ -1415,6 +1411,53 @@ footer {
     .screen5{
         margin: 0;
     }
+
+    .screen6 {
+
+        h3 {
+            margin-bottom: $gap;
+        }
+
+        .reviews {
+
+            .review-item {
+                flex-direction: column;
+                width: auto;
+                height: auto;
+            }
+        }
+
+        .certeficate-img {
+            display: none;
+        }
+
+    }
+
+    .screen7 {
+        padding: 0;
+
+
+    }
+
+    .form {
+        height: auto;
+        padding-left: $gap;
+        padding-right: $gap;
+
+    }
+
+    .modal-dialog {
+
+        .form {
+
+            width: auto;
+            padding: .5*$gap $gap .5*$gap .5*$gap;
+
+
+        }
+
+    }
+
 }
 @media screen and (max-width: 540px) {
 
