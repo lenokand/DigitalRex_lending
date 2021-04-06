@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены</title>
+
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/gilroy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="bundle.css">
+</head>
+
+<body>
+
+    <section class="screen1 price-pg" style="background-image: url(img/cloud.png), url(img/fon-price.png) ;">
+        <div class="logo_hide">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        <div id="shadow"></div>
+        <div class="container">
+
+            <menu id="main-menu" class="main-menu_serveces">
+
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <div class="menu-item services" id="services">
+
+                    <a href="serveces.html">Услуги </a>
+                    <div class="services-items">
+                        <div class="services-item"><a href="#">Клининг</a> </div>
+                        <div class="services-item"><a href="#">Фасадные работы</a> </div>
+                        <div class="services-item"><a href="#">Металлоконструкции</a></div>
+                        <div class="services-item"><a href="#">Кровельные работы</a></div>
+                    </div>
+
+                </div>
+
+
+                <div class="menu-item"><a href="#">Цены</a> </div>
+                <div class="menu-item about" id="about"> <a href="#">О компании </a>
+                    <div class="about-items">
+                        <div class="about-item"><a href="#">Клининг</a> </div>
+                        <div class="about-item"><a href="#">Фасадные работы</a> </div>
+                        <div class="about-item"><a href="#">Металлоконструкции</a></div>
+                        <div class="about-item"><a href="#">Кровельные работы</a></div>
+                    </div>
+                </div>
+                <div class="menu-item"><a href="#">Юридическим лицам</a> </div>
+                <div class="menu-item"><a href="#">Вопрос-ответ</a> </div>
+                <div class="menu-item"><a href="#">Контакты</a> </div>
+                <div class="social">
+                    <a href="#" class="social-link text-decoration-none">
+                        <img src="img/tg.svg" alt="telegram">
+                    </a>
+                    <a href="#" class="social-link text-decoration-none">
+                        <img src="img/wb.png" alt="wiber">
+                    </a>
+                    <a href="#" class="social-link text-decoration-none ">
+                        <img src="img/wapp.png" alt="watsapp">
+                    </a>
+
+                </div>
+                <div class="contacts">
+                    <div class="mail"> <a href="mailto:zakaz-alp@yandex.ru"
+                            class="text-decoration-none ">zakaz-alp@yandex.ru</a> </div>
+                    <div class="telephone">
+                        <a href="tel:74957983214" class="text-decoration-none ">+7 (495) 798-32-14 </a>
+                    </div>
+                </div>
+                <button class="btn btn-order wow fadeInDown " data-bs-toggle="modal"
+                    data-bs-target="#CallModal">заказать звонок</button>
+
+            </menu>
+
+
+
+            <!-- Modal call-->
+            <div class="modal fade" id="CallModal" tabindex="-1" aria-labelledby="CallModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="form " style="background-image: url(img/carabineSm.png);">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h4>Остались вопросы?
+                            </h4>
+                            <p>Получите бесплатную консультацию</p>
+                            <form action="" method="POST">
+                                <input type="text" minlength="1" name="name" id="name" placeholder="Ваше имя" required>
+                                <input type="tel" minlength="10" name="telephone" id="telephone"
+                                    placeholder="Ваш номер телефона" required>
+
+                                <textarea cols="32" name="message" rows="3" placeholder="Сообщение"></textarea>
+                                <button type="submit" class="btn btn-submit">
+                                    отправить заявку
+                                </button>
+                                <label for="checkbox">
+                                    <input id="checkbox" class="custom-checkbox" type="checkbox" checked required>
+                                    <span class="check">
+                                        <img src="img/check-ltl.svg" alt=""></span>
+
+                                    Принимаю &nbsp <a href="#" data-bs-toggle="modal"
+                                        data-bs-target="#licenseModal">условия обработки информации</a>
+                                </label>
+
+                                <!--  -->
+
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- // -->
+            <!-- Условия лиц соглашения -->
+            <div class="modal fade" id="licenseModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="licenseModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable ">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="licenseModal">Условия обработки информации
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aut
+                            quibusdam eveniet dolorum ratione, culpa facere porro mollitia deleniti
+                            officiis, nesciunt quos eos voluptatibus corrupti debitis magni harum
+                            tempore similique.
+                            Quo, quos nostrum? Dolore ducimus laudantium ut quod quasi aliquid
+                            corrupti tempora vel sint sapiente animi dolor, voluptates in molestiae
+                            a vero! Quasi dolorum id magnam sapiente ab non tempore!
+                            Sapiente earum optio eveniet natus magnam nesciunt cum, quam nisi at
+                            quia alias nostrum sit consectetur incidunt in explicabo iusto provident
+                            maxime dolorum modi veritatis corporis itaque? Nihil, repellat facere.
+                            Distinctio fugit similique veritatis modi ratione. Sunt maxime possimus
+                            voluptatibus omnis quaerat, beatae veritatis labore iste placeat
+                            molestiae at animi temporibus provident porro inventore sed officia
+                            architecto voluptate asperiores amet.
+                            Ipsa aspernatur nostrum consectetur porro velit, error mollitia vitae
+                            veniam sapiente cupiditate sequi animi deleniti exercitationem provident
+                            beatae fuga possimus, modi est, repudiandae quis magni adipisci?
+                            Voluptatem fugit veniam iste?
+                            Magni autem veritatis quam, iusto iure, modi at culpa tempora iste
+                            repellat ad error quia atque corporis adipisci sed itaque sapiente et,
+                            tempore fugit officia veniam. Quasi molestiae rerum pariatur!
+                            Veritatis, iste in. Quod facilis reiciendis sit, quo praesentium
+                            exercitationem accusamus doloremque non minus, a, culpa officiis fuga
+                            debitis? Rem fugiat commodi modi laudantium ipsa dolores ipsam enim a
+                            doloremque?
+                            Dignissimos, saepe illo corporis iure consequatur ad distinctio deserunt
+                            atque nisi aperiam est dolor cupiditate voluptas recusandae quia
+                            accusamus molestiae odio alias natus, debitis nostrum itaque qui
+                            dolorem! Consequuntur, voluptas.
+                            Nulla numquam neque temporibus adipisci illo officiis ea amet, aperiam
+                            eligendi aliquam, voluptatum, consequatur odit reiciendis ut? Ut ipsam
+                            reprehenderit vitae neque ducimus reiciendis eius consequuntur eligendi
+                            eaque. In, vero!
+                            Ipsa aspernatur nostrum consectetur porro velit, error mollitia vitae
+                            veniam sapiente cupiditate sequi animi deleniti exercitationem provident
+                            beatae fuga possimus, modi est, repudiandae quis magni adipisci?
+                            Voluptatem fugit veniam iste?
+                            Magni autem veritatis quam, iusto iure, modi at culpa tempora iste
+                            repellat ad error quia atque corporis adipisci sed itaque sapiente et,
+                            tempore fugit officia veniam. Quasi molestiae rerum pariatur!
+                            Veritatis, iste in. Quod facilis reiciendis sit, quo praesentium
+                            exercitationem accusamus doloremque non minus, a, culpa officiis fuga
+                            debitis? Rem fugiat commodi modi laudantium ipsa dolores ipsam enim a
+                            doloremque?
+                            Dignissimos, saepe illo corporis iure consequatur ad distinctio deserunt
+                            atque nisi aperiam est dolor cupiditate voluptas recusandae quia
+                            accusamus molestiae odio alias natus, debitis nostrum itaque qui
+                            dolorem! Consequuntur, voluptas.
+                            Nulla numquam neque temporibus adipisci illo officiis ea amet, aperiam
+                            eligendi aliquam, voluptatum, consequatur odit reiciendis ut? Ut ipsam
+                            reprehenderit vitae neque ducimus reiciendis eius consequuntur eligendi
+                            eaque. In, vero!
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">закрыть</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+
+        <button id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+
+        <h1>Цены</h1>
+        <div class="container-crumb">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="bread-item"><a href="index.html">Главная </a></li>
+                    <li class="bread-item"> &nbsp / Цены</li>
+                </ol>
+            </nav>
+        </div>
+
+    </section>
+
+    <section class="prices price-pg">
+        <div class="container">
+            
+
+            <div class="tabs">
+                <ul class="nav " id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="btn-tabs active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">клиннинг</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn-tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">фасадные работы</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn-tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">металлоконструкции</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn-tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-contact2" type="button" role="tab" aria-controls="pills-contact2" aria-selected="false">кровельные работы</button>
+                    </li>
+
+
+                </ul>
+              
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">1
+
+                        <div class="table-price">
+                            <div class="pricelist">
+                                <div class="row thead">
+                                    <div class="col">Виды работ</div>
+                                    <div class="col">Ед. измерения</div>
+                                    <div class="col">Цена, руб.</div>
+                                </div>
+                                <div class="row trow">
+                                    <div class="col">Мытье вертикальных стекол</div>
+                                    <div class="col">м. кв.</div>
+                                    <div class="col">от 30</div>
+                                </div>
+                                <div class="row trow">
+                                    <div class="col">Мытье горизонтальных, наклонных стекол</div>
+                                    <div class="col">м. кв.</div>
+                                    <div class="col">от 60.</div>
+                                </div>
+                                <div class="row trow">
+                                    <div class="col">Мытье труднодоступных стекол</div>
+                                    <div class="col">м. кв.</div>
+                                    <div class="col">дог.</div>
+                                </div>
+                                <div class="row trow">
+                                    <div class="col">Мытье сильнозагрязненных стекол</div>
+                                    <div class="col">м. кв.</div>
+                                    <div class="col">от 50</div>
+                                </div>
+                                <div class="row trow">
+                                    <div class="col">Минимальная стоимость заказа</div>
+                                    <div class="col">м. кв.</div>
+                                    <div class="col">12 000</div>
+                                </div>
+                            </div>
+            
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2
+
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Очистка кровли от снега и наледи
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Мойка фасада
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Гидрофобизация
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                 Мойка остекления
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">3</div>
+                    <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact-tab">4</div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+<section class="triger">
+<div class="container">
+    <div class="download" style="background-image: url(img/fon-download.png);">
+        <div class="dowload-info">
+           <span class="bold-text"> Хотите получить прайс-лист?</span> Жмите на кнопку
+        </div>
+        <a class="btn" href="img/fon1.png" download >Скачать документ <img src="img/download.svg" alt="download"></a>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+    <section class="screen7" style="background-image: url(img/bottom-bg.png);">
+        <div class="container">
+
+            <div class="form wow fadeInDown" style="background-image: url(img/carabineSm.png);">
+                <h4>Остались вопросы?
+                </h4>
+                <p>Получите бесплатную консультацию</p>
+                <form action="" method="POST">
+                    <input type="text" minlength="1" name="name" id="name" placeholder="Ваше имя" required>
+                    <input type="tel" minlength="10" name="telephone" id="telephone" placeholder="Ваш номер телефона"
+                        required>
+                    <input type="email" name="email" id="email" placeholder="Адрес электронной почты" required>
+
+                    <textarea cols="32" name="message" rows="3" placeholder="Сообщение"></textarea>
+                    <button type="submit" class="btn btn-submit">
+                        отправить заявку
+                    </button>
+                    <label for="checkbox">
+                        <input id="checkbox" class="custom-checkbox" type="checkbox" checked required>
+                        <span class="check">
+                            <img src="img/check-ltl.svg" alt=""></span>
+
+                        Принимаю &nbsp <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal">условия
+                            обработки информации</a>
+                    </label>
+
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="wrapper-left">
+                <div class="logo">
+                    <div class="logo-img">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+
+
+
+                    <div class="description">
+                        Высотные работы по москве и
+                        московской области
+                    </div>
+                    <div class="logo-item">Политика конфидециальности</div>
+                    <div class="logo-item">Не оферта</div>
+                </div>
+                <div class="nav">
+
+                    <h5>Навигация по сайту</h5>
+                    <div class="nav-item">Услуги</div>
+                    <div class="nav-item">Цены</div>
+                    <div class="nav-item">О компании</div>
+                    <div class="nav-item">Юридическим лицам</div>
+                    <div class="nav-item">Вопрос - овтет</div>
+                    <div class="nav-item">Контакты</div>
+
+                </div>
+
+            </div>
+
+            <div class="wrapper-right">
+                <div class="contacts">
+
+                    <h5>Контактные телефоны:</h5>
+
+                    <div class=" ">
+                        <div class="telephone">
+                            <a href="tel:74952666434" class="text-decoration-none ">+7 (495) 266 64 34 </a>
+                        </div>
+                        <div class="telephone">
+                            <a href="tel:79256095975" class="text-decoration-none ">+7 (925) 609 59 75 </a>
+                        </div>
+
+                        <div class="row-links">
+                            <div class=""><a href="#" class="social-link text-decoration-none">
+
+                                    <img src="img/tg.svg" alt="telegram">
+                                </a></div>
+                            <div class="">
+                                <a href="#" class="social-link text-decoration-none">
+                                    <img src="img/wb.png" alt="wiber">
+                                </a>
+                            </div>
+                            <div class="">
+                                <a href="#" class="social-link text-decoration-none ">
+                                    <img src="img/wapp.png" alt="watsapp">
+                                </a>
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="mail">
+                    <h5>Электронная почта:</h5>
+                    <div class="row">
+                        <a href="mailto:zakaz-alp@yandex.ru" class="text-decoration-none ">zakaz-alp@yandex.ru</a>
+                    </div>
+                </div>
+                <div class="adress">
+                    <h5>Адрес и график работы:</h5>
+                    <div class="adress-item">г. Москва, ул. Тестовская, д. 10</div>
+                    <div class="adress-item">Пн - Сб с 9.00 - 18.00</div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </footer>
+
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script src="main.bundle.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            // autoplay: true,
+            autoplayTimeout: 3000,
+            stagePadding: 0,
+            center: true,
+            nav: true,
+            navText: [$('.arrow-left_serv '), $('.arrow-right_serv')],
+            dots: false,
+
+            responsive: {
+                0: {
+                    items: 1,
+
+                },
+                850: {
+                    items: 3,
+
+                },
+                1330: {
+                    items: 3,
+
+                }
+            }
+        })
+    </script>
+    <style>
+        .owl-stage {
+            /* left: -15px; */
+        }
+    </style>
+</body>
+
+</html>

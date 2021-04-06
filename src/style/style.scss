@@ -3,6 +3,8 @@
 
 // переменные
 $gap:15px;
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill=' #E04100'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill=' #E04100'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 
 body {
     font-family: "Gilroy", sans-serif;
@@ -1965,7 +1967,8 @@ footer {
 
     .container {
         position: relative;
-        .roof-bg{
+
+        .roof-bg {
             position: absolute;
             top: -320px;
             left: -350px;
@@ -2103,6 +2106,22 @@ footer {
 
 }
 
+@media screen and (max-width: 960px) {
+
+    .screen1.serveces-pg {
+        background-position: center 277%, top;
+    }
+
+}
+
+@media screen and (max-width: 455px) {
+
+    .screen1.serveces-pg {
+        background-position: center 250%, top;
+    }
+
+}
+
 @media screen and (max-width: 850px) {
     .example {
         margin-top: $gap;
@@ -2147,46 +2166,220 @@ footer {
 
     .prices .pricelist {
         .thead {
-       
+
             padding: $gap 0 $gap $gap;
-    
+
             .col:first-child {
                 flex-basis: 62%;
             }
-    
+
             .col:last-child {
                 flex-basis: 19%;
             }
-    
+
             .col:nth-child(2) {
                 flex-basis: 19%;
             }
         }
-    
+
         .trow {
             padding: $gap 0 $gap $gap;
         }
 
     }
-    
+
 
 }
+
 @media screen and (max-width: 600px) {
-    .table-price{
-  
-            overflow: scroll;
-        .pricelist{
-            
+    .table-price {
+
+        overflow: scroll;
+
+        .pricelist {
+
             width: 570px;
             height: 350px;
         }
-    
+
     }
-    
+
 }
+
 @media screen and (max-width: 1000px) {
-    .roof-bg{
+    .roof-bg {
         display: none;
     }
-    
+
+}
+
+//Страница цены
+
+
+.price-pg {
+    height: auto;
+    background-position: center 220%, top;
+
+    h1 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 134.7%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .container-crumb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .breadcrumb {
+            .bread-item a {
+                font-style: normal;
+                font-weight: 800;
+                font-size: 14px;
+                line-height: 134.7%;
+                text-align: center;
+                text-decoration-line: underline;
+                color: #FFFFFF;
+            }
+
+            .bread-item {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 134.7%;
+                text-align: center;
+                text-decoration-line: underline;
+                color: #FFFFFF;
+                text-decoration-line: none;
+            }
+        }
+
+    }
+
+}
+
+.prices {
+
+    // аккардион
+    .tabs{
+        ul{
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .accordion-button:not(.collapsed){
+            
+            background: #F2F2F2;
+            border-radius: 12px;
+        }
+        .accordion-button.collapsed{
+            background: #EBEBEB;
+    border-radius: 12px;
+        }
+        .accordion-button:not(.collapsed):after{
+            // background-image:check-ltl.svg;
+        }
+    }
+
+   
+
+    .btn-tabs {
+        width: 270px;
+        height: 57px;
+        border: 1px solid #DDDDDD;
+        background: #fff;
+        box-sizing: border-box;
+        border-radius: 6px;
+    }
+
+
+    .btn-tabs.active {
+        background: linear-gradient(0deg, #E04100 0%, #FD733B 100%);
+        box-shadow: 0px 3px 0px #BB4F23;
+        border-radius: 6px;
+        width: 270px;
+        height: 57px;
+        border: none;
+        outline: none;
+    }
+}
+
+.triger {
+    margin-top: 8*$gap;
+
+    .download {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 12px;
+        max-width: 1170px;
+        height: 136px;
+        padding: 0 4*$gap;
+
+        .dowload-info {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 37px;
+            color: #FFFFFF;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 0;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            width: 232px;
+            height: 48px;
+            background: linear-gradient(0deg, #E04100 0%, #FD733B 100%);
+            box-shadow: 0px 3px 0px #BB4F23;
+            border-radius: 6px;
+
+            img {
+                margin-left: .5*$gap;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .price-pg {
+        height: 287px;
+        background-position: center -135%, top;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    .triger .download {
+        background-size: cover;
+        height: auto;
+        padding: $gap 4*$gap;
+        flex-direction: column;
+
+        .dowload-info {
+            margin-bottom: $gap;
+        }
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .triger .download {
+        padding: $gap;
+    }
+
 }
