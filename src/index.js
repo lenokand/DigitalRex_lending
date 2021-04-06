@@ -21,35 +21,6 @@ shadow.addEventListener('click', toggleMenu)
 
 
 
-// const services = document.getElementById("services")
-// const toggleItem = () => {
-    
-//     services.classList.toggle('open')
-    
-// }
-// services.addEventListener('click', toggleItem)
-
-
-
-// const about = document.getElementById("about")
-// const toggleAbout = () => {
-    
-//     about.classList.toggle('open')
-
-//     if services.classList.contains('open') {
-       
-//         services.classList.remove('open');
-      
-//     }
-    
-// }
-// about.addEventListener('click', toggleAbout)
-
-
-
-
-
-
 var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);
 var scene = document.getElementById('scene2');
@@ -68,7 +39,7 @@ var parallax = new Parallax(scene7);
 
 let text = document.getElementById("contentSpoiler");
 let link = document.getElementById("linkSpoiler");
-
+console.log(link);
 link.addEventListener('click', function(e){
     e.preventDefault();
        if (text.style.display == "block") {
