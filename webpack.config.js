@@ -9,7 +9,7 @@ module.exports = {
     entry: ['./src/index.js', './src/style/style.scss'],
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: `[name].bundle.${new Date().getTime()}.js`
+        filename: `[name].bundle.js`
     },
     mode: 'production',
     devServer: {

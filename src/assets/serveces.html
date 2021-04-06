@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Услуги</title>
 
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -19,21 +19,22 @@
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="bundle.css">
 </head>
 
 <body>
 
-    <section class="screen1" style="background-image: url(img/cloud.png), url(img/fon1.png) ;">
+    <section class="screen1 serveces-pg" style="background-image: url(img/cloud.png), url(img/fon-serve.png) ;">
         <div class="logo_hide">
-           <a href="#"><img src="img/logo.png" alt="logo"></a> 
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
         </div>
         <div id="shadow"></div>
         <div class="container">
 
-            <menu id="main-menu">
+            <menu id="main-menu" class="main-menu_serveces">
 
                 <div class="logo">
-                    <a href="#"><img src="img/logo.png" alt="logo"></a> 
+                    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
                 </div>
                 <div class="menu-item services" id="services">
 
@@ -83,6 +84,9 @@
                     data-bs-target="#CallModal">заказать звонок</button>
 
             </menu>
+
+
+
             <!-- Modal call-->
             <div class="modal fade" id="CallModal" tabindex="-1" aria-labelledby="CallModal" aria-hidden="true">
                 <div class="modal-dialog">
@@ -207,30 +211,78 @@
         </button>
 
 
+        <div class="container serveces-pg">
+            <div class=" tittle-container">
+                <div class="tittle-block wow fadeInDown">
+                    <div class="tittle row">
+                        <div class="col">
+                            <h1>Мытье окон</h1>
+
+                            <span class="subtittle">промышленными альпинистами</span>
+                        </div>
+                    </div>
+                    <div class="tittle-info row ">
+                        <ul>
 
 
-        <div class="container tittle-container">
-            <div class="tittle-block wow fadeInDown">
-                <div class="tittle row">
-                    <div class="col">
-                        <h1>Высотные работы
-                            промышленными альпинистами
-                            <span class="subtittle">в Москве и области</span> </h1>
+                            <li>
+                                <div class="checked"> <img src="img/check-ltl-white.svg" alt="check"></div> Скидка от
+                                10% до 15% на первый заказ
+                            </li>
+                            <li>
+                                <div class="checked"> <img src="img/check-ltl-white.svg" alt="check"></div>Скидка до 30%
+                                (в зависимости от объёма)
+                            </li>
+                            <li>
+                                <div class="checked"> <img src="img/check-ltl-white.svg" alt="check"></div>Оплата по
+                                факту
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="tittle-info row ">
-                    <h2>Оперативное реагирование менеджер приедет к вам в течении часа</h2>
+                <button class="btn btn-leave-order wow fadeInDown animate__delay-2s" data-bs-toggle="modal"
+                    data-bs-target="#requerModal">
+                    Оставить заявку
+                </button>
+
+
+            </div>
+            <div class="requer-block">
+                <div class="form wow fadeInDown" style="background-image: url(img/carabineSm.png);">
+                    <h4>Остались вопросы?
+                    </h4>
+                    <p>Получите бесплатную консультацию</p>
+                    <form action="" method="POST">
+                        <input type="text" minlength="1" name="name" id="name" placeholder="Ваше имя" required>
+                        <input type="tel" minlength="10" name="telephone" id="telephone"
+                            placeholder="Ваш номер телефона" required>
+                        <input type="email" name="email" id="email" placeholder="Адрес электронной почты" required>
+
+                        <textarea cols="32" name="message" rows="3" placeholder="Сообщение"></textarea>
+                        <button type="submit" class="btn btn-submit">
+                            отправить заявку
+                        </button>
+                        <label for="checkbox">
+                            <input id="checkbox" class="custom-checkbox" type="checkbox" checked required>
+                            <span class="check">
+                                <img src="img/check-ltl.svg" alt=""></span>
+
+                            Принимаю &nbsp <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal">условия
+                                обработки информации</a>
+                        </label>
+
+
+                    </form>
+
                 </div>
             </div>
-            <button class="btn btn-leave-order wow fadeInDown animate__delay-2s" data-bs-toggle="modal"
-                data-bs-target="#requerModal">
-                Оставить заявку
-            </button>
-
         </div>
+
+
+
         <!-- Modal requerModal -->
 
-        <div class="modal fade" id="requerModal" tabindex="-1" aria-labelledby="requerModal" aria-hidden="true">
+        <div class="modal fade " id="requerModal" tabindex="-1" aria-labelledby="requerModal" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="form " style="background-image: url(img/carabineSm.png);">
@@ -349,108 +401,168 @@
 
     </section>
 
-
-    <section class="screen2">
-
+    <section class="prices">
         <div class="container">
-            <div class="screen-tittle">
-                <h3>Наши услуги</h3>
+            <h3>Цены на услуги</h3>
+            <div class="table-price">
+                <div class="pricelist">
+                    <div class="row thead">
+                        <div class="col">Виды работ</div>
+                        <div class="col">Ед. измерения</div>
+                        <div class="col">Цена, руб.</div>
+                    </div>
+                    <div class="row trow">
+                        <div class="col">Мытье вертикальных стекол</div>
+                        <div class="col">м. кв.</div>
+                        <div class="col">от 30</div>
+                    </div>
+                    <div class="row trow">
+                        <div class="col">Мытье горизонтальных, наклонных стекол</div>
+                        <div class="col">м. кв.</div>
+                        <div class="col">от 60.</div>
+                    </div>
+                    <div class="row trow">
+                        <div class="col">Мытье труднодоступных стекол</div>
+                        <div class="col">м. кв.</div>
+                        <div class="col">дог.</div>
+                    </div>
+                    <div class="row trow">
+                        <div class="col">Мытье сильнозагрязненных стекол</div>
+                        <div class="col">м. кв.</div>
+                        <div class="col">от 50</div>
+                    </div>
+                    <div class="row trow">
+                        <div class="col">Минимальная стоимость заказа</div>
+                        <div class="col">м. кв.</div>
+                        <div class="col">12 000</div>
+                    </div>
+                </div>
+    
             </div>
+           
 
-            <div class="serveces " data-relative-input="true">
-                <div class="left-services wow fadeInLeft">
-                    <div class="left-top" style="background-image: url(img/claening.png);">
-                        <div>
-                            <h4>
-                                Клинниг
-                            </h4>
-                            <ul>
-                                <li>- Очистка кровли от снега и наледи</li>
-                                <li>- Чистка фасада</li>
-                                <li>- Мойка фасада</li>
-                                <li>- Гидрофобизация</li>
-                                <li>- Мойка остекления</li>
-                            </ul>
-                        </div>
 
-                        <button class="btn" data-bs-toggle="modal" data-bs-target="#requerModal">оставить
-                            заявку</button>
-
-                    </div>
-
-                    <div class="left-bottomn " style="background-image: url(img/metal.png);">
-                        <div>
-                            <h4>
-                                Металлоконструкции
-                            </h4>
-                            <ul>
-                                <li>- Покраска металлоконструкций</li>
-                                <li>- Обеспыливание металлоконструкций</li>
-                                <li>- Монтаж металлоконструкций</li>
-                                <li>- Демонтаж металлоконструкций</li>
-
-                            </ul>
-                        </div>
-
-                        <button class="btn" data-bs-toggle="modal" data-bs-target="#requerModal">оставить
-                            заявку</button>
-                    </div>
-                </div>
-                <div class="right-services wow fadeInRight">
-                    <div class="left-top" style="background-image: url(img/fasad.png);">
-                        <div>
-                            <h4>
-                                Фасадные работы
-                            </h4>
-                            <ul>
-                                <li>- Очистка кровли от снега и наледи</li>
-                                <li>- Покраска фасада</li>
-                                <li>- Герметизация швов</li>
-                                <li>- Ремонт фасада</li>
-                                <li>- Отделка монолитных поясов</li>
-                            </ul>
-                        </div>
-
-                        <button class="btn" data-bs-toggle="modal" data-bs-target="#requerModal">оставить
-                            заявку</button>
-                    </div>
-                    <div class="left-bottomn" style="background-image: url(img/roof.png);">
-                        <div>
-                            <h4>
-                                Кровельные работы
-                            </h4>
-                            <ul>
-                                <li>- Ремонт кровли</li>
-                                <li>- Монтаж кровли</li>
-
-                            </ul>
-                        </div>
-
-                        <button class="btn" data-bs-toggle="modal" data-bs-target="#requerModal">оставить
-                            заявку</button>
-                    </div>
-                </div>
-                <div class="carabine-left " data-relative-input="true" id="scene">
-                    <div data-depth="0.2">
-                        <img src="img/carbine-left.png" alt="carbine">
-                    </div>
-
-                </div>
-                <div class="carbine-right" data-relative-input="true" id="scene2">
-                    <div data-depth="0.2">
-                        <img src="img/carbine-right.png" alt="carbine">
-                    </div>
-
-                </div>
-
-            </div>
 
 
         </div>
 
+    </section>
+
+    <!-- <section class="example" style="background-image: url(img/roof-chb.png);"> -->
+    <section class="example" >
+        <div class="container">
+            <h3>Примеры
+                <div><span class="bold-text">выполненных работ </span></div>
+            </h3>
+            <!-- управление лево/право -->
+            <div class="arrow-left_serv wow fadeInLeft ">
+                <img src="img/arrow-left_wh.svg" alt="arrow left">
+            </div>
+            <div class="arrow-right_serv wow fadeInRight">
+                <img src="img/arrow-right_wh.svg" alt="arrow right">
+            </div>
+
+            <!-- карусель -->
+            <div class="carusel_serveces-pg owl-carousel owl-theme" id="slider">
+                <div class="example-item">
+                    <img src="img/example1.png" alt="building">
+                    <div class="descryption">
+                        <p>БЦ Госкорпорации "РОСАТОМ"</p>
+                        <p>Озерковская наб., 28, стр. 3, г. Москва</p>
+                        <p>Объём: <span class="size">7 000 кв.м</span> </p>
+                        <p>Срок выполнения: <span class="term">8 дней</span> </p>
+                    </div>
+
+                </div>
+                <div class="example-item">
+                    <img src="img/example2.png" alt="building">
+                    <div class="descryption">
+                        <p>БЦ Госкорпорации "РОСАТОМ"</p>
+                        <p>Озерковская наб., 28, стр. 3, г. Москва</p>
+                        <p>Объём: <span class="size">7 000 кв.м</span> </p>
+                        <p>Срок выполнения: <span class="term">8 дней</span> </p>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <img src="img/example3.png" alt="building">
+                    <div class="descryption">
+                        <p>БЦ Госкорпорации "РОСАТОМ"</p>
+                        <p>Озерковская наб., 28, стр. 3, г. Москва</p>
+                        <p>Объём: <span class="size">7 000 кв.м</span> </p>
+                        <p>Срок выполнения: <span class="term">8 дней</span> </p>
+                    </div>
+                </div>
+
+            </div>
+            <img class="roof-bg" src="img/roof-chb.png" alt="roof">
+        </div>
+  
+
+    </section>
+
+    <section class="screen4 wow fadeIn" style="background-image: url(img/alpinist.png); " data-wow-delay=".2s">
+
+        <div class="container">
+            <div class="tittle">
+                <h3>Информация о компании
+                </h3>
+                <h4>в цифрах</h4>
+            </div>
+
+            <!-- <img class="alpinist" src="img/alpinist.png" alt="alpinist"> -->
+            <div class="numbers">
+                <!-- первая колонка -->
+                <div class="number-col">
+                    <div class="numper-item">
+                        <p>Работаем с</p>
+                        <img src="img/2011.png" alt="2011">
+                        <p>года</p>
+                    </div>
+                    <div class="numper-item">
+                        <p>Филиалы в</p>
+                        <img src="img/3.png" alt="3">
+                        <p>городах России</p>
+                    </div>
+                </div>
+                <!-- вторая колонка -->
+                <div class="number-col">
+                    <div class="numper-item">
+                        <p>Выполнено</p>
+                        <img src="img/793.png" alt="793">
+                        <p>заказа</p>
+                    </div>
+                    <div class="numper-item">
+                        <p>Рейтинг</p>
+                        <img src="img/top3.png" alt="top">
+                        <p>по Москве и области</p>
+                    </div>
+                </div>
+                <!-- третья колонка -->
+                <div class="number-col">
+                    <div class="numper-item">
+                        <p>На обслуживание</p>
+                        <img src="img/141.png" alt="141">
+                        <p>объект</p>
+                    </div>
+                    <div class="numper-item">
+                        <p>В штате компании</p>
+                        <img src="img/27.png" alt="27">
+                        <p>альпинистов</p>
+                    </div>
+                </div>
 
 
 
+
+
+            </div>
+
+
+
+
+
+
+        </div>
 
     </section>
 
@@ -539,75 +651,13 @@
             <img class="stages-img" src="img/man-on-roof.png" alt="man-on-roof">
         </div>
     </section>
-    <section class="screen4 wow fadeIn" style="background-image: url(img/alpinist.png); " data-wow-delay=".2s">
-
-        <div class="container">
-            <div class="tittle">
-                <h3>Информация о компании
-                </h3>
-                <h4>в цифрах</h4>
-            </div>
-
-            <!-- <img class="alpinist" src="img/alpinist.png" alt="alpinist"> -->
-            <div class="numbers">
-                <!-- первая колонка -->
-                <div class="number-col">
-                    <div class="numper-item">
-                        <p>Работаем с</p>
-                        <img src="img/2011.png" alt="2011">
-                        <p>года</p>
-                    </div>
-                    <div class="numper-item">
-                        <p>Филиалы в</p>
-                        <img src="img/3.png" alt="3">
-                        <p>городах России</p>
-                    </div>
-                </div>
-                <!-- вторая колонка -->
-                <div class="number-col">
-                    <div class="numper-item">
-                        <p>Выполнено</p>
-                        <img src="img/793.png" alt="793">
-                        <p>заказа</p>
-                    </div>
-                    <div class="numper-item">
-                        <p>Рейтинг</p>
-                        <img src="img/top3.png" alt="top">
-                        <p>по Москве и области</p>
-                    </div>
-                </div>
-                <!-- третья колонка -->
-                <div class="number-col">
-                    <div class="numper-item">
-                        <p>На обслуживание</p>
-                        <img src="img/141.png" alt="141">
-                        <p>объект</p>
-                    </div>
-                    <div class="numper-item">
-                        <p>В штате компании</p>
-                        <img src="img/27.png" alt="27">
-                        <p>альпинистов</p>
-                    </div>
-                </div>
 
 
 
 
 
-            </div>
-
-
-
-
-
-
-        </div>
-
-    </section>
     <section class="screen5">
-        <div class="cable" data-relative-input="true" data-invert-y="false" id="scene6">
-            <img class="" data-depth="0.2" src="img/cable.png" alt="cable">
-        </div>
+
 
         <div class="container">
             <h3>Нашим клиентам
@@ -692,153 +742,11 @@
 
             </div>
         </div>
-        <div class="carabine" data-relative-input="true" id="scene7">
-            <img data-depth="0.4" src="img/carabine.png" alt="carabine">
-        </div>
+
 
     </section>
 
 
-    <section class="screen6" style="background-image: url(img/gray-bg.png);">
-        <div class="container">
-            <h3>Отзывы клиентов</h3>
-            <div class="reviews">
-                <!-- управление лево/право -->
-                <div class="arrow-left wow fadeInLeft ">
-                    <img src="img/arrow-left.svg" alt="arrow left">
-                </div>
-                <div class="arrow-right wow fadeInRight">
-                    <img src="img/arrow-right.svg" alt="arrow right">
-                </div>
-
-                <div class="reviews-carusel owl-carousel owl-theme" id="slider">
-
-
-                    <!-- отзыв1 -->
-                    <div class="review-item wow fadeInLeft slide">
-                        <img class="mark" src="img/pins.png" alt="mark">
-                        <div class="item-left">
-                            <p>Нам было приято сотрудничать с высокопрофессиональными и добросовестными специалистами
-                                этой
-                                компании, имеющими большой опыт работы в своей области.
-                                Настоящим письмом МУП Г.о Подольск «ДЕЗ» выражает благодарность компании «Альпсфера» за
-                                проведение работ по очистке кровли от снега и наледи. В числе несомненных преимуществ
-                                компании «Альпсфера»]: индивидуальный подход к решению поставленных задач.
-                                Мы довольны качеством работ, выполненных в оговоренные сроки. Предлагаем и в дальнейшем
-                                сотрудничать.</p>
-                            <div class="sighn">
-                                <span class="bold-text">С уважением,</span> Зайцева Н.В.
-                            </div>
-                        </div>
-                        <div class="item-right ">
-                            <img class="certeficate-img" src="img/certeficate.png" alt="certeficate">
-
-                            <button class="btn btn-reviews">
-                                <p>посмотреть </p>
-                                <img src="img/loop.svg" alt="search">
-                            </button>
-
-                        </div>
-
-
-                    </div>
-                    <!-- отзыв2 -->
-                    <div class="review-item wow fadeInRight slide">
-                        <img class="mark" src="img/pins.png" alt="mark">
-                        <div class="item-left">
-                            <p>Компания ООО «Чистый Град» выражает благодарность компании ООО «Альпсфера» за
-                                профессионализм
-                                и оперативность в оказании работ по мытью фасадного остекления и цокольного этажа
-                                здания.
-                                Наша организация заинтересована в дальнейшем сотрудничестве и рекомендует ООО
-                                «Альпсфера»
-                                как надежного партнера.</p>
-                            <div class="sighn">
-                                <span class="bold-text">С уважением,</span> Сергей Королев
-                            </div>
-                        </div>
-                        <div class="item-right">
-                            <img class="certeficate-img" src="img/certeficate2.png" alt="certeficate">
-
-                            <button class="btn btn-reviews">
-                                <p>посмотреть </p>
-                                <img src="img/loop.svg" alt="search">
-                            </button>
-
-                        </div>
-
-
-                    </div>
-                    <!-- отзыв3 -->
-                    <div class="review-item wow fadeInLeft slide">
-                        <img class="mark" src="img/pins.png" alt="mark">
-                        <div class="item-left">
-                            <p>Нам было приято сотрудничать с высокопрофессиональными и добросовестными специалистами
-                                этой
-                                компании, имеющими большой опыт работы в своей области.
-                                Настоящим письмом МУП Г.о Подольск «ДЕЗ» выражает благодарность компании «Альпсфера» за
-                                проведение работ по очистке кровли от снега и наледи. В числе несомненных преимуществ
-                                компании «Альпсфера»]: индивидуальный подход к решению поставленных задач.
-                                Мы довольны качеством работ, выполненных в оговоренные сроки. Предлагаем и в дальнейшем
-                                сотрудничать.</p>
-                            <div class="sighn">
-                                <span class="bold-text">С уважением,</span> Зайцева Н.В.
-                            </div>
-                        </div>
-                        <div class="item-right ">
-                            <img class="certeficate-img" src="img/certeficate.png" alt="certeficate">
-
-                            <button class="btn btn-reviews">
-                                <p>посмотреть </p>
-                                <img src="img/loop.svg" alt="search">
-                            </button>
-
-                        </div>
-
-
-                    </div>
-                    <!-- отзыв4 -->
-                    <div class="review-item wow fadeInRight slide">
-                        <img class="mark" src="img/pins.png" alt="mark">
-                        <div class="item-left">
-                            <p>Компания ООО «Чистый Град» выражает благодарность компании ООО «Альпсфера» за
-                                профессионализм
-                                и оперативность в оказании работ по мытью фасадного остекления и цокольного этажа
-                                здания.
-                                Наша организация заинтересована в дальнейшем сотрудничестве и рекомендует ООО
-                                «Альпсфера»
-                                как надежного партнера.</p>
-                            <div class="sighn">
-                                <span class="bold-text">С уважением,</span> Сергей Королев
-                            </div>
-                        </div>
-                        <div class="item-right">
-                            <img class="certeficate-img" src="img/certeficate2.png" alt="certeficate">
-
-                            <button class="btn btn-reviews">
-                                <p>посмотреть </p>
-                                <img src="img/loop.svg" alt="search">
-                            </button>
-
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-
-
-
-
-
-
-
-
-
-            </div>
-        </div>
-    </section>
     <section class="screen7" style="background-image: url(img/bottom-bg.png);">
         <div class="container">
             <h3> <span class="bold-text"> Блок</span> CEO текста</h3>
@@ -942,7 +850,7 @@
                 <div class="nav">
 
                     <h5>Навигация по сайту</h5>
-                    <div class="nav-item"><a href="serveces.html">Услуги</a> </div>
+                    <div class="nav-item">Услуги</div>
                     <div class="nav-item">Цены</div>
                     <div class="nav-item">О компании</div>
                     <div class="nav-item">Юридическим лицам</div>
@@ -1019,43 +927,44 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous"></script>
-
+    <script src="main.bundle.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
             // autoplay: true,
             autoplayTimeout: 3000,
             stagePadding: 0,
-            // center:true,
+            center: true,
             nav: true,
-            navText: [$('.arrow-left '), $('.arrow-right')],
+            navText: [$('.arrow-left_serv '), $('.arrow-right_serv')],
             dots: false,
 
             responsive: {
                 0: {
                     items: 1,
-                    center: true,
+
+                },
+                850: {
+                    items: 3,
+
                 },
                 1330: {
-                    items: 1,
-                    center: true,
-                },
-                1330: {
-                    items: 2,
-                    center: false
+                    items: 3,
+
                 }
             }
         })
     </script>
     <style>
-               .owl-stage {
-            left: -15px;
+        .owl-stage {
+            /* left: -15px; */
         }
     </style>
 </body>
