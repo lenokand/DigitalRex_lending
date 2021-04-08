@@ -39,7 +39,7 @@ var parallax = new Parallax(scene7);
 
 let text = document.getElementById("contentSpoiler");
 let link = document.getElementById("linkSpoiler");
-console.log(link);
+
 link.addEventListener('click', function(e){
     e.preventDefault();
        if (text.style.display == "block") {

@@ -213,6 +213,7 @@ body {
                     font-size: 14px;
                     line-height: 16px;
                     color: #000000;
+                    white-space: nowrap;
                 }
 
             }
@@ -387,6 +388,21 @@ body {
 @media screen and (max-width: 991px) {
     .screen1 menu .services-items {
         position: static;
+
+        .subitems {
+            position: static;
+            width: auto;
+        }
+    }
+
+    .menu-item.about:hover {
+        margin-bottom: 0;
+
+    }
+
+    .screen1 menu .about .about-items {
+        position: static;
+
 
         .subitems {
             position: static;
@@ -2329,6 +2345,10 @@ footer {
     height: auto;
     background-position: center 220%, top;
 
+    &.prices {
+        margin-top: -45px;
+    }
+
     h1 {
         font-style: normal;
         font-weight: 800;
@@ -2578,6 +2598,14 @@ footer {
 
 // адаптив страницы цены
 
+@media screen and (max-width: 1002px) {
+    .price-pg.screen1 {
+        background-position: center 198%, top;
+    }
+
+
+}
+
 @media screen and (max-width: 1151px) {
     .prices .tabs ul {
 
@@ -2593,6 +2621,10 @@ footer {
     .screen1.price-pg {
         height: 287px;
         background-position: center -135%, top;
+    }
+
+    .prices.price-pg {
+        margin-top: 0;
     }
 
 }
@@ -2612,6 +2644,12 @@ footer {
 }
 
 @media screen and (max-width: 860px) {
+    .tabs {
+        .nav-item {
+            margin-bottom: $gap;
+        }
+    }
+
     .nav {
         // margin: auto;
         display: flex;
@@ -2759,6 +2797,7 @@ footer {
 .content-txt {
     background-repeat: no-repeat;
     background-position: 100% 240%;
+
     .content-item {
         margin-bottom: 3*$gap;
     }
@@ -2800,12 +2839,13 @@ footer {
         }
     }
 
-    ul{
+    ul {
         padding-left: 1.3em;
+
         li {
             color: #E04100;
             font-size: 22px;
-            
+
             span {
                 font-style: normal;
                 font-weight: normal;
@@ -2814,9 +2854,590 @@ footer {
                 color: #000000;
             }
         }
-    } 
+    }
+
     // .background-img{
     //     position: absolute;
     // }
+
+}
+
+
+// страница отзывы 
+
+.reviews-items {
+    display: grid;
+
+    grid-gap: 2*$gap;
+    grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+
+
+
+    .review-item {
+
+        height: 415px;
+        display: flex;
+        margin: 0 18px;
+        padding: 3*$gap 3*$gap 2*$gap;
+        margin-bottom: $gap;
+        background: #FFF;
+        border-radius: 12px;
+        box-shadow: 0px 10px 52px rgba(0, 0, 0, 0.1), 0 0 0 6px #FFF;
+        border: 2px dashed #D8D8D8;
+        position: relative;
+
+        .mark {
+            position: absolute;
+            top: -25px;
+            left: 2.5*$gap;
+            background-color: rgba(255, 255, 255, 0);
+            width: 46px;
+            height: 44px;
+        }
+
+        .item-left {
+
+            max-width: 275px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-right: $gap;
+
+            p {
+                display: inline-block;
+                font-style: italic;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 134.7%;
+                color: #000
+            }
+        }
+
+        .item-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .btn-reviews {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: #FFF;
+                width: 180px;
+                height: 48px;
+
+                p {
+                    margin: 0 9px 0 0;
+                }
+            }
+        }
+
+    }
+}
+
+.reviews-list {
+    .page-link {
+        border: none;
+    }
+
+    nav {
+        margin-top: 4*$gap;
+    }
+
+    .page-link.arrow-right {
+        background: linear-gradient(0deg, #E04100 0%, #FD733B 100%);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        width: 38px;
+        height: 38px;
+        border-radius: 55%;
+        // margin-left: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a {
+        color: #000;
+    }
+
+    .page-link.arrow-left {
+        background: linear-gradient(0deg, #E04100 0%, #FD733B 100%);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        width: 38px;
+        height: 38px;
+        border-radius: 55%;
+        // margin-right: 50px;
+        display: inline-block;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-item.disabled {
+        .arrow {
+            background: #E7E7E7;
+        }
+    }
+
+    .page-link {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #000;
+        padding: 0;
+
+        .current-page {
+            color: #E04100;
+        }
+
+    }
+
+    .pagination {
+        align-items: center;
+    }
+
+    .page-info {
+        display: flex;
+        margin: 0 2*$gap;
+    }
+}
+
+// адаптив страницы отзывов
+@media screen and (max-width: 560px) {
+    .reviews-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 870px) {
+    .reviews-items {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+
+        // max-width: none;
+        .review-item {
+
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+
+            .item-left {
+                max-width: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .reviews-items {
+        //    grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
+        justify-items: center;
+
+        .review-item {
+            max-width: 570px;
+        }
+
+        margin: auto;
+
+
+    }
+
+    .reviews-list {
+
+        nav {
+            margin-top: $gap;
+        }
+    }
+}
+
+
+//  страница наши сотрудники
+.worker-items {
+    display: grid;
+    grid-gap: 2*$gap;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+
+    .worker-item {
+        padding: 39px;
+        background: #FFF;
+        border-radius: 12px;
+        box-shadow: 0px 10px 52px rgba(0, 0, 0, 0.1), 0 0 0 6px #FFF;
+        border: 2px dashed #D8D8D8;
+
+        .worker-info {
+            margin-bottom: 1.5*$gap;
+        }
+
+    }
+
+}
+
+.worker-list {
+    margin-top: -30px;
+
+    .check {
+        width: 16px;
+        height: 16px;
+        background: linear-gradient(0deg, #E04100 0%, #FD733B 100%);
+        border-radius: 55%;
+        margin-right: .7*$gap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .worker-item {
+        .worker-name {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 134.7%;
+            color: #000000;
+
+            .worker-position {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 134.7%;
+                // text-align: center;
+                color: #E04100;
+            }
+        }
+
+        .check-row {
+            display: flex;
+            align-items: center;
+            // justify-content: center;    
+            margin-bottom: 20px;
+        }
+
+        .row-zoom {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .document-zoom {
+        position: relative;
+        border: 1px solid #E04100;
+        border-radius: 6px;
+        overflow: hidden;
+
+        .zoom {
+            // position: absolute;
+            display: none;
+        }
+    }
+
+    .document-zoom:hover {
+        cursor: pointer;
+
+        .document {
+            filter: brightness(45%);
+
+        }
+
+        .zoom {
+            position: absolute;
+            display: block;
+            top: 35%;
+            left: 35%;
+        }
+    }
+
+}
+
+// пагинация
+.worker-list {
+    .page-link {
+        border: none;
+    }
+
+    nav {
+        margin-top: 4*$gap;
+    }
+
+    .page-link.arrow-right {
+        background: linear-gradient(0deg, #E04100 0%, #FD733B 100%);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        width: 38px;
+        height: 38px;
+        border-radius: 55%;
+        // margin-left: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a {
+        color: #000;
+    }
+
+    .page-link.arrow-left {
+        background: linear-gradient(0deg, #E04100 0%, #FD733B 100%);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        width: 38px;
+        height: 38px;
+        border-radius: 55%;
+        // margin-right: 50px;
+        display: inline-block;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-item.disabled {
+        .arrow {
+            background: #E7E7E7;
+        }
+    }
+
+    .page-link {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #000;
+        padding: 0;
+
+        .current-page {
+            color: #E04100;
+        }
+
+    }
+
+    .pagination {
+        align-items: center;
+    }
+
+    .page-info {
+        display: flex;
+        margin: 0 2*$gap;
+    }
+}
+
+// адаптив для сраницы сотрудников
+@media screen and (max-width: 400px) {
+    .worker-items {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+        .worker-item {
+            padding: $gap;
+
+            .row-zoom {
+                flex-wrap: wrap;
+            }
+
+        }
+    }
+}
+
+// страница юридическим лицам
+.screen1.business {
+    background-position: center 154%, top;
+
+    .tittle-container {
+        margin-top: 14.6*$gap;
+    }
+
+    .tittle-block {
+        max-width: 620px;
+
+        .tittle {
+
+            h1 {
+                font-style: normal;
+                font-weight: 800;
+                font-size: 36px;
+                line-height: 134.7%;
+                color: #FFFFFF;
+            }
+
+            .tittle-row {
+                display: flex;
+            }
+
+        }
+
+        .tittle-info {
+            font-style: normal;
+            font-weight: lighter;
+            font-size: 18px;
+            line-height: 132.6%;
+            color: #FFFFFF;
+            padding-left: calc(var(--bs-gutter-x)/2);
+            max-width: 440px;
+
+        }
+    }
+
+}
+
+
+.info {
+    .info-items {
+        margin-top: 6*$gap;
+        display: grid;
+        grid-gap: 2*$gap;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+
+    }
+
+    h3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 134.7%;
+        text-align: center;
+        color: #000000;
+    }
+
+    .info-item {
+        padding: 1.5*$gap;
+        box-shadow: 0 6px 58px rgb(0 0 0 / 10%), 0 0 0 6px #fff;
+        border: 2px dashed #d8d8d8;
+        border-radius: 12px;
+        height: 189px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // align-items: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 148.7%;
+        color: #000000;
+
+
+        .btn-inf {
+            width: 220px;
+            height: 48px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                margin-left: .5*$gap;
+            }
+        }
+
+
+    }
+}
+
+.gallery {
+    margin-top: 7*$gap;
+
+    h3 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 134.7%;
+        text-align: center;
+        color: #000000;
+
+    }
+
+    .doc-gallery {
+        display: grid;
+        grid-gap: 2*$gap;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        margin-top: 6*$gap;
+
+        .gallery-item {
+            border: 1px dashed #9A9A9A;
+            box-sizing: border-box;
+            border-radius: 10px;
+            height: 159px;
+            overflow: hidden;
+            img{
+                object-fit: cover;
+                object-position: center;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+           
+
+        }
+    }
+}
+
+// адаптив для страницы юридических лиц
+@media screen and (max-width: 1200px) {
+    .info .info-item {
+        align-items: center;
+
+        p {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    .screen1.business {
+        height: 550px;
+        background-position: center 281%, top;
+
+        .tittle-container {
+            margin-top: 3*$gap;
+
+            .tittle-block .tittle {
+
+                .tittle-row {
+                    display: inline;
+                }
+            }
+        }
+
+        .tittle-info {
+            text-align: center;
+            // margin: auto;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+        }
+
+        .btn-leave-order {
+            // margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+
+    .screen1.business {
+        background-position: center 247%, top;
+        height: auto;
+
+        .tittle-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
 
 }
