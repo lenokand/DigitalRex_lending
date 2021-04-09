@@ -52,3 +52,22 @@ link.addEventListener('click', function(e){
 
 })
 
+// const services = document.getElementById("services");
+// console.log(services);
+
+// const toggleMenuItem = () => {
+//     services.classList.toggle('open')
+   
+// }
+// services.addEventListener('click', toggleMenuItem)
+
+
+// const about = document.getElementById("about");
+// console.log(about);
+
+
+// const toggleMenuItem2 = () => {
+//     about.classList.toggle('open')
+   
+// }
+// about.addEventListener('click', toggleMenuItem2);
