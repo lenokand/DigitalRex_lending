@@ -52,6 +52,40 @@ link.addEventListener('click', function(e){
 
 })
 
+
+// выпадающее меню
+let arrowMenu = document.querySelectorAll('.menu-item.level1 >.arrow_menu')
+let menuItemsLev1 = document.querySelectorAll('.menu-item.level1')
+
+
+
+menuItemsLev1.forEach( function(item, indexItem){
+            
+    console.log(item.hasChildNodes());
+
+   
+})
+
+
+// arrowMenu.forEach( function (arrow, index) {
+//         arrow.addEventListener('click', function(e) {
+//         e.preventDefault();
+          
+//         menuItemsLev1.forEach( function(item, indexItem){
+            
+//             console.log( menuItemsLev1[index])
+//             // console.log( menuItemsLev1[index])
+//             // menuItemsLev1[index].classList.toggle('show')
+
+           
+//         })
+//         // arrow.classList.toggle('show')
+//         // console.log(1);
+//             } )
+    
+// }) 
+// console.log(arrowMenu);
+
 // const services = document.getElementById("services");
 // console.log(services);
 
