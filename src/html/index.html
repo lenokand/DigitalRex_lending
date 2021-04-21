@@ -61,10 +61,10 @@
 
                     <div class="contract">
                         <p>Предоставляем <span class="bold_txt">гарантии <span class="colored_txt"> заявок</span> в
-                                договоре</span> 
-                             </p>
+                                договоре</span>
+                        </p>
 
-                             <img src="img/blank.png" alt="contract">
+                        <img src="img/blank.png" alt="contract">
                     </div>
 
                     <div>
@@ -121,34 +121,39 @@
             <div class="modal fade" id="CallModal" tabindex="-1" aria-labelledby="CallModal" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="form " style="background-image: url(img/carabineSm.png);">
+                        <div class="form " style="background-image: url(img/fon_modal.jpg);">
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <h4>Остались вопросы?
-                            </h4>
-                            <p>Получите бесплатную консультацию</p>
-                            <form action="" method="POST">
-                                <input type="text" minlength="1" name="name" id="name" placeholder="Ваше имя" required>
-                                <input type="tel" minlength="10" name="telephone" id="telephone"
-                                    placeholder="Ваш номер телефона" required>
+                            <h4>Оставьте заявку,
+                                <span class="bold_txt"> и мы свяжемся с Вами</span>
 
-                                <textarea cols="32" name="message" rows="3" placeholder="Сообщение"></textarea>
-                                <button type="submit" class="btn btn-submit">
+                            </h4>
+
+                            <form action="" method="POST">
+                                <input type="text" minlength="3" name="name" id="name" placeholder="ВАШЕ ИМЯ" required>
+                                <input type="tel" minlength="10" name="telephone" id="telephone"
+                                    placeholder="ВАШ НОМЕР ТЕЛЕФОНА" required>
+
+
+                                <button type="submit" class="btn btn_submit">
                                     отправить заявку
                                 </button>
                                 <label for="checkbox">
                                     <input id="checkbox" class="custom-checkbox" type="checkbox" checked required>
-                                    <span class="check">
-                                        <img src="img/check-ltl.svg" alt=""></span>
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    <div>
+                                        <span> Вы соглашаетесь с условиями</span>
+                                        <br> <a href="#" data-bs-toggle="modal" data-bs-target="#licenseModal">обработки
+                                            персональных данных</a>
+                                    </div>
 
-                                    Принимаю &nbsp <a href="#" data-bs-toggle="modal"
-                                        data-bs-target="#licenseModal">условия обработки информации</a>
+
                                 </label>
 
                                 <!--  -->
 
 
                             </form>
-
+                            <img src="img/modal_phone.png" alt="phone">
                         </div>
 
                     </div>
@@ -163,29 +168,32 @@
 
     </section>
 
-<!-- второй экран -->
-    <section class="utp" >
+    <!-- второй экран -->
+    <section class="utp">
 
         <div class="container">
-                <div class="wrapper" style="background-image: url(img/fon_utp.png);">
-                    <div class="left">
-                        <div class="title">
-                            <h2>
-                                Оставьте заявку и мы разработаем <span class="bold_txt"> маркетинговую стратегию для Вашего проекта</span> 
-                            </h2>
-                        </div>
-    
-                        
-                        <div class="info">
-                            <p>Дарим SEO-аудит сайта: анализ конкурентов, анализ видимости сайта и рекомендации по повышению релевантности страницы</p>
-                            <img src="img/check.svg" alt="check">
-                        </div>
+            <div class="wrapper" style="background-image: url(img/fon_utp.png);">
+                <div class="left">
+                    <div class="title">
+                        <h2>
+                            Оставьте заявку и мы разработаем <span class="bold_txt"> маркетинговую стратегию для Вашего
+                                проекта</span>
+                        </h2>
                     </div>
-                   <div class="right">
-                       <button class="btn btn_order" data-bs-toggle="modal" data-bs-target="#CallModal">Получить стратегию</button>
-                   </div>
-                    <img class="case" src="img/papka.png" alt="case">
+
+
+                    <div class="info">
+                        <p>Дарим SEO-аудит сайта: анализ конкурентов, анализ видимости сайта и рекомендации по повышению
+                            релевантности страницы</p>
+                        <img src="img/check.svg" alt="check">
+                    </div>
                 </div>
+                <div class="right">
+                    <button class="btn btn_order" data-bs-toggle="modal" data-bs-target="#CallModal">Получить
+                        стратегию</button>
+                </div>
+                <img class="case" src="img/papka.png" alt="case">
+            </div>
 
 
 
@@ -196,9 +204,10 @@
     <section class="offer">
         <div class="container">
             <h2>
-                Продвижение сайта от <span class="colored_txt">Digital Rex</span> 
+                Продвижение сайта от <span class="colored_txt">Digital Rex</span>
             </h2>
-            <h3>Наша задача - <span class="bold_txt">обеспечить </span> Вашему проекту <span class="bold_txt">постоянный поток клиентов </span> </h3>
+            <h3>Наша задача - <span class="bold_txt">обеспечить </span> Вашему проекту <span class="bold_txt">постоянный
+                    поток клиентов </span> </h3>
 
             <div class="wrapper">
                 <!-- колонка 1 -->
@@ -207,11 +216,11 @@
                     <div class="right">
                         <h4>Оформление
                             договора</h4>
-                            <ul>
-                                <li><span>Заключаем договор о сотрудничестве </span></li>
-                                <li><span>Фиксируем в договоре все виды выполняемых работ</span> </li>
-                                <li><span>Соблюдаем конфиденциальность</span></li>
-                            </ul>
+                        <ul>
+                            <li><span>Заключаем договор о сотрудничестве </span></li>
+                            <li><span>Фиксируем в договоре все виды выполняемых работ</span> </li>
+                            <li><span>Соблюдаем конфиденциальность</span></li>
+                        </ul>
                     </div>
                 </div>
 
@@ -221,13 +230,13 @@
                     <div class="right">
                         <h4>Оформление
                             договора</h4>
-                            <ul>
-                                <li><span>Показываем отчеты по посещаемости сайта на ежемесячной основе
-                                    
-                                    </span></li>
-                                <li><span>Показываем анализ конверсии </span> </li>
-                                <li><span>предоставляем развёрнутый план по дальнейшему продвижению </span></li>
-                            </ul>
+                        <ul>
+                            <li><span>Показываем отчеты по посещаемости сайта на ежемесячной основе
+
+                                </span></li>
+                            <li><span>Показываем анализ конверсии </span> </li>
+                            <li><span>предоставляем развёрнутый план по дальнейшему продвижению </span></li>
+                        </ul>
                     </div>
                 </div>
                 <!-- колонка 3 -->
@@ -236,41 +245,163 @@
                     <div class="right">
                         <h4>Оформление
                             договора</h4>
-                            <ul>
-                                <li><span>Разрабатываем эффективную <br> SEO-стратегию для Вашего бизнеса
-                                   
-                                    </span></li>
-                                <li><span> Постоянно работаем над оптимизацией юзабилити сайта и контента</span> </li>
-                                <li><span> Оперативно реагируем на правки</span></li>
-                            </ul>
+                        <ul>
+                            <li><span>Разрабатываем эффективную <br> SEO-стратегию для Вашего бизнеса
+
+                                </span></li>
+                            <li><span> Постоянно работаем над оптимизацией юзабилити сайта и контента</span> </li>
+                            <li><span> Оперативно реагируем на правки</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
 
             <div class="bottom">
-                <button class="btn btn_order" data-bs-toggle="modal" data-bs-target="#CallModal">Получить персональное предложение</button>
+                <button class="btn btn_order" data-bs-toggle="modal" data-bs-target="#CallModal">Получить персональное
+                    предложение</button>
             </div>
         </div>
-        
+
 
     </section>
 
 
     <section class="result">
+        <h2 class="bold_txt">Результат, который Вы получите</h2>
+        <h3>Ваш бизнес будет стабильно расти, <span class="bold_txt"> потому что мы обеспечим Вам:</span></h3>
+        <div class="wrapper" style="background-image: url(img/fon_result.jpg);">
+            <div class="container">
+
+
+                <div class="result_box">
+                    <div class="left">
+                        <img src="img/photo.png" alt="girl">
+                    </div>
+                    <div class="right">
+                        <!-- item 1 -->
+                        <div class="result_item">
+                            <img src="img/result_item1.png" alt="hands">
+                            <div class="item_txt">
+                                <h4>Регулярный трафик</h4>
+                                <p>Благодаря SEO-продвижению на Ваш сайт будут приходить целевые посетители</p>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="result_item">
+                            <img src="img/result_item2.png" alt="hands">
+                            <div class="item_txt">
+                                <h4>Рост конверсий</h4>
+                                <p>Оптимизация сайта сделает его привлекательным для посетителей, и превратит их в Ваших
+                                    потенциальных клиентов</p>
+                            </div>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="result_item">
+                            <img src="img/result_item3.png" alt="hands">
+                            <div class="item_txt">
+                                <h4>Увеличение прибыли</h4>
+                                <p>Постоянный поток целевой аудитории на сайт обеспечит увеличение продаж </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="question">
         <div class="container">
+            <div class="left">
+                <h3>FAQ</h3>
+                <div class="faq_subtitle">Ответы на часто
+                    задаваемые вопросы</div>
 
-            <h2 class="bold_txt">Результат, который Вы получите</h2>
-            <h3>Ваш бизнес будет стабильно расти, <span class="bold_txt">  потому что мы обеспечим Вам:</span></h3>
-
-            <div class="result_box" style="background-image: url(img/fon_result.jpg);">
-
+                <button class="btn btn_order" data-bs-toggle="modal" data-bs-target="#CallModal">Вопрос
+                    специалисту</button>
 
             </div>
 
 
+            <div class="right">
+                <!-- аккордион -->
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <!--1  -->
+                    <div class="accordion-item">
+                        <h2 class="" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Сколько стоит SEO-продвижение сайта?
+                            </button>
+                        </h2>
+                        
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">В нашем агентстве оплата услуг фиксирована, и включает в себя нашу работу и расходы по проекту. 
+                                Стоимость проекта зависит от нескольких фактор: конкуренции и количества продвигаемых страниц. Можно начать сотрудничество с 15 000 рублей,  а в дальнейшем увеличивать обороты. </div>
+                        </div>
+                    </div>
+
+                    <!--2  -->
+                    <div class="accordion-item">
+                        <h2 class="" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Можете ли взяться за оптимизацию отдельных страниц сайта?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Да, можем взяться за отдельные страницы. Но результат проявляется только тогда, когда оптимизированы все страницы, которые попадают в индексацию, или с которыми взаимодействует посетитель.</div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="accordion-item">
+                        <h2 class="" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Когда будет результат от SEO-продвижения?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Результативность продвижения будет зависеть от ваешго проекта. Обычно, первые положительные результаты раскрутки старых сайтов появляются после 2х месяцев продвижения, а новых - через 4. В первые месяцы проводятся основные виды работ, подготавливающие сайт к дальнейшему продвижению, что оправдывает ожидание первых результатов. Обращаем Ваше внимание на то, что SEO имеет долговременный эффект, это значит, что вы будете получать клиентов даже после завершения работ по оптимизации.</div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                                Какие гарантии я получу?
+                            </button>
+                        </h2>
+                        <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Мы гарантируем, что после начала сотрудничества Вы получите оптимизированный сайт, отвечающий запросам Вашей целевой аудитории, а первые результаты продвижения будут видны через 2 месяца.</div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+
+            </div>
         </div>
-     
     </section>
 
 
