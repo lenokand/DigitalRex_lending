@@ -806,9 +806,9 @@ menu {
 }
 
 .question {
-    .container{
+    .container {
         display: flex;
-        
+
     }
 
     .left {
@@ -832,14 +832,22 @@ menu {
     }
 
     // аккордион
-    .accordion-button:after{
+    .accordion-button:after {
         content: '+';
-        background-image:none;
+        background-image: none;
         color: #FF5F46;
         font-size: 35px;
         font-weight: 500;
+        transform: translateY(-10px)
     }
 
+    font-size: 35px;
+    font-weight: 500;
 
+    .accordion-button:not(.collapsed):after {
+        color: #CACACA;
+        transform: translateY(6px) rotate(-135deg) ;
+        // transform: rotate(-135deg);
+    }
 
 }
