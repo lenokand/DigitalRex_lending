@@ -277,7 +277,12 @@ menu {
     }
 }
 
+input.error {
+    border: 1px solid red !important;
+}
+
 .form {
+   
     padding: 60px 180px 55px 70px;
     position: relative;
     background: #C4C4C4;
@@ -1404,7 +1409,16 @@ footer {
 
         button {
             box-shadow: none;
-
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 124.7%;
+            /* or 17px */
+            
+            text-align: right;
+            text-decoration-line: underline;
+            
+            color: #FFFFFF;
             &:focus,
             &:active {
                 box-shadow: none;
