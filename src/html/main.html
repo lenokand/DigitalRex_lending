@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Rex</title>
+
+    <link rel="stylesheet" href="font/gilroy.css">
+    <link rel="stylesheet" href="libs/animate.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="libs/revision.css">
+
+
+
+
+</head>
+
+<body>
+    <!-- первый экран -->
+    <section class="first_screen"
+        style="background-image:url(img/fon1.jpg); background-repeat: no-repeat; background-size: cover;">
+        <div id="shadow"></div>
+        <div class="container">
+            <div class="logo_hiden">
+                <a href="#"><img src="img/logo.svg" alt="digitalrex"></a>
+            </div>
+            <menu id="main-menu">
+
+                <div class="logo">
+                    <a href="#"><img src="img/logo.svg" alt="digitalrex"></a>
+                </div>
+                <div class="main_menu">
+                    <div> <a href="#how">Как мы работаем</a></div>
+                    <div> <a href="#result">Результаты сотрудничества</a> </div>
+                    <div><a href="#faq">FAQ</a></div>
+                    <div><a href="#price">Стоимость</a></div>
+                    <div><a href="#work">Наши проекты</a></div>
+                    <div><a href="#cont">Свяжитесь с нами</a></div>
+
+                </div>
+                <div class="contacts"> <img src="img/phone.svg" alt="phone"> <a href="tel:+7 (499) 403-17-10"> +7 (499)
+                        403-17-10</a></div>
+
+                <button class="btn btn-call wow fadeInDown " data-bs-toggle="modal" data-bs-target="#CallModal">Заказать
+                    звонок</button>
+
+            </menu>
+
+            <button id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="main_content">
+
+                <div class="colum1 wow fadeInLeft">
+                    <h1>
+                        Комплексное
+                        <br> SEO-продвижение
+                        <span class="bold_txt">
+                            Вашего проекта
+                            <br> от 15 000 ₽ в месяц
+                        </span>
+                    </h1>
+                    <img class="line" src="img/line.png" alt="line">
+
+                    <div class="contract">
+                        <p>Предоставляем <span class="bold_txt">гарантии <span class="colored_txt"> заявок</span> в
+                                договоре</span>
+                        </p>
+
+                        <img src="img/blank.png" alt="contract">
+                    </div>
+
+                    <div>
+                        <button class="btn btn_order" data-bs-toggle="modal" data-bs-target="#CallModal">Получить
+                            консультацию</button>
+                    </div>
+
+                    <div class="money " data-relative-input="true" id="scene">
+                        <div data-depth="0.2">
+                            <img src="img/money.png" alt="money">
+                        </div>
+
+                    </div>
+                    <div class="money2 " data-relative-input="true" id="scene2">
+                        <div data-depth="0.2">
+                            <img src="img/money2.png" alt="money">
+                        </div>
+
+                    </div>
+                    <div class="coin " data-relative-input="true" id="scene3">
+                        <div data-depth="0.2">
+                            <img src="img/coin.png" alt="coin">
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+                <div class="colum2">
+                    <img src="img/nastya.png" alt="girl">
+                </div>
+                <div class="colum3 wow fadeInRight">
+                    <div class="stage">
+                        <div class="number">01</div>
+                        <div class="stage_txt">Анализируем и оцениваем качество сайта</div>
+                    </div>
+                    <div class="stage">
+                        <div class="number">02</div>
+                        <div class="stage_txt">Составляем семантическое ядро и оптимизируем контент</div>
+                    </div>
+                    <div class="stage">
+                        <div class="number">03</div>
+                        <div class="stage_txt">Обеспечиваем поток целевого трафика и заявок </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- Modal call-->
+            <div class="modal fade" id="CallModal" tabindex="-1" aria-labelledby="CallModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="form " style="background-image: url(img/fon_modal.jpg);">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h4>Оставьте заявку,
+                                <span class="bold_txt"> и мы свяжемся с Вами</span>
+
+                            </h4>
+
+                            <form action="mail.php" id="contactform" method="POST">
+                                <input type="text" minlength="3" name="name" id="name" placeholder="ВАШЕ ИМЯ" required>
+                                <input class="telephone" type="text" minlength="10" name="telephone" id="telephone"
+                                    placeholder="ВАШ НОМЕР ТЕЛЕФОНА" required>
+
+
+                                <button type="submit" class="btn btn_submit">
+                                    отправить заявку
+                                </button>
+                                <label for="checkbox">
+                                    <input id="checkbox" class="custom-checkbox" type="checkbox" checked required>
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    <div>
+                                        <span> Вы соглашаетесь с условиями</span>
+                                        <br> <a href="#" data-bs-toggle="modal" data-bs-target="#CallModal2">обработки
+                                            персональных данных</a>
+                                    </div>
+
+
+                                </label>
+
+                                <!--  -->
+
+
+                            </form>
+                            <img src="img/modal_phone.png" alt="phone">
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- // -->
+
+            <!-- Personal processing-->
+
+            <div class="modal fade" id="CallModal2" tabindex="-1" aria-labelledby="CallModal2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="wrapper_politics">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h3>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h3>
+                            <p>
+                                Данная политика конфиденциальности относится к сайту с доменным именем digitalrex.kz и
+                                его поддоменам. Страница содержит сведения о том, какую информацию администрация сайта
+                                или третьи лица могут получать, когда пользователь (вы) посещаете его.
+
+                                Данные, которые собираются при посещении
+
+                                Персональные данные
+
+                                Персональные данные при посещении сайта передаются пользователем добровольно, к ним
+                                могут относиться: имя, фамилия, отчество, номера телефонов, адреса электронной почты,
+                                адреса для доставки товаров или оказания услуг, реквизиты компании, которую представляет
+                                пользователь, должность в компании, которую представляет пользователь, аккаунты в
+                                социальных сетях, а также — прочие, заполняемые поля форм.
+
+                                Эти данные собираются в целях оказания услуг или продажи товаров, возможности связи с
+                                пользователем или иной активности пользователя на сайте, а также, чтобы отправлять
+                                пользователю информацию, которую он согласился получать.
+
+                                Мы не проверяем достоверность оставляемых данных и не гарантируем качественного
+                                исполнения заказов, оказания услуг или обратной связи с нами при предоставлении
+                                некорректных сведений.
+
+                                Данные собираются имеющимися на сайте формами для заполнения (например, регистрации,
+                                оформления заказа, подписки, оставления отзыва, вопроса, обратной связи и иными).
+
+                                Формы, установленные на сайте, могут передавать данные как напрямую на сайт, так и на
+                                сайты сторонних организаций (скрипты сервисов сторонних организаций).
+
+                                Данные могут собираться через технологию cookies (куки) как непосредственно сайтом, так
+                                и скриптами сервисов сторонних организаций. Эти данные собираются автоматически,
+                                отправку этих данных можно запретить, отключив cookies (куки) в браузере, в котором
+                                открывается сайт.
+
+                                Не персональные данные
+
+                                Кроме персональных данных при посещении сайта собираются не персональные данные, их сбор
+                                происходит автоматически веб-сервером, на котором расположен сайт, средствами CMS
+                                (системы управления сайтом), скриптами сторонних организаций, установленными на сайте. К
+                                данным, собираемым автоматически, относятся: IP адрес и страна его регистрации, имя
+                                домена, с которого вы к нам пришли, переходы посетителей с одной страницы сайта на
+                                другую, информация, которую ваш браузер предоставляет добровольно при посещении сайта,
+                                cookies (куки), фиксируются посещения, иные данные, собираемые счетчиками аналитики
+                                сторонних организаций, установленными на сайте.
+
+                                Эти данные носят неперсонифицированный характер и направлены на улучшение обслуживания
+                                клиентов, улучшения удобства использования сайта, анализа статистики посещаемости.
+
+                                Предоставление данных третьим лицам
+
+                                Мы не раскрываем личную информацию пользователей компаниям, организациям и частным
+                                лицам, не связанным с нами. Исключение составляют случаи, перечисленные ниже.
+
+                                Данные пользователей в общем доступе
+
+                                Персональные данные пользователя могут публиковаться в общем доступе в соответствии с
+                                функционалом сайта, например, при оставлении отзывов / вопросов, может публиковаться
+                                указанное пользователем имя, такая активность на сайте является добровольной, и
+                                пользователь своими действиями дает согласие на такую публикацию.
+
+                                По требованию закона
+
+                                Информация может быть раскрыта в целях воспрепятствования мошенничеству или иным
+                                противоправным действиям; по требованию законодательства и в иных случаях,
+                                предусмотренных законами РФ.
+
+                                Для оказания услуг, выполнения обязательств
+
+                                Пользователь соглашается с тем, что персональная информация может быть передана третьим
+                                лицам в целях оказания заказанных на сайте услуг, выполнении иных обязательств перед
+                                пользователем. К таким лицам, например, относятся курьерская служба, почтовые службы,
+                                службы грузоперевозок и иные.
+
+                                Сервисам сторонних организаций, установленным на сайте
+
+                                На сайте могут быть установлены формы, собирающие персональную информацию других
+                                организаций, в этом случае сбор, хранение и защита персональной информации пользователя
+                                осуществляется сторонними организациями в соответствии с их политикой
+                                конфиденциальности.
+
+                                Сбор, хранение и защита полученной от сторонней организации информации осуществляется в
+                                соответствии с настоящей политикой конфиденциальности.
+
+                                Как мы защищаем вашу информацию
+
+                                Мы принимаем соответствующие меры безопасности по сбору, хранению и обработке собранных
+                                данных для защиты их от несанкционированного доступа, изменения, раскрытия или
+                                уничтожения, ограничиваем нашим сотрудникам, подрядчикам и агентам доступ к персональным
+                                данным, постоянно совершенствуем способы сбора, хранения и обработки данных, включая
+                                физические меры безопасности, для противодействия несанкционированному доступу к нашим
+                                системам.
+
+                                Ваше согласие с этими условиями
+
+                                Используя сайт, вы выражаете свое согласие с этой политикой конфиденциальности. Если вы
+                                не согласны с этой политикой, пожалуйста, не используйте его. Ваше дальнейшее
+                                использование сайта после внесения изменений в настоящую политику будет рассматриваться
+                                как ваше согласие с этими изменениями.
+
+                                Отказ от ответственности
+
+                                Политика конфиденциальности не распространяется ни на какие другие сайты и не применима
+                                к веб-сайтам третьих лиц, которые могут содержать упоминание о нашем сайте и с которых
+                                могут делаться ссылки на сайт, а также ссылки с этого сайта на другие сайты сети
+                                интернет. Мы не несем ответственности за действия других веб-сайтов.
+
+                                Изменения в политике конфиденциальности
+
+                                Мы имеем право по своему усмотрению обновлять данную политику конфиденциальности в любое
+                                время. Используя сайт, вы соглашаетесь с принятием на себя ответственности за
+                                периодическое ознакомление с политикой конфиденциальности и изменениями в ней.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- // -->
+            <!-- Modal Politics-->
+
+            <div class="modal fade" id="licenseModal3" tabindex="-1" aria-labelledby="licenseModal3" aria-hidden="true"
+                style="width: 90%;">
+                <div class="modal-dialog" style="width: 90%;">
+                    <div class="modal-content" style="width: 90%;">
+                        <div class="wrapper_politics" style="width: 90%;">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam maiores, explicabo,
+                                corporis magnam cupiditate dolorem minima earum, debitis est impedit sint beatae
+                                accusamus mollitia asperiores culpa odit quia! Ducimus, quibusdam.
+                                At nobis quidem, perferendis ratione voluptatem inventore culpa quis quae deleniti,
+                                dolores in corporis nisi sequi? Odio assumenda voluptates, labore rem molestias eum et
+                                distinctio iusto voluptatem! Ab, dolore molestiae?
+                                Soluta explicabo sint autem, neque eum quas ex ipsam nihil, voluptatem exercitationem
+                                harum saepe culpa? Iusto, impedit, delectus quaerat pariatur dolores dignissimos
+                                voluptas esse quo earum saepe, deserunt quisquam aliquid.
+                                Aliquid quaerat error tempore ab fuga ut iure cumque libero architecto vitae, id aperiam
+                                quo accusamus deserunt in labore molestiae! Tenetur magni earum corporis sunt impedit
+                                ipsam iste iure ab?
+                                In expedita eveniet porro, deleniti maiores quaerat similique corporis sed. Ab ullam
+                                nemo officiis doloribus, amet suscipit, quae quo minima sequi voluptatum aliquid rerum
+                                architecto dolore, sed nihil perspiciatis cum.
+                                Dignissimos pariatur quisquam perferendis labore eos ducimus, saepe nemo et cumque
+                                excepturi nulla amet sit nam voluptas quo? Totam repudiandae sapiente nemo atque labore,
+                                similique sint fuga dolor vitae ut!
+                                Facere molestiae dolores quasi atque voluptates laudantium quibusdam doloribus, fugiat
+                                sint ipsum cum enim vel quos, aut suscipit corporis maxime cumque ipsam, odit dolorem?
+                                Deleniti in accusantium maiores ut sint.
+                                Debitis voluptatem non, nam error omnis sed inventore incidunt excepturi perspiciatis
+                                quae labore, asperiores sint molestias iste doloremque odio animi cupiditate quam
+                                dolorum totam. Voluptates nihil beatae sit odio aspernatur.
+                                A aspernatur ut, saepe cum fugit harum asperiores autem labore voluptatem laudantium
+                                minima velit consequatur, rerum quos culpa tempora vitae placeat iure odio libero ad
+                                repellat ratione. Eius, doloribus ullam.
+                                Cum quisquam porro doloribus nulla sequi reprehenderit deserunt incidunt eligendi
+                                officia quo dolore voluptatum numquam iure tempora magnam deleniti est, vero at soluta
+                                hic voluptates earum impedit. Qui, reiciendis cumque!
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- // -->
+
+        </div>
+
+
+    </section>
+
+    <!-- второй экран -->
+    <section class="utp wow fadeIn">
+
+        <div class="container">
+            <div class="wrapper" style="background-image: url(img/fon_utp.png);">
+                <div class="left">
+                    <div class="title">
+                        <a name="how"></a>
+                        <h2>
+                            Оставьте заявку и мы разработаем <span class="bold_txt"> маркетинговую стратегию для Вашего
+                                проекта</span>
+                        </h2>
+                    </div>
+
+
+                    <div class="info">
+                        <p>Дарим SEO-аудит сайта: анализ конкурентов, анализ видимости сайта и рекомендации по повышению
+                            релевантности страницы</p>
+                        <img src="img/check.svg" alt="check">
+                    </div>
+                </div>
+                <div class="right">
+                    <button class="btn btn_order" data-bs-toggle="modal" data-bs-target="#CallModal">Получить
+                        стратегию</button>
+                </div>
+                <img class="case" src="img/papka.png" alt="case">
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+    <section class="offer wow fadeIn">
+        <div class="container">
+            <h2>
+                Продвижение сайта от <span class="colored_txt">Digital Rex</span>
+            </h2>
+            <h3>Наша задача - <span class="bold_txt">обеспечить </span> Вашему проекту <span class="bold_txt">постоянный
+                    поток клиентов </span> </h3>
+
+            <div class="wrapper">
+                <!-- колонка 1 -->
+                <div class="column">
+                    <div class="left"> <img src="img/offer.png" alt="report"> </div>
+                    <div class="right">
+                        <h4>Оформление
+                            договора</h4>
+                        <ul>
+                            <li><span>Заключаем договор о сотрудничестве </span></li>
+                            <li><span>Фиксируем в договоре все виды выполняемых работ</span> </li>
+                            <li><span>Соблюдаем конфиденциальность</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- колонка 2 -->
+                <div class="column">
+                    <div class="left"> <img src="img/report.png" alt="report"> </div>
+                    <div class="right">
+                        <h4>Ежемесячная
+                            отчетность</h4>
+                        <ul>
+                            <li><span>Показываем отчеты по посещаемости сайта на ежемесячной основе
+
+                                </span></li>
+                            <li><span>Показываем анализ конверсии </span> </li>
+                            <li><span>предоставляем развёрнутый план по дальнейшему продвижению </span></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- колонка 3 -->
+                <div class="column">
+                    <div class="left"> <img src="img/medal.png" alt="report"> </div>
+                    <div class="right">
+                        <h4>Сопровождение
+                            проекта</h4>
+                        <ul>
+                            <li><span>Разрабатываем эффективную <br> SEO-стратегию для Вашего бизнеса
+
+                                </span></li>
+                            <li><span> Постоянно работаем над оптимизацией юзабилити сайта и контента</span> </li>
+                            <li><span> Оперативно реагируем на правки</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bottom">
+                <button class="btn btn_order" data-bs-toggle="modal" data-bs-target="#CallModal">Получить персональное
+                    предложение</button>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="result">
+        <a name="result"></a>
+        <h2 class="bold_txt">Результат, который Вы получите</h2>
+        <h3>Ваш бизнес будет стабильно расти, <span class="bold_txt"> потому что мы обеспечим Вам:</span></h3>
+
+        <div class="wrapper" style="background-image: url(img/fon_result.jpg);">
+            <div class="container">
+
+
+                <div class="result_box">
+                    <div class="left">
+                        <img src="img/photo.png" alt="girl">
+                    </div>
+                    <div class="right wow fadeInRight">
+                        <!-- item 1 -->
+                        <div class="result_item">
+                            <img src="img/result_item1.png" alt="hands">
+                            <div class="item_txt">
+                                <h4>Регулярный трафик</h4>
+                                <p>Благодаря SEO-продвижению на Ваш сайт будут приходить целевые посетители</p>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="result_item">
+                            <img src="img/result_item2.png" alt="hands">
+                            <div class="item_txt">
+                                <h4>Рост конверсий</h4>
+                                <p>Оптимизация сайта сделает его привлекательным для посетителей, и превратит их в Ваших
+                                    потенциальных клиентов</p>
+                            </div>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="result_item">
+                            <img src="img/result_item3.png" alt="hands">
+                            <div class="item_txt">
+                                <h4>Увеличение прибыли</h4>
+                                <p>Постоянный поток целевой аудитории на сайт обеспечит увеличение продаж </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="question">
+        <div class="container">
+
+            <div class="left wow fadeInLeft">
+                <a name="faq"></a>
+                <h3>FAQ</h3>
+                <div class="faq_subtitle">Ответы на часто
+                    задаваемые вопросы</div>
+
+                <button class="btn btn_order" data-bs-toggle="modal" data-bs-target="#CallModal">Вопрос
+                    специалисту</button>
+
+            </div>
+
+
+            <div class="right wow fadeInRight">
+                <!-- аккордион -->
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <!--1  -->
+                    <div class="accordion-item">
+                        <h2 class="" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Сколько стоит SEO-продвижение сайта?
+                            </button>
+                        </h2>
+
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">В нашем агентстве оплата услуг фиксирована, и включает в себя
+                                нашу работу и расходы по проекту.
+                                Стоимость проекта зависит от нескольких фактор: конкуренции и количества продвигаемых
+                                страниц. Можно начать сотрудничество с 15 000 рублей, а в дальнейшем увеличивать
+                                обороты. </div>
+                        </div>
+                    </div>
+
+                    <!--2  -->
+                    <div class="accordion-item">
+                        <h2 class="" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Можете ли взяться за оптимизацию отдельных страниц сайта?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Да, можем взяться за отдельные страницы. Но результат
+                                проявляется только тогда, когда оптимизированы все страницы, которые попадают в
+                                индексацию, или с которыми взаимодействует посетитель.</div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="accordion-item">
+                        <h2 class="" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Когда будет результат от SEO-продвижения?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Результативность продвижения будет зависеть от ваешго проекта.
+                                Обычно, первые положительные результаты раскрутки старых сайтов появляются после 2х
+                                месяцев продвижения, а новых - через 4. В первые месяцы проводятся основные виды работ,
+                                подготавливающие сайт к дальнейшему продвижению, что оправдывает ожидание первых
+                                результатов. Обращаем Ваше внимание на то, что SEO имеет долговременный эффект, это
+                                значит, что вы будете получать клиентов даже после завершения работ по оптимизации.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                                Какие гарантии я получу?
+                            </button>
+                        </h2>
+                        <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Мы гарантируем, что после начала сотрудничества Вы получите
+                                оптимизированный сайт, отвечающий запросам Вашей целевой аудитории, а первые результаты
+                                продвижения будут видны через 2 месяца.</div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="projects ">
+        <div class="container">
+            <a name="work"></a>
+            <h2>Наши проекты по SEO-продвижению</h2>
+            <h3>Познакомьтесь с <span class="bold_txt">результатами нашей работы</span> на реальных проектах</h3>
+            <!-- управление для карусели лево/право -->
+            <div class="arrow_car arrow-left wow fadeInLeft ">
+                <img src="img/arrow-left.svg" alt="arrow left">
+            </div>
+            <div class="arrow_car arrow-right wow fadeInRight">
+                <img src="img/arrow-right.svg" alt="arrow right">
+            </div>
+
+
+
+            <div class="projects-carusel slider1 owl-carousel owl-theme wow fadeIn" id="slider">
+                <!-- 1 -->
+                <div class="projects-item" style="background-image: url(img/fon_item1.png);">
+                    <div class="top">
+                        <div class="subtitle">
+                            Аренда жилья в Феодосии
+                        </div>
+                        <div class="title">ARENDAFEO</div>
+                    </div>
+
+                    <div class="bottom">
+                        <p><span class="bold_txt">Задача </span> - привести целевой трафик</p>
+                        <p>Срок сотрудничества - <span class="bold_txt"> 6 месяцев</span> </p>
+                        <p>Увеличили кол-во трафика<span class="bold_txt"> в 9 раз</span></p>
+                        <p>Повысили процент конверсий<span class="bold_txt"> в 15 раз</span> </p>
+                        <p>С клиентом работаем ежегодно в
+                            период туристического бизнеса в Крыму</p>
+                    </div>
+
+                </div>
+                <!-- 2 -->
+                <div class="projects-item" style="background-image: url(img/fon_item2.png);">
+                    <div class="top">
+                        <div class="subtitle">
+                            Мёд и продукты пчеловодства
+                        </div>
+                        <div class="title">АЛТАЙ ПРЕМИУМ</div>
+                    </div>
+
+                    <div class="bottom">
+                        <p><span class="bold_txt">Задача </span> - привести целевой трафик</p>
+                        <p>Срок сотрудничества - <span class="bold_txt"> более 3х лет</span> </p>
+                        <p>Органический трафик - <span class="bold_txt"> более
+                                5 000 чел./месяц</span></p>
+                        <p>Сотрудничество с клиентом началось
+                            с разработки текущего сайта</p>
+
+                    </div>
+
+                </div>
+                <!-- 3 -->
+                <div class="projects-item" style="background-image: url(img/fon_item3.png);">
+                    <div class="top">
+                        <div class="subtitle">
+                            Продажа шин и аксессуаров для авто
+                        </div>
+                        <div class="title">Альфа Шины</div>
+                    </div>
+
+                    <div class="bottom">
+                        <p><span class="bold_txt">Задача </span>- увеличение кол-ва заявок</p>
+                        <p>Срок сотрудничества - <span class="bold_txt"> более 6 лет</span> </p>
+                        <p>Среднее кол-во заявок - <span class="bold_txt"> 58 шт./мес.</span></p>
+                        <p>Вывели 70% запросов<span class="bold_txt"> в ТОП-10</span> </p>
+                        <p>Сотрудничество с клиентом началось
+                            с разработки текущего сайта и
+                            внедрения ЧПУ-фильтра</p>
+                    </div>
+
+                </div>
+                <!-- 4 -->
+                <div class="projects-item" style="background-image: url(img/fon_item4.webp);">
+                    <div class="top">
+                        <div class="subtitle">
+                            Автошкола
+                        </div>
+                        <div class="title">Авто ДПС</div>
+                    </div>
+
+                    <div class="bottom">
+                        <p><span class="bold_txt">Задача </span>-позиции сайта в ТОП 10</p>
+                        <p>Срок сотрудничества - <span class="bold_txt"> более года</span> </p>
+                        <p>Повысили процент конверсий <span class="bold_txt"> в 7 раз</span></p>
+                        <p>Вывели 70% запросов <span class="bold_txt"> в ТОП-10</span> </p>
+
+                    </div>
+
+                </div>
+                <!-- 5 -->
+                <div class="projects-item" style="background-image: url(img/fon_item5.png);">
+                    <div class="top">
+                        <div class="subtitle">
+                            Пластиковые окна
+                        </div>
+                        <div class="title">НЕМЕЦКИЕ ОКНА</div>
+                    </div>
+
+                    <div class="bottom">
+                        <p><span class="bold_txt">Задача </span>- позиции сайта в ТОП 10</p>
+                        <p>Срок сотрудничества - <span class="bold_txt"> 3 года</span> </p>
+                        <p>Повысили процент конверсий <span class="bold_txt"> в 12 раз</span></p>
+                        <p>Вывели 74% запросов<span class="bold_txt"> в ТОП-10</span> </p>
+                        <p>С клиентом работали по настройке
+                            контекстной рекламы и по разработке
+                            сайта для нового направления</p>
+                    </div>
+
+                </div>
+                <!-- 6 -->
+                <div class="projects-item" style="background-image: url(img/fon_item6.png);">
+                    <div class="top">
+                        <div class="subtitle">
+                            Пересадка волос в Алматы
+                        </div>
+                        <div class="title">Dr.Bezrukov</div>
+                    </div>
+
+                    <div class="bottom">
+                        <p><span class="bold_txt">Задача </span>- позиции сайта в ТОП 10</p>
+                        <p>Срок сотрудничества - <span class="bold_txt"> более 4 лет</span> </p>
+                        <p>Увеличили видимость сайта <span class="bold_txt"> в 15 раз</span></p>
+                        <p>Повысили процент конверсий <span class="bold_txt"> в 8 раз</span> </p>
+                        <p>В процессе продвижения было принято
+                            решение сделать редизайн сайта</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="tarif">
+        <div class="container">
+            <a name="price"></a>
+            <h3> Выберите оптимальный тарифный пакет</h3>
+            <h2>
+
+                для продвижения под Ваш бизнес
+            </h2>
+
+            <div class="tarif_items wow fadeInDown">
+
+                <!-- 1 -->
+                <div class="tarif_item">
+                    <img class="tarif_img" src="img/img_tarif1.png" alt="tarif">
+                    <div class="titile">
+                        Пакет
+                        <br> <span class="bold_txt"> Начальный</span>
+
+                    </div>
+                    <ul>
+                        <li style="list-style-image:url(img/check_green.svg)">До 3 страниц в работе</li>
+                        <li style="list-style-image:url(img/check_red.svg)">Рекомендован для низкоконкурентных тематик
+                            Landing Page</li>
+                        <li style="list-style-image:url(img/check_red.svg)">Минимальное кол-во заявок -
+                            от 5 шт/со 2 месяца работы</li>
+                    </ul>
+
+                    <div class="price">
+                        <p>Стоимость:</p>
+                        <p class="number">15 000 ₽</p>
+                    </div>
+                    <button class="btn btn_order" data-bs-toggle="modal" data-bs-target="#CallModal">заказать</button>
+
+
+                </div>
+
+
+                <!-- 2 -->
+                <div class="tarif_item">
+                    <img class="tarif_img" src="img/img_tarif2.png" alt="tarif">
+                    <div class="titile">
+                        Пакет
+                        <br> <span class="bold_txt"> Базовый</span>
+
+                    </div>
+                    <ul>
+                        <li style="list-style-image:url(img/check_green.svg)">До 10 страниц в работе</li>
+                        <li style="list-style-image:url(img/check_red.svg)">Рекомендован для сайтов-витрин или небольших
+                            сайтов по услугам</li>
+                        <li style="list-style-image:url(img/check_red.svg)">Минимальное кол-во заявок -
+                            от 15 шт/со 2 месяца работы</li>
+                    </ul>
+
+                    <div class="price">
+                        <p>Стоимость:</p>
+                        <p class="number">30 000 ₽</p>
+                    </div>
+                    <button class="btn btn_order" data-bs-toggle="modal" data-bs-target="#CallModal">заказать</button>
+
+
+                </div>
+                <!-- 3 -->
+                <div class="tarif_item">
+                    <img class="tarif_img" src="img/img_tarif3.png" alt="tarif">
+                    <div class="titile">
+                        Пакет
+                        <br> <span class="bold_txt"> Оптимальный</span>
+
+                    </div>
+                    <ul>
+                        <li style="list-style-image:url(img/check_green.svg)">До 25 страниц в работе</li>
+                        <li style="list-style-image:url(img/check_red.svg)">Рекомендован для крупных сайтов по услугам и
+                            для средних ИМ</li>
+                        <li style="list-style-image:url(img/check_red.svg)">Минимальное кол-во заявок -
+                            от 30 шт/со 2 месяца работы</li>
+                    </ul>
+
+                    <div class="price">
+                        <p>Стоимость:</p>
+                        <p class="number">45 000 ₽</p>
+                    </div>
+                    <button class="btn btn_order" data-bs-toggle="modal" data-bs-target="#CallModal">заказать</button>
+
+
+                </div>
+                <!-- 4 -->
+                <div class="tarif_item">
+                    <img class="tarif_img" src="img/img_tarif4.png" alt="tarif">
+                    <div class="titile">
+                        Пакет
+                        <br> <span class="bold_txt"> Индивидуальный</span>
+
+                    </div>
+                    <ul>
+                        <li style="list-style-image:url(img/check_green.svg)">Максимальное количество страниц в работе
+                        </li>
+                        <li style="list-style-image:url(img/check_red.svg)">Разрабатывается индивидуально под крупных
+                            клиентов</li>
+
+                    </ul>
+
+                    <div class="price" style="
+                    margin-top: 28px;
+                ">
+                        <p>Стоимость:</p>
+                        <p class="number">50 000 ₽</p>
+                    </div>
+                    <button class="btn btn_order" data-bs-toggle="modal" data-bs-target="#CallModal">заказать</button>
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="reweis ">
+        <h2><span class="bold_txt">Отзывы</span> о сотрудничестве с нами</h2>
+        <div class="wrapper" style="background-image: url(img/fon_rewies.png);">
+            <div class="container">
+
+
+
+                <!-- управление для карусели лево/право -->
+                <div class="arrow_car slider-left arrow-left wow fadeInLeft ">
+                    <img src="img/arrow-left.svg" alt="arrow left">
+                </div>
+                <div class="arrow_car slider-right arrow-right wow fadeInRight">
+                    <img src="img/arrow-right.svg" alt="arrow right">
+                </div>
+
+
+
+                <div class="rewies-carusel slider2 owl-carousel owl-theme wow fadeIn" id="slider">
+                    <!-- 1 -->
+                    <div class="rewies_item">
+                        <div class="wrapper">
+                            <div class="left">
+                                <span>
+                                    <div class="title">
+                                        Шаров В.В.
+
+                                    </div>
+                                    <div class="position">
+                                        Директор ТОО фирма “Карст”
+                                    </div>
+                                </span>
+
+                                <div class="text">
+                                    “Выражаем огромную благодарность компании Digital Rex, за разработку и продвижение
+                                    нашего сайта.”
+                                </div>
+
+                                <button class="btn btn_order" data-fancybox="gallery"
+                                    href="img/rewiev.jpg">Посмотреть</button>
+
+
+
+
+                            </div>
+                            <img src="img/img_rewiev.png" alt="document">
+                        </div>
+
+
+                    </div>
+                    <!-- 2 -->
+
+                    <!--  видео отзыв -->
+                    <div class="rewies_item">
+                        <div class="wrapper">
+                            <div class="left " style="justify-content: center;"><span>
+                                    <div class="title">Иванов А.М.</div>
+                                    <div class="position" style="margin-bottom: 0;">Директор Альфа-шина</div>
+                                </span>
+
+                                <div class="text"></div>
+                                <a class="btn btn_order" data-fancybox="gallery"
+                                    href="https://www.youtube.com/watch?v=IHkPm2dCX6k&t=2s" style="width:auto">смотреть
+                                    отзыв</a>
+
+
+
+                            </div> <a class="btn_play" data-fancybox="gallery"
+                                href="https://www.youtube.com/watch?v=IHkPm2dCX6k&t=2s">
+                                <img src="img/img_rew.webp" style="top: 35px;" alt="document">
+                                <img class="img_play" src="img/btn_play.webp" alt="document">
+                            </a>
+
+                        </div>
+                    </div>
+                    <!-- /видео отзыв -->
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="callback">
+        <div class="container">
+            <div class="title">
+                <a name="cont"></a>
+                <h2>
+                    Остались вопросы?
+                    <br> <span class="bold_txt"> Заполните заявку и мы свяжемся с Вами
+                        <br> в ближайшее время</span>
+
+                </h2>
+            </div>
+
+            <div class="callback_form wow fadeIn" style="background-image: url(img/fon_form.png);">
+
+                <form action="mail.php" method="POST">
+                    <div class="wrapper">
+                        <input type="text" minlength="3" name="name" id="name" placeholder="ВАШЕ ИМЯ" required>
+                        <input class="telephone" type="text" minlength="10" name="telephone" id="telephone"
+                            placeholder="+7 (___) ___-__-__" required>
+
+
+                        <button type="submit" class="btn btn_submit">
+                            отправить заявку
+                        </button>
+                    </div>
+                    <div class="label">
+                        <label for="checkbox2">
+                            <input id="checkbox2" class="custom-checkbox" type="checkbox" checked required>
+                            <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                            <div>
+                                <span> Вы соглашаетесь с условиями</span>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#CallModal2">обработки
+                                    персональных данных</a>
+                            </div>
+
+
+                        </label>
+
+                    </div>
+
+                    <!--  -->
+
+
+                </form>
+                <img src="img/form_phone.png" alt="phone">
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="img/logo_footer.svg" alt="digitalrex"></a>
+            </div>
+            <div class="footer_menu">
+                <div> <img src="img/phone.svg" alt="phone"> <a href="tel:+7 (499) 403-17-10"> +7 (499) 403-17-10</a>
+                </div>
+
+
+                <div> <img src="img/wapp.svg" alt="app"> <a href="tel:+7 (925) 957-17-81"> +7 (925) 957-17-81</a></div>
+
+
+                <div> <img src="img/mail.svg" alt="mail"> <a class="mail" href="mailto:info@digitalre.ru">
+                        info@digitalre.ru</a></div>
+
+
+
+            </div>
+
+
+            <button class="btn btn-call wow fadeInDown " data-bs-toggle="modal" data-bs-target="#CallModal2">Политика
+                конфидециальности </button>
+        </div>
+
+    </footer>
+
+
+    <!-- стрелочка на верх страницы -->
+    <div ID="toTop" style="display: flex;"> <img src="img/arrow-right.svg" alt="arrow left"> </div>
+    <!-- Скрипты подключаемых плагинов -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+
+    <!-- для формы -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <!-- <script src="jquery.min.js" type="text/javascript"></script>
+<script src="jquery.validate.pack.js" type="text/javascript"></script> -->
+    <!-- <script type="text/javascript">
+$(document).ready(function(){
+$("#contactform").validate();
+});
+</script>     -->
+
+
+   
+<script >
+
+  
+</script>
+    
+
+    <!-- анимация -->
+    <script src="libs/wow.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!-- для формы  маска телефона-->
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+    <script src="libs/customjQuery.js"></script>
+
+</body>
+
+</html>

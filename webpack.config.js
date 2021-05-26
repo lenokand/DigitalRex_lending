@@ -17,11 +17,11 @@ module.exports = {
         open: true
     },
     plugins: [
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery'
-          }),
+        // new webpack.ProvidePlugin({
+        //     $: 'jquery',
+        //     jQuery: 'jquery',
+        //     'window.jQuery': 'jquery'
+        //   }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: 'bundle.css'
@@ -30,6 +30,11 @@ module.exports = {
         new HtmlWebpackPlugin ({
             filename: 'index.html',
             template: './src/html/index.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin ({
+            filename: 'main.html',
+            template: './src/html/main.html',
             inject: 'body'
         }),
         new CopyWebpackPlugin({
