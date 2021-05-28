@@ -31,6 +31,7 @@ var scene3 = document.getElementById('scene3');
 var parallax = new Parallax(scene3);
 
 /////////////////////
+// переход по табам, инфо о специалистах
 
 const tabContent2 = document.querySelectorAll('div[data-tabs]') //информация с фото
 const tabContent3 = document.querySelectorAll('div[data-tabsTxt]') //информация с текстом
@@ -46,26 +47,79 @@ function makeActive(a) {
   // переключение фото
   tabContent2.forEach((tab, index) => {
 
-    if (tab.classList.contains('active')) {
-      // console.log(tab)
-      tab.classList.remove('active')
-    }
-  })
-
-  if (tabContent2[a].classList.contains('active')) {
-  } else {
-    tabContent2[a].classList.add('active')
-  }
-  // переключение текста
-  tabContent3.forEach((tab, index) => {
-    if (tab.classList.contains('active')) {
+    if (tab.classList.contains('active') && tab != tabContent2[a] ) {
       
       tab.classList.remove('active')
-    }
+      tabContent2[a].classList.add('active')
+    } 
   })
-  if (tabContent3[a].classList.contains('active')) {
-  } else {
-    tabContent3[a].classList.add('active')
-  }
+
+
+  // if (tabContent2[a].classList.contains('active')) {
+  // } else {
+  //   tabContent2[a].classList.add('active')
+  // }
+
+
+  // переключение текста
+  tabContent3.forEach((tab, index) => {
+
+    if (tab.classList.contains('active') && tab != tabContent3[a] ) {
+      
+      tab.classList.remove('active')
+      tabContent3[a].classList.add('active')
+    } 
+
+    // if (tab.classList.contains('active')) {
+      
+    //   tab.classList.remove('active')
+    // }
+  })
+
+  // if (tabContent3[a].classList.contains('active')) {
+  // } else {
+  //   tabContent3[a].classList.add('active')
+  // }
+
+}
+
+
+
+
+
+
+// переключение отзывов
+const tabNavRew = document.querySelectorAll('.nav_item') //навигация
+
+const tabContentRew = document.querySelectorAll('.content_item') //информация отзывов
+
+
+
+tabNavRew.forEach((item, index) => {
+  item.addEventListener("click", function () {
+    makeActiveRev(index)
+  }, false)
+})
+
+function makeActiveRev(a) {
+  // переключение фото
+  tabContentRew.forEach((tab, index) => {
+
+    if (tab.classList.contains('active') && tab != tabContentRew[a] ) {
+      
+      tab.classList.remove('active')
+      tabContentRew[a].classList.add('active')
+    } 
+  })
+
+  tabNavRew.forEach((tab, index) => {
+
+    if (tab.classList.contains('active') && tab != tabNavRew[a] ) {
+      
+      tab.classList.remove('active')
+      tabNavRew[a].classList.add('active')
+    } 
+  })
+
 
 }

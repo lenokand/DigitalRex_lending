@@ -1,0 +1,25 @@
+$(document).ready(function(){
+    инициализация
+
+    $('.img').on("click",function(){
+        slide_index = $(this).data();
+        temp = $('.testimonials-banner');
+        temp[0].slick.slickGoTo(parseInt(slide_index.imgIndex))
+    })
+    $('.testimonials-banner').on('beforeChange',function(event,slick,currentSlide,nextSlide){
+        string_current = '.img-'+currentSlide;
+        string_next = '.img-'+nextSlide;
+        $(string_current).css('transform','scale(1)');
+        $(string_next).css('transform','scale(1.2)');
+    });
+  });
+
+  $('.fgfgfgf').on('beforeChange',function(event,slick,currentSlide,nextSlide){
+    cur_temp = $('.bold_txt_un').eq(currentSlide).data().colorName;
+    next_temp = $('.bold_txt_un').eq(nextSlide).data().colorName;
+    $('.Qwerty').removeClass(cur_temp);
+    $('.Qwerty').addClass(next_temp);
+})
+
+
+data-color-name="black"
