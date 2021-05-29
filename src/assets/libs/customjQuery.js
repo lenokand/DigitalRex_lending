@@ -63,7 +63,7 @@
       }
   })
 
-  // стрелочка на верх страницы 
+  //  на верх страницы 
 
   $(function () {
 
@@ -104,19 +104,22 @@
   });
 
 
-
+// slick
   $(document).ready(function () {
+
+    // 
       $('.tabs-right_bottomn').slick({
           slidesToShow: 4,
           nextArrow: `  <div class="slick_arrow">
           <img src="img/arrow-right.svg" alt="">
-      </div>`,
+            </div>`,
           prevArrow: '',
           slidesToScroll: 3,
 
 
           slide: '.tabWorker',
           dots: false,
+          
           //   infinite: false
 
 
@@ -151,111 +154,49 @@
           //   ]
 
       });
-  });
-  $(document).ready(function () {
+// отзывы
       $('.works_carusel').slick({
-          slidesToShow: 2,
-          nextArrow: `<div class="slick_arrow">
-          <img src="img/arrow-right.svg" alt="">
-      </div>  `,
-          prevArrow: `<div class="slick_arrow_left">
-          <img src="img/arrow-right.svg" alt="arrow">
-      </div>  `,
-          //   slidesToScroll: 3,
-          dots: false,
-          slide: '.carusel-item',
+        slidesToShow: 2,
+        nextArrow: `<div class="slick_arrow">
+        <img src="img/arrow-right.svg" alt="">
+    </div>  `,
+        prevArrow: `<div class="slick_arrow_left">
+        <img src="img/arrow-right.svg" alt="arrow">
+    </div>  `,
+        //   slidesToScroll: 3,
+        dots: false,
+        slide: '.carusel-item',
+      //   autoplay: true,
+      //   autoplaySpeed: 200,
+      //   fade: true,
 
-      });
-  });
-
-
-  //   главный слайдер
-//   $(document).ready(function () {
-//       $('.fgfgfgf').slick({
-//           slidesToShow: 1,
-//           nextArrow: `  `,
-//           prevArrow: `  `,
-//           //   slidesToScroll: 3,
-//           dots: false,
-//           slide: '.slider-item111',
-//           adaptiveHeight: true,
-//         //   autoplay: true,
-//         //   autoplaySpeed: 2000,
-
-//       });
-//   });
-
-// $(document).ready(function(){
-//     инициализация
-  
-//     // $('.testimonials-banner').on('beforeChange',function(event,slick,currentSlide,nextSlide){
-//     //     string_current = '.img-'+currentSlide;
-//     //     string_next = '.img-'+nextSlide;
-//     //     $(string_current).css('transform','scale(1)');
-//     //     $(string_next).css('transform','scale(1.2)');
-//     // });
-//   });
+    });
 
 
-$(document).ready(function () {
+
+    // главный экран
     $('.slick_main_txt').slick({
         slidesToShow: 1,
-        nextArrow: `  `,
+        // nextArrow: `  `,
         prevArrow: `  `,
         fade: true,
         //   slidesToScroll: 3,
         dots: false,
         infinite: true,
-      //   autoplay: true,
-      //   autoplaySpeed: 2000,
-        // asNavFor: '.slider-for',
-        // asNavFor: '.slick_more',
+        centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 200,
+        slide: '.slick_main_item'
     });
-    $('.slick_more').slick({
-        slidesToShow: 1,
-        nextArrow: `  `,
-        prevArrow: `  `,
-        fade: true,
-        //   slidesToScroll: 3,
-        dots: false,
-        infinite: true,
-      //   autoplay: true,
-      //   autoplaySpeed: 2000,
-        asNavFor: '.slick_main_txt',
-    });
-
-    $('.slike_vertical_txt').slick({
-        slidesToShow: 1,
-        nextArrow: ``,
-        prevArrow: ``,
-        fade: true,
-        //   slidesToScroll: 3,
-        dots: false,
-        infinite: true,
-      //   autoplay: true,
-      //   autoplaySpeed: 2000,
-        asNavFor: '.slick_more',
-    });
-    // $('.slike_gorisontal_txt').slick({
-    //     slidesToShow: 1,
-    //     nextArrow: `  `,
-    //     prevArrow: `  `,
-    //     fade: true,
-    //     //   slidesToScroll: 3,
-    //     dots: false,
-    //     infinite: true,
-    //   //   autoplay: true,
-    //   //   autoplaySpeed: 2000,
-    //     asNavFor: '.slike_vertical_txt',
-    // });
-
 
 
 
     $('.slick_main_txt').on('beforeChange',function(event,slick,currentSlide,nextSlide){
-        cur_temp = $('.bold_txt_un').eq(currentSlide).data().colorName;
-        next_temp = $('.bold_txt_un').eq(nextSlide).data().colorName;
-        $('#color_block').removeClass(cur_temp);
-        $('#color_block').addClass(next_temp);
-    })
+            cur_temp = $('.slick_main_item').eq(currentSlide).data().colorName;
+            next_temp = $('.slick_main_item').eq(nextSlide).data().colorName;
+            $('#color_block').removeClass(cur_temp);
+            $('#color_block').addClass(next_temp);
+        })
+ 
 });
+ 
