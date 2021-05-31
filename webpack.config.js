@@ -37,6 +37,21 @@ module.exports = {
             template: './src/html/main.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin ({
+            filename: 'portfolio.html',
+            template: './src/html/portfolio.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin ({
+            filename: 'rewiews.html',
+            template: './src/html/rewiews.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin ({
+            filename: 'blog.html',
+            template: './src/html/blog.html',
+            inject: 'body'
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 {

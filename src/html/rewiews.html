@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Rex</title>
+
+    <link rel="stylesheet" href="font/gilroy.css">
+    <link rel="stylesheet" href="libs/animate.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+    <!-- галерея -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/> -->
+
+    <link rel="stylesheet" href="libs/revision.css">
+
+
+
+
+</head>
+
+<body>
+    <!-- первый экран -->
+    <section class=" rewiews_screen" style="background-image: url(img/fon_portfolio.png);">
+
+
+        <div id="shadow"></div>
+        <div class="container">
+
+            <div class="logo_hiden">
+                <a href="#"><img src="img/logo.svg" alt="digitalrex"></a>
+            </div>
+            <menu id="main-menu">
+
+                <div class="logo">
+                    <a href="#"><img src="img/logo.svg" alt="digitalrex"></a>
+                </div>
+                <div class="main_menu">
+                    <div> <a href="index.html">Главная</a></div>
+                    <div> <a href="#result">О нас</a> </div>
+                    <div><a href="main.html">Услуги</a></div>
+                    <div><a href="#price">Портфолио</a></div>
+                    <div><a href="#work">Отзывы</a></div>
+                    <div><a href="#cont">Вакансии</a></div>
+                    <div><a href="#cont">Блог</a></div>
+                    <div><a href="#cont">Контакты</a></div>
+
+                </div>
+                <div class="contacts"> <img src="img/phone_org.svg" alt="phone"> <a href="tel:+7 (499) 403-17-10"> +7
+                        (499)
+                        403-17-10</a></div>
+
+                <button class="btn btn-call  wow fadeInDown " data-bs-toggle="modal"
+                    data-bs-target="#CallModal">Заказать
+                    звонок</button>
+
+            </menu>
+
+            <button id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+
+
+            <!-- Modal call-->
+            <div class="modal fade" id="CallModal" tabindex="-1" aria-labelledby="CallModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="form " style="background-image: url(img/fon_modal.jpg);">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h4>Оставьте заявку,
+                                <span class="bold_txt"> и мы свяжемся с Вами</span>
+
+                            </h4>
+
+                            <form action="mail.php" id="contactform" method="POST">
+                                <input type="text" minlength="3" name="name" id="name" placeholder="ВАШЕ ИМЯ" required>
+                                <input class="telephone" type="text" minlength="10" name="telephone" id="telephone"
+                                    placeholder="ВАШ НОМЕР ТЕЛЕФОНА" required>
+
+
+                                <button type="submit" class="btn btn_submit">
+                                    отправить заявку
+                                </button>
+                                <label for="checkbox">
+                                    <input id="checkbox" class="custom-checkbox" type="checkbox" checked required>
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    <div>
+                                        <span> Вы соглашаетесь с условиями</span>
+                                        <br> <a href="#" data-bs-toggle="modal" data-bs-target="#CallModal2">обработки
+                                            персональных данных</a>
+                                    </div>
+
+
+                                </label>
+
+                                <!--  -->
+
+
+                            </form>
+                            <img src="img/modal_phone.png" alt="phone">
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- // -->
+
+            <!-- Personal processing-->
+
+            <div class="modal fade" id="CallModal2" tabindex="-1" aria-labelledby="CallModal2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="wrapper_politics">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h3>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h3>
+                            <p>
+                                Данная политика конфиденциальности относится к сайту с доменным именем digitalrex.kz и
+                                его поддоменам. Страница содержит сведения о том, какую информацию администрация сайта
+                                или третьи лица могут получать, когда пользователь (вы) посещаете его.
+
+                                Данные, которые собираются при посещении
+
+                                Персональные данные
+
+                                Персональные данные при посещении сайта передаются пользователем добровольно, к ним
+                                могут относиться: имя, фамилия, отчество, номера телефонов, адреса электронной почты,
+                                адреса для доставки товаров или оказания услуг, реквизиты компании, которую представляет
+                                пользователь, должность в компании, которую представляет пользователь, аккаунты в
+                                социальных сетях, а также — прочие, заполняемые поля форм.
+
+                                Эти данные собираются в целях оказания услуг или продажи товаров, возможности связи с
+                                пользователем или иной активности пользователя на сайте, а также, чтобы отправлять
+                                пользователю информацию, которую он согласился получать.
+
+                                Мы не проверяем достоверность оставляемых данных и не гарантируем качественного
+                                исполнения заказов, оказания услуг или обратной связи с нами при предоставлении
+                                некорректных сведений.
+
+                                Данные собираются имеющимися на сайте формами для заполнения (например, регистрации,
+                                оформления заказа, подписки, оставления отзыва, вопроса, обратной связи и иными).
+
+                                Формы, установленные на сайте, могут передавать данные как напрямую на сайт, так и на
+                                сайты сторонних организаций (скрипты сервисов сторонних организаций).
+
+                                Данные могут собираться через технологию cookies (куки) как непосредственно сайтом, так
+                                и скриптами сервисов сторонних организаций. Эти данные собираются автоматически,
+                                отправку этих данных можно запретить, отключив cookies (куки) в браузере, в котором
+                                открывается сайт.
+
+                                Не персональные данные
+
+                                Кроме персональных данных при посещении сайта собираются не персональные данные, их сбор
+                                происходит автоматически веб-сервером, на котором расположен сайт, средствами CMS
+                                (системы управления сайтом), скриптами сторонних организаций, установленными на сайте. К
+                                данным, собираемым автоматически, относятся: IP адрес и страна его регистрации, имя
+                                домена, с которого вы к нам пришли, переходы посетителей с одной страницы сайта на
+                                другую, информация, которую ваш браузер предоставляет добровольно при посещении сайта,
+                                cookies (куки), фиксируются посещения, иные данные, собираемые счетчиками аналитики
+                                сторонних организаций, установленными на сайте.
+
+                                Эти данные носят неперсонифицированный характер и направлены на улучшение обслуживания
+                                клиентов, улучшения удобства использования сайта, анализа статистики посещаемости.
+
+                                Предоставление данных третьим лицам
+
+                                Мы не раскрываем личную информацию пользователей компаниям, организациям и частным
+                                лицам, не связанным с нами. Исключение составляют случаи, перечисленные ниже.
+
+                                Данные пользователей в общем доступе
+
+                                Персональные данные пользователя могут публиковаться в общем доступе в соответствии с
+                                функционалом сайта, например, при оставлении отзывов / вопросов, может публиковаться
+                                указанное пользователем имя, такая активность на сайте является добровольной, и
+                                пользователь своими действиями дает согласие на такую публикацию.
+
+                                По требованию закона
+
+                                Информация может быть раскрыта в целях воспрепятствования мошенничеству или иным
+                                противоправным действиям; по требованию законодательства и в иных случаях,
+                                предусмотренных законами РФ.
+
+                                Для оказания услуг, выполнения обязательств
+
+                                Пользователь соглашается с тем, что персональная информация может быть передана третьим
+                                лицам в целях оказания заказанных на сайте услуг, выполнении иных обязательств перед
+                                пользователем. К таким лицам, например, относятся курьерская служба, почтовые службы,
+                                службы грузоперевозок и иные.
+
+                                Сервисам сторонних организаций, установленным на сайте
+
+                                На сайте могут быть установлены формы, собирающие персональную информацию других
+                                организаций, в этом случае сбор, хранение и защита персональной информации пользователя
+                                осуществляется сторонними организациями в соответствии с их политикой
+                                конфиденциальности.
+
+                                Сбор, хранение и защита полученной от сторонней организации информации осуществляется в
+                                соответствии с настоящей политикой конфиденциальности.
+
+                                Как мы защищаем вашу информацию
+
+                                Мы принимаем соответствующие меры безопасности по сбору, хранению и обработке собранных
+                                данных для защиты их от несанкционированного доступа, изменения, раскрытия или
+                                уничтожения, ограничиваем нашим сотрудникам, подрядчикам и агентам доступ к персональным
+                                данным, постоянно совершенствуем способы сбора, хранения и обработки данных, включая
+                                физические меры безопасности, для противодействия несанкционированному доступу к нашим
+                                системам.
+
+                                Ваше согласие с этими условиями
+
+                                Используя сайт, вы выражаете свое согласие с этой политикой конфиденциальности. Если вы
+                                не согласны с этой политикой, пожалуйста, не используйте его. Ваше дальнейшее
+                                использование сайта после внесения изменений в настоящую политику будет рассматриваться
+                                как ваше согласие с этими изменениями.
+
+                                Отказ от ответственности
+
+                                Политика конфиденциальности не распространяется ни на какие другие сайты и не применима
+                                к веб-сайтам третьих лиц, которые могут содержать упоминание о нашем сайте и с которых
+                                могут делаться ссылки на сайт, а также ссылки с этого сайта на другие сайты сети
+                                интернет. Мы не несем ответственности за действия других веб-сайтов.
+
+                                Изменения в политике конфиденциальности
+
+                                Мы имеем право по своему усмотрению обновлять данную политику конфиденциальности в любое
+                                время. Используя сайт, вы соглашаетесь с принятием на себя ответственности за
+                                периодическое ознакомление с политикой конфиденциальности и изменениями в ней.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- // -->
+            <!-- Modal Politics-->
+
+            <div class="modal fade" id="licenseModal3" tabindex="-1" aria-labelledby="licenseModal3" aria-hidden="true"
+                style="width: 90%;">
+                <div class="modal-dialog" style="width: 90%;">
+                    <div class="modal-content" style="width: 90%;">
+                        <div class="wrapper_politics" style="width: 90%;">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam maiores, explicabo,
+                                corporis magnam cupiditate dolorem minima earum, debitis est impedit sint beatae
+                                accusamus mollitia asperiores culpa odit quia! Ducimus, quibusdam.
+                                At nobis quidem, perferendis ratione voluptatem inventore culpa quis quae deleniti,
+                                dolores in corporis nisi sequi? Odio assumenda voluptates, labore rem molestias eum et
+                                distinctio iusto voluptatem! Ab, dolore molestiae?
+                                Soluta explicabo sint autem, neque eum quas ex ipsam nihil, voluptatem exercitationem
+                                harum saepe culpa? Iusto, impedit, delectus quaerat pariatur dolores dignissimos
+                                voluptas esse quo earum saepe, deserunt quisquam aliquid.
+                                Aliquid quaerat error tempore ab fuga ut iure cumque libero architecto vitae, id aperiam
+                                quo accusamus deserunt in labore molestiae! Tenetur magni earum corporis sunt impedit
+                                ipsam iste iure ab?
+                                In expedita eveniet porro, deleniti maiores quaerat similique corporis sed. Ab ullam
+                                nemo officiis doloribus, amet suscipit, quae quo minima sequi voluptatum aliquid rerum
+                                architecto dolore, sed nihil perspiciatis cum.
+                                Dignissimos pariatur quisquam perferendis labore eos ducimus, saepe nemo et cumque
+                                excepturi nulla amet sit nam voluptas quo? Totam repudiandae sapiente nemo atque labore,
+                                similique sint fuga dolor vitae ut!
+                                Facere molestiae dolores quasi atque voluptates laudantium quibusdam doloribus, fugiat
+                                sint ipsum cum enim vel quos, aut suscipit corporis maxime cumque ipsam, odit dolorem?
+                                Deleniti in accusantium maiores ut sint.
+                                Debitis voluptatem non, nam error omnis sed inventore incidunt excepturi perspiciatis
+                                quae labore, asperiores sint molestias iste doloremque odio animi cupiditate quam
+                                dolorum totam. Voluptates nihil beatae sit odio aspernatur.
+                                A aspernatur ut, saepe cum fugit harum asperiores autem labore voluptatem laudantium
+                                minima velit consequatur, rerum quos culpa tempora vitae placeat iure odio libero ad
+                                repellat ratione. Eius, doloribus ullam.
+                                Cum quisquam porro doloribus nulla sequi reprehenderit deserunt incidunt eligendi
+                                officia quo dolore voluptatum numquam iure tempora magnam deleniti est, vero at soluta
+                                hic voluptates earum impedit. Qui, reiciendis cumque!
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- // -->
+
+        </div>
+        <div class="main_cont" >
+            <div class="container">
+                <div class="cont-left">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#"><span class="colored_txt">Главная</span>  </a></li>
+                          <li class="breadcrumb-item active" aria-current="page">/ Отзывы</li>
+                        </ol>
+                    </nav>
+    
+                    <h1>
+                        Отзывы
+
+                       <br> <span class="bold_txt">наших клиентов</span>
+    
+                    </h1>
+                </div>
+               <div class="cont-right">
+                   <img src="img/rewiev_stars.jpg" alt="airplane">
+               </div>
+
+            </div>
+
+
+
+        </div>
+
+       
+    </section>
+   
+
+
+      <!-- отзывы -->
+      <section class="main_rewies pg_rew">
+        <div class="container">
+            <h2>Для Казахстана <span class="bold_txt">с любовью!</span> </h2>
+
+            <div class="rewies_tabs">
+                <!-- навигация -->
+                <div class="tabs_nav">
+                    <div class="nav_item active">
+                        Видеоотзывы
+                    </div>
+                    <div class="nav_item">
+                        Отзывы
+                    </div>
+                    <div class="nav_item">
+                        Благодарственные
+                        письма
+                    </div>
+
+                </div>
+
+                <!-- табы -->
+                <div class="tabs_content">
+                    <div class="content_item active">
+                        <div class="video_row">
+                            <div class="video_col">
+                                <img src="img/massage.png" alt="massage">
+
+                                <div class="btn_block" data-fancybox="galleryRew" href="https://youtu.be/9_je_MdCB5U">
+                                    <div class="btn_block1">
+                                        <div class="btn_block2">
+                                            <div class="btn_block3">
+                                                <img src="img/play.svg" alt="play">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="video_col">
+                                <div class="text_video">
+                                    <h3><span class="bold_txt">Сеть</span>
+                                        <br> массажных салонов</h3>
+                                    <div class="name">
+                                        <span class="bold_txt">Егор Липовецкий</span>
+
+                                    </div>
+                                    <div class="position colored_txt ">
+                                        Основатель компании
+                                    </div>
+                                    <div class="prew_txt">
+                                        Наше сотрудничество с ребятами началось с 2019 года. Заказывал у них услуги
+                                        продвижения в социальных сетях и настройку таргетированной рекламы.
+                                        Доволен результатом. Сейчас продолжаем работать и по другим направлениям.
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_row">
+
+                            <div class="video_col">
+                                <div class="text_video">
+                                    <h3><span class="bold_txt">MYxBAG</span>
+                                        <br>
+                                        чемоданы на колесах</h3>
+                                    <div class="name">
+                                        <span class="bold_txt">Руслан
+                                        </span>
+
+                                    </div>
+                                    <div class="position colored_txt ">
+                                        Основатель компании
+                                    </div>
+                                    <div class="prew_txt">
+                                        Работаю с ребятами более 3х лет по разным тематикам. Сотрудничал не только по
+                                        услугам социальных сетей, но и работал с ними по разработке сайта.
+                                        Всем доволен и в будущем буду их рекомендовать.
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="video_col">
+                                <img src="img/mybag.png" alt="mybag">
+
+                                <div class="btn_block" data-fancybox="galleryRew" href="https://youtu.be/0FR39OzEZQI">
+                                    <div class="btn_block1">
+                                        <div class="btn_block2">
+                                            <div class="btn_block3">
+                                                <img src="img/play.svg" alt="play">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_row">
+                            <div class="video_col">
+                                <img src="img/alfshina.png" alt="alfshina">
+
+                                <div class="btn_block" data-fancybox="galleryRew" href="https://youtu.be/IHkPm2dCX6k">
+                                    <div class="btn_block1">
+                                        <div class="btn_block2">
+                                            <div class="btn_block3">
+                                                <img src="img/play.svg" alt="play">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="video_col">
+                                <div class="text_video">
+                                    <h3><span class="bold_txt">Альфа шина</span>
+                                        <br> </h3>
+                                    <div class="name">
+                                        <span class="bold_txt">Константин
+                                        </span>
+
+                                    </div>
+                                    <div class="position colored_txt ">
+                                        Руководитель компании Альфа-шина
+                                    </div>
+                                    <div class="prew_txt">
+                                        Разработка нашего сайта в студии Диджитал Рекс – это комплексная и
+                                        результативная работа всего коллектива. По итогам работ, мы увидели отличный
+                                        сайт. Наш Project-менеджер прислушивался ко всем нашим пожеланиям.
+                                        Это огромный плюс для компании!
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        2
+                    </div>
+                    <div class="content_item">
+                        3
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class="callback">
+        <div class="container">
+            <div class="title">
+                <a name="cont"></a>
+                <h2>
+                    Остались вопросы?
+                    <br> <span class="bold_txt"> Заполните заявку и мы свяжемся с Вами
+                        <br> в ближайшее время</span>
+
+                </h2>
+            </div>
+
+            <div class="callback_form wow fadeIn" style="background-image: url(img/fon_form.png);">
+
+                <form action="mail.php" method="POST">
+                    <div class="wrapper">
+                        <input type="text" minlength="3" name="name" id="name" placeholder="ВАШЕ ИМЯ" required>
+                        <input class="telephone" type="text" minlength="10" name="telephone" id="telephone"
+                            placeholder="+7 (___) ___-__-__" required>
+
+
+                        <button type="submit" class="btn btn_submit">
+                            отправить заявку
+                        </button>
+                    </div>
+                    <div class="label">
+                        <label for="checkbox2">
+                            <input id="checkbox2" class="custom-checkbox" type="checkbox" checked required>
+                            <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                            <div>
+                                <span> Вы соглашаетесь с условиями</span>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#CallModal2">обработки
+                                    персональных данных</a>
+                            </div>
+
+
+                        </label>
+
+                    </div>
+
+                    <!--  -->
+
+
+                </form>
+                <img src="img/form_worker.png" alt="phone">
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="img/logo_footer.svg" alt="digitalrex"></a>
+            </div>
+
+            <div class="footer_menu">
+                <div class="site_menu">
+                    <div class="item-title">
+                        Меню сайта
+                    </div>
+                    <div class="item-content">
+                        <div class="content-col">
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    Главная</a>
+
+                            </div>
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    О нас</a></div>
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    Портфолио</a>
+                            </div>
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    Отзывы</a>
+                            </div>
+                        </div>
+                        <div class="content-col">
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    Вакансии</a>
+                            </div>
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    Блог</a>
+                            </div>
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    Контакты</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="site_menu">
+                    <div class="item-title">
+                        Наши услуги
+                    </div>
+                    <div class="item-content">
+                        <div class="content-col">
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    CEO продвижение</a>
+
+                            </div>
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    SMM продвижение</a></div>
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    Настройка контекстной рекламы</a>
+                            </div>
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    Разработка сайтов под ключ</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="site_menu">
+                    <div class="item-title">
+                        Наши контакты
+                    </div>
+                    <div class="item-content">
+                        <div class="content-col">
+                            <div class="content_row">
+                                <a class="mail" href="tel:+7 (499) 403-17-10"><img src="img/phone.svg" alt="phone"> +7
+                                    (499)
+                                    403-17-10</a>
+
+                            </div>
+                            <div class="content_row">
+                                <a class="mail" href="https://wa.me/79259571781"><img src="img/wapp.svg" alt="app"> +7
+                                    (925)
+                                    957-17-81</a></div>
+                            <div class="content_row">
+                                <a href="mailto:info@digitalre.ru">
+                                    <img src="img/mail.svg" alt="mail"> info@digitalre.ru</a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="site_menu">
+                    <div class="item-title">
+                        Наш офис
+                    </div>
+                    <div class="item-content">
+                        <div class="content-col">
+                            <div class="content_row location">
+                                <img src="img/location_or.svg" alt="location">
+                                <div>
+                                    г. Москва, 22-ой км.
+                                    <br> домовладение 4,
+                                    <br>Киевское ш.
+                                    <br> БЦ Румянцево
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+        <div class="container ">
+            <div class="year-info">Digital Rex - Создание сайтов © 2016 - 2021</div>
+            <button class="btn btn-call wow fadeInDown " data-bs-toggle="modal" data-bs-target="#CallModal2">Политика
+                конфидециальности </button>
+        </div>
+
+    </footer>
+
+
+    <!-- стрелочка на верх страницы -->
+    <div ID="toTop" style="display: flex;"> <img src="img/arrow-right.svg" alt="arrow left"> </div>
+    <!-- Скрипты подключаемых плагинов -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+
+    <!-- для формы -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <!-- <script src="jquery.min.js" type="text/javascript"></script>
+<script src="jquery.validate.pack.js" type="text/javascript"></script> -->
+    <!-- <script type="text/javascript">
+$(document).ready(function(){
+$("#contactform").validate();
+});
+</script>     -->
+
+
+
+
+    <!-- анимация -->
+    <script src="libs/wow.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!-- для формы  маска телефона-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="libs/customjQuery.js"></script>
+
+</body>
+
+</html>
