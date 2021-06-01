@@ -92,6 +92,16 @@ const tabContent2 = document.querySelectorAll('div[data-tabs]') //информа
 const tabContent3 = document.querySelectorAll('div[data-tabsTxt]') //информация с текстом
 const tabNav = document.querySelectorAll('div[data-tabs-nav]') //навигация
 
+if (tabContent2.length > 0) {
+  tabContent2[0].classList.add('active')
+}
+
+if(tabContent3.length > 0) {
+  tabContent3[0].classList.add('active')
+}
+
+
+
 tabNav.forEach((item, index) => {
   item.addEventListener("click", function () {
     makeActive(index)
@@ -157,7 +167,7 @@ tabNavRew.forEach((item, index) => {
 })
 
 function makeActiveRev(a) {
-  // переключение фото
+  
   tabContentRew.forEach((tab, index) => {
 
     if (tab.classList.contains('active') && tab != tabContentRew[a] ) {
@@ -173,6 +183,67 @@ function makeActiveRev(a) {
       
       tab.classList.remove('active')
       tabNavRew[a].classList.add('active')
+    } 
+  })
+
+
+}
+
+
+
+// загрузка файла в форму
+let Loadfield = document.querySelector('.file_load');
+if(Loadfield) {
+  let label = Loadfield.nextElementSibling,
+  labelVal = label.querySelector('.field__file-fake').innerText;
+
+  Loadfield.addEventListener('change', function (e) {
+      let countFiles = '';
+      if (this.files && this.files.length >= 1)
+        countFiles = this.files.length;
+
+      if (countFiles)
+        label.querySelector('.field__file-fake').innerText = 'Файлов прикреплено: ' + countFiles;
+      else
+        label.querySelector('.field__file-fake').innerText = labelVal;
+  });
+
+}
+
+
+
+
+
+    // переключение табов на странице контакты
+const tabNavContact = document.querySelectorAll('.contacts_tab') //навигация
+
+const tabContentContact = document.querySelectorAll('.cont-content_item') //информация отзывов
+
+
+
+tabNavContact.forEach((item, index) => {
+  item.addEventListener("click", function () {
+    makeActiveContact(index)
+  }, false)
+})
+
+function makeActiveContact(a) {
+  
+  tabContentContact.forEach((tab, index) => {
+
+    if (tab.classList.contains('active') && tab != tabContentContact[a] ) {
+      
+      tab.classList.remove('active')
+      tabContentContact[a].classList.add('active')
+    } 
+  })
+
+  tabNavContact.forEach((tab, index) => {
+
+    if (tab.classList.contains('active') && tab != tabNavContact[a] ) {
+      
+      tab.classList.remove('active')
+      tabNavContact[a].classList.add('active')
     } 
   })
 

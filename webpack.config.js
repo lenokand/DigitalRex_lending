@@ -52,6 +52,26 @@ module.exports = {
             template: './src/html/blog.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin ({
+            filename: 'content.html',
+            template: './src/html/content.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin ({
+            filename: 'vacancy.html',
+            template: './src/html/vacancy.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin ({
+            filename: 'contacts.html',
+            template: './src/html/contacts.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin ({
+            filename: 'about.html',
+            template: './src/html/about.html',
+            inject: 'body'
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 {
