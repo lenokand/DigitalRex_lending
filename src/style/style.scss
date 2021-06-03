@@ -4827,18 +4827,89 @@ footer {
 
 // страница гарантий
 .guarantee {
+    margin-bottom: 100px;
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
     .title {
         font-weight: 900;
         font-size: 48px;
         line-height: 124.7%;
         color: #202020;
     }
-    .subtitle{
+
+    .subtitle {
         font-style: normal;
         font-weight: 400;
-        font-size: 30px;
-        line-height: 130.7%;
-      
+        font-size: 29px;
+        line-height: 39.21px;
         color: #202020;
+
+        .bold_txt {
+            font-size: 30px;
+        }
+
+        margin-bottom: 60px;
+
+    }
+
+    .guarantee_cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        >div {
+            max-width: 164px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 124.7%;
+            color: #000000;
+        }
+
+
+
+        .guar_card {
+            // flex-direction: column;
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 30px;
+            }
+
+            .card_txt {
+                max-width: 45px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 124.7%;
+                color: #000000;
+
+            }
+        }
+
+    }
+}
+
+// партнеры
+.partners {
+    .partners_block {
+        background: linear-gradient(302.74deg, #FF81F2 0%, #C256F5 100%);
+        border-radius: 12px;
+        background-repeat: no-repeat;
+        background-position: center ;
+        background-size: cover;
+
+        display: flex;
+
+    }
+
+    .title {
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 118.7%;
+        color: #FFFFFF;
     }
 }
