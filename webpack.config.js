@@ -72,6 +72,15 @@ module.exports = {
             template: './src/html/about.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin ({
+            filename: 'context.html',
+            template: './src/html/context.html',
+            inject: 'body'
+        }),
+
+
+
+
         new CopyWebpackPlugin({
             patterns: [
                 {

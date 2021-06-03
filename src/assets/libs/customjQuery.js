@@ -107,7 +107,7 @@
   // slick
   $(document).ready(function () {
 
-      // 
+      // галерея работников
       $('.tabs-right_bottomn').slick({
           slidesToShow: 4,
           nextArrow: `  <div class="slick_arrow">
@@ -120,7 +120,7 @@
           slide: '.tabWorker',
           dots: false,
 
-            infinite: false
+          infinite: false
 
 
           // arrows: true,
@@ -154,15 +154,16 @@
           //   ]
 
       });
+
       // отзывы
       $('.works_carusel').slick({
           slidesToShow: 2,
           nextArrow: `<div class="slick_arrow">
-        <img src="img/arrow-right.svg" alt="">
-    </div>  `,
+            <img src="img/arrow-right.svg" alt="">
+            </div>  `,
           prevArrow: `<div class="slick_arrow_left">
-        <img src="img/arrow-right.svg" alt="arrow">
-    </div>  `,
+            <img src="img/arrow-right.svg" alt="arrow">
+            </div>  `,
           //   slidesToScroll: 3,
           dots: false,
           slide: '.carusel-item',
@@ -188,10 +189,38 @@
           autoplaySpeed: 3000,
           slide: '.slick_main_item',
           dots: true,
-          dotsClass:'tabs_nav',
+          dotsClass: 'tabs_nav',
           pauseOnHover: false
 
       });
+
+
+      //страница контекстной рекламы
+
+     
+      $('.gallery_clients').slick({
+        slidesToShow: 1,
+        nextArrow: `<div class="slick_arrow slick_arrow_right">
+          <img src="img/arrow-right.svg" alt="">
+          </div>  `,
+        prevArrow: `<div class="slick_arrow_left">
+          <img src="img/arrow-right.svg" alt="arrow">
+          </div>  `,
+        //   slidesToScroll: 3,
+        dots: true,
+        fade: true,
+        dotsClass: 'slick_pug',
+        appendArrows: '.pagination',
+        appendDots: '.pagination',
+        // slide: '.carusel-item',
+        //   autoplay: true,
+        //   autoplaySpeed: 200,
+        //   fade: true,
+
+    });
+
+
+     
 
 
 
@@ -201,5 +230,10 @@
           $('#color_block').removeClass(cur_temp);
           $('#color_block').addClass(next_temp);
       })
+
+
+
+
+
 
   });

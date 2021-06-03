@@ -249,3 +249,49 @@ function makeActiveContact(a) {
 
 
 }
+
+// выпадающее меню
+let submenuButton = document.querySelector('.arrow_menu')
+
+submenuButton.addEventListener("click", function(){
+
+ 
+  // console.log(document.getElementsByClassName("submenu"));
+  let x = document.querySelector(".main_menu > div .submenu")
+  
+  x.classList.toggle("show");
+
+})
+
+
+// Close the dropdown menu if the user clicks outside of it
+// window.onclick = function(event) {
+
+// if (!event.target.matches('.dropbtn')) {
+
+//   var dropdowns = document.getElementsByClassName("submenu");
+//   var i;
+//   for (i = 0; i < dropdowns.length; i++) {
+//     var openDropdown = dropdowns[i];
+//     if (openDropdown.classList.contains('show')) {
+//       openDropdown.classList.remove('show');
+//     }
+//   }
+// }
+// }
+
+
+// переключение свитчера на странице контекстная реклама
+// затемнение не активного блока
+
+
+let switchBtn = document.querySelector('.switch_btn')
+let blockMethods = document.querySelector('.methods_block')
+
+switchBtn.addEventListener("click", function(){
+
+console.log('dddd');
+switchBtn.classList.toggle('active')
+blockMethods.classList.toggle('active')
+})
+
