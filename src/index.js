@@ -96,7 +96,7 @@ if (tabContent2.length > 0) {
   tabContent2[0].classList.add('active')
 }
 
-if(tabContent3.length > 0) {
+if (tabContent3.length > 0) {
   tabContent3[0].classList.add('active')
 }
 
@@ -112,11 +112,11 @@ function makeActive(a) {
   // переключение фото
   tabContent2.forEach((tab, index) => {
 
-    if (tab.classList.contains('active') && tab != tabContent2[a] ) {
-      
+    if (tab.classList.contains('active') && tab != tabContent2[a]) {
+
       tab.classList.remove('active')
       tabContent2[a].classList.add('active')
-    } 
+    }
   })
 
 
@@ -129,14 +129,14 @@ function makeActive(a) {
   // переключение текста
   tabContent3.forEach((tab, index) => {
 
-    if (tab.classList.contains('active') && tab != tabContent3[a] ) {
-      
+    if (tab.classList.contains('active') && tab != tabContent3[a]) {
+
       tab.classList.remove('active')
       tabContent3[a].classList.add('active')
-    } 
+    }
 
     // if (tab.classList.contains('active')) {
-      
+
     //   tab.classList.remove('active')
     // }
   })
@@ -167,23 +167,23 @@ tabNavRew.forEach((item, index) => {
 })
 
 function makeActiveRev(a) {
-  
+
   tabContentRew.forEach((tab, index) => {
 
-    if (tab.classList.contains('active') && tab != tabContentRew[a] ) {
-      
+    if (tab.classList.contains('active') && tab != tabContentRew[a]) {
+
       tab.classList.remove('active')
       tabContentRew[a].classList.add('active')
-    } 
+    }
   })
 
   tabNavRew.forEach((tab, index) => {
 
-    if (tab.classList.contains('active') && tab != tabNavRew[a] ) {
-      
+    if (tab.classList.contains('active') && tab != tabNavRew[a]) {
+
       tab.classList.remove('active')
       tabNavRew[a].classList.add('active')
-    } 
+    }
   })
 
 
@@ -193,19 +193,19 @@ function makeActiveRev(a) {
 
 // загрузка файла в форму
 let Loadfield = document.querySelector('.file_load');
-if(Loadfield) {
+if (Loadfield) {
   let label = Loadfield.nextElementSibling,
-  labelVal = label.querySelector('.field__file-fake').innerText;
+    labelVal = label.querySelector('.field__file-fake').innerText;
 
   Loadfield.addEventListener('change', function (e) {
-      let countFiles = '';
-      if (this.files && this.files.length >= 1)
-        countFiles = this.files.length;
+    let countFiles = '';
+    if (this.files && this.files.length >= 1)
+      countFiles = this.files.length;
 
-      if (countFiles)
-        label.querySelector('.field__file-fake').innerText = 'Файлов прикреплено: ' + countFiles;
-      else
-        label.querySelector('.field__file-fake').innerText = labelVal;
+    if (countFiles)
+      label.querySelector('.field__file-fake').innerText = 'Файлов прикреплено: ' + countFiles;
+    else
+      label.querySelector('.field__file-fake').innerText = labelVal;
   });
 
 }
@@ -214,7 +214,7 @@ if(Loadfield) {
 
 
 
-    // переключение табов на странице контакты
+// переключение табов на странице контакты
 const tabNavContact = document.querySelectorAll('.contacts_tab') //навигация
 
 const tabContentContact = document.querySelectorAll('.cont-content_item') //информация отзывов
@@ -228,23 +228,23 @@ tabNavContact.forEach((item, index) => {
 })
 
 function makeActiveContact(a) {
-  
+
   tabContentContact.forEach((tab, index) => {
 
-    if (tab.classList.contains('active') && tab != tabContentContact[a] ) {
-      
+    if (tab.classList.contains('active') && tab != tabContentContact[a]) {
+
       tab.classList.remove('active')
       tabContentContact[a].classList.add('active')
-    } 
+    }
   })
 
   tabNavContact.forEach((tab, index) => {
 
-    if (tab.classList.contains('active') && tab != tabNavContact[a] ) {
-      
+    if (tab.classList.contains('active') && tab != tabNavContact[a]) {
+
       tab.classList.remove('active')
       tabNavContact[a].classList.add('active')
-    } 
+    }
   })
 
 
@@ -253,12 +253,12 @@ function makeActiveContact(a) {
 // выпадающее меню
 let submenuButton = document.querySelector('.arrow_menu')
 
-submenuButton.addEventListener("click", function(){
+submenuButton.addEventListener("click", function () {
+
 
  
-  // console.log(document.getElementsByClassName("submenu"));
   let x = document.querySelector(".main_menu > div .submenu")
-  
+
   x.classList.toggle("show");
 
 })
@@ -288,10 +288,103 @@ submenuButton.addEventListener("click", function(){
 let switchBtn = document.querySelector('.switch_btn')
 let blockMethods = document.querySelector('.methods_block')
 
-switchBtn.addEventListener("click", function(){
+switchBtn.addEventListener("click", function () {
 
-console.log('dddd');
-switchBtn.classList.toggle('active')
-blockMethods.classList.toggle('active')
+  
+  switchBtn.classList.toggle('active')
+  blockMethods.classList.toggle('active')
 })
 
+
+// квиз
+
+let changeScreen = document.querySelector("#change_screen") //кнопка переключения слайдов
+let arrSlides = document.querySelectorAll('.question_screen') //свыборка слайдов
+let currentSlide = 0
+let submitBtn = document.querySelector('#quiz_submit') //кнопка отправки формы
+
+let currentQuestion = document.querySelector('.current_question') // передача номера текущего слайда
+let coloredBlock = document.querySelectorAll('.prof_item') // закрашивание блоков
+
+
+
+// изначальная блокировка кнопки
+changeScreen.setAttribute('disabled', 'disabled')
+
+unDisabledBtn(arrSlides[0])
+
+// функция для блока кнопки
+function unDisabledBtn(item) {
+
+  
+  let listOfInput = item.querySelectorAll('input')
+  listOfInput.forEach((item, index) => {
+
+    item.addEventListener('change', function () {
+
+      changeScreen.removeAttribute('disabled')
+
+    })
+  })
+
+}
+
+
+
+changeScreen.addEventListener('click', function () {
+
+  if ((currentSlide + 2) !== arrSlides.length) {
+
+    changeScreen.setAttribute('disabled', 'disabled')
+ 
+
+
+
+    arrSlides[currentSlide].classList.remove('active')
+
+    currentSlide++
+
+    arrSlides[currentSlide].classList.add('active')
+
+    unDisabledBtn(arrSlides[currentSlide])
+
+    coloredBlock[currentSlide].style.cssText = "background-image: url(img/profit_fon.png);"
+    currentQuestion.textContent = (currentSlide + 1)
+
+
+  } else {
+    arrSlides[currentSlide].classList.remove('active')
+
+    currentSlide++
+    coloredBlock[currentSlide].style.cssText = "background-image: url(img/profit_fon.png);"
+    currentQuestion.textContent = (currentSlide + 1)
+    arrSlides[currentSlide].classList.add('active')
+
+    changeScreen.style.cssText = "display: none;"
+    currentSlide = 0
+  }
+
+
+})
+
+
+submitBtn.addEventListener('submit', function () {
+  currentSlide = 0
+
+  arrSlides[(arrSlides.length - 1)].classList.remove('active')
+
+  arrSlides[0].classList.add('active')
+  changeScreen.style.cssText = "display: block;"
+
+
+  coloredBlock.forEach((block, index) => {
+
+    if (index !== 0) {
+
+      block.style.cssText = "background-image: none;"
+    }
+
+
+  })
+
+})

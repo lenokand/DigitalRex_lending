@@ -815,19 +815,399 @@
     </section>
     <section class="partners">
         <div class="container">
-            <div class="partners_block" >
-                <img src="img/shout.png" alt="">
+            <div class="partners_block" style="background-image: url(img/fon_shout.png);">
+                <!-- <img src="img/shout.png" alt=""> -->
                 <div class="title">
                     Сертифицированные <span class="bold_txt">партнеры</span>
                 </div>
-                <img src="img/adwords.png" alt="">
-                <img src="img/direct.png" alt="">
+                <img class="adword" src="img/adwords.png" alt="">
+                <img class="direct" src="img/direct.png" alt="">
             </div>
 
 
 
         </div>
     </section>
+
+
+    <section class="tarifs" style="background-image: url(img/fon_tarif.png);">
+        <div class="circle_purple">
+            <img src="img/circle_purple.png" alt="">
+        </div>
+        <div class="container">
+
+
+
+
+            <div class="title">
+                Тарифные планы
+            </div>
+            <div class="subtitle">
+                <span class="bold_txt">Настройка и ведение </span>рекламной кампании
+            </div>
+            <div class="tarifs_cards">
+
+                <!-- 1 -->
+                <div class="tarif_card">
+
+                    <div class="card_title">
+                        Яндекс
+                    </div>
+                    <div class="wrapper">
+
+                        <div class="price">
+                            от <span class="bold_txt">15 000 ₽ </span> в месяц
+                        </div>
+                        <button class="button_result" data-bs-toggle="modal" data-bs-target="#CallModal">
+                            Заказать
+                        </button>
+
+
+
+                    </div>
+
+                    <img src="img/tar_direct.png" alt="">
+                </div>
+                <!-- 2 -->
+                <div class="tarif_card">
+
+                    <div class="card_title">
+                        Google
+                    </div>
+                    <div class="wrapper">
+
+                        <div class="price">
+                            от <span class="bold_txt">15 000 ₽ </span> в месяц
+                        </div>
+                        <button class="button_result" data-bs-toggle="modal" data-bs-target="#CallModal">
+                            Заказать
+                        </button>
+
+
+
+                    </div>
+
+                    <img src="img/tar_google.png" alt="">
+                </div>
+                <!-- 3 -->
+                <div class="tarif_card">
+
+                    <div class="card_title">
+                        Яндекс +Google
+                    </div>
+                    <div class="wrapper">
+
+                        <div class="price">
+                            от <span class="bold_txt">20 000 ₽ </span> в месяц
+                        </div>
+                        <button class="button_result" data-bs-toggle="modal" data-bs-target="#CallModal">
+                            Заказать
+                        </button>
+
+
+
+                    </div>
+
+                    <img src="img/tar_gogyand.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="qwiz">
+                <div class="title">
+                    Расчитайте Ваш бюджет
+                    <br> <span class="bold_txt">прямо сейчас!</span>
+                </div>
+                <div class="subtitle">
+                    Выберите <span class="colored_txt">нужный</span> пункт
+                </div>
+                <div class="number_question">
+                    <span class="bold_txt">Вопрос <span class="current_question">1</span></span> из 6
+                </div>
+                <div class="question_profit">
+                    <div class="prof_item active" style="background-image: url(img/profit_fon.png);"></div>
+                    <div class="prof_item"></div>
+                    <div class="prof_item"></div>
+                    <div class="prof_item"></div>
+                    <div class="prof_item"></div>
+                    <div class="prof_item"></div>
+                </div>
+                <!-- форма квиза -->
+                <form action="">
+                    <!-- 1 -->
+                    <div class="question_screen active">
+                        <div class="questions">
+                            В каких системах контекстной рекламы необходимо
+                            проводить кампанию?
+                        </div>
+                        <div class="answer">
+                            <div class="checkbox_col">
+                                <!-- 1 -->
+                                <label for="checkbox1">
+
+                                    <input id="checkbox1" class="custom-checkbox" type="radio" name="screen1"
+                                        value="Реклама в Яндексе" required="required">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    Реклама в Яндексе
+                                </label>
+<!-- 2 -->
+                                <label for="checkbox2">
+
+                                    <input id="checkbox2" class="custom-checkbox" type="radio" name="screen1"
+                                        value="Реклама в Google" required>
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    Реклама в Google
+                                </label>
+                            </div>
+                          
+                            <div class="checkbox_col">
+                                  <!-- 3 -->
+                                <label for="checkbox3">
+
+                                    <input id="checkbox3" class="custom-checkbox" type="radio" name="screen1"
+                                        value="Реклама в Яндексе и Google" >
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    Реклама в Яндексе и Google
+                                </label>
+<!-- 4 -->
+                                <label for="checkbox4">
+
+                                    <input id="checkbox4" class="custom-checkbox" type="radio" name="screen1"
+                                        value="Другое" >
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    Другое
+                                </label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- 2 -->
+                    <div class="question_screen">
+                        <div class="questions">
+                            Цель рекламной кампании?
+                        </div>
+                        <div class="answer">
+                            <div class="checkbox_col">
+                                <label for="checkbox5">
+
+                                    <input id="checkbox5" class="custom-checkbox" type="radio" name="screen2"
+                                        value="Привлечение клиентов">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    Привлечение клиентов
+                                </label>
+
+                                <label for="checkbox6">
+
+                                    <input id="checkbox6" class="custom-checkbox" type="radio" name="screen2"
+                                        value="Увеличение количества звонков">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    Увеличение количества звонков
+                                </label>
+                            </div>
+                            <div class="checkbox_col">
+                                <label for="checkbox7">
+
+                                    <input id="checkbox7" class="custom-checkbox" type="radio" name="screen2"
+                                        value="Увеличение целевого трафика">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    Увеличение целевого трафика
+                                </label>
+
+                                <label for="checkbox8">
+
+                                    <input id="checkbox8" class="custom-checkbox" type="radio" name="screen2"
+                                        value="Популяризация бренда">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    Популяризация бренда
+                                </label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- 3 -->
+                    <div class="question_screen">
+                        <div class="questions">
+                            Регион показа объявлений?
+                        </div>
+                        <div class="answer">
+                            <div class="checkbox_col">
+                                <label for="checkbox9">
+
+                                    <input id="checkbox9" class="custom-checkbox" type="radio" name="screen3"
+                                        value="По конкретному городу">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    По конкретному городу
+                                </label>
+
+                                <label for="checkbox10">
+
+                                    <input id="checkbox10" class="custom-checkbox" type="radio" name="screen3"
+                                        value="По всей области">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    По всей области
+                                </label>
+                            </div>
+                            <div class="checkbox_col">
+                                <label for="checkbox11">
+
+                                    <input id="checkbox11" class="custom-checkbox" type="radio" name="screen3"
+                                        value="По целой стране">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    По целой стране
+                                </label>
+
+                                <label for="checkbox12">
+
+                                    <input id="checkbox12" class="custom-checkbox" type="radio" name="screen3"
+                                        value="Другое">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    Другое
+                                </label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- 4 -->
+                    <div class="question_screen">
+                        <div class="questions">
+                            Предполагаемый бюджет на рекламу?
+                        </div>
+                        <div class="answer">
+                            <div class="checkbox_col">
+                                <label for="checkbox13">
+
+                                    <input id="checkbox13" class="custom-checkbox" type="radio" name="screen4"
+                                        value="До 5000 р/мес">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    До 5000 р/мес
+                                </label>
+
+                                <label for="checkbox14">
+
+                                    <input id="checkbox14" class="custom-checkbox" type="radio" name="screen4"
+                                        value="От 5000 до 10000 р/мес">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    От 5000 до 10000 р/мес
+                                </label>
+                            </div>
+                            <div class="checkbox_col">
+                                <label for="checkbox15">
+
+                                    <input id="checkbox15" class="custom-checkbox" type="radio" name="screen4"
+                                        value="От 10000 до 30000 р/мес">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    От 10000 до 30000 р/мес
+                                </label>
+
+                                <label for="checkbox16">
+
+                                    <input id="checkbox16" class="custom-checkbox" type="radio" name="screen4"
+                                        value="Более 30000 р/мес">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    Более 30000 р/мес
+                                </label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- 5 -->
+                    <div class="question_screen">
+                        <div class="questions">
+                            Планируете ли вы использовать дополнительную рекламу в интернете?
+                        </div>
+                        <div class="answer">
+                            <div class="checkbox_col">
+                                <label for="checkbox17">
+
+                                    <input id="checkbox17" class="custom-checkbox" type="radio" name="screen5"
+                                        value="Да, социальные сети">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    Да, социальные сети
+                                </label>
+
+                                <label for="checkbox18">
+
+                                    <input id="checkbox18" class="custom-checkbox" type="radio" name="screen5"
+                                        value="Да, SEO-продвижение">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    Да, SEO-продвижение
+                                </label>
+                            </div>
+                            <div class="checkbox_col">
+                                <label for="checkbox19">
+
+                                    <input id="checkbox19" class="custom-checkbox" type="radio" name="screen5"
+                                        value="Да, социальные сети и SEO-продвижение">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    Да, социальные сети и SEO-продвижение
+                                </label>
+
+                                <label for="checkbox20">
+
+                                    <input id="checkbox20" class="custom-checkbox" type="radio" name="screen5"
+                                        value="Нет, не планирую">
+
+                                    <div class="custom_chk"> <img src="img/check2.svg" alt="check"> </div>
+                                    Нет, не планирую
+                                </label>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- последний экран -->
+
+                    <div class="question_screen last_screen">
+                        <div class="questions">
+                            Рассчет готов! Оставьте контактные данные
+                        </div>
+
+                        <input type="text" placeholder="ВАШЕ ИМЯ">
+                        <input class="telephone" minlength="10" type="text" name="telephone" id=""
+                            placeholder="+7 (___) ___-__-__" maxlength="18" required>
+
+                        <button id="quiz_submit" class="button_result" type="submit">
+                            Расчитать стоимость
+                        </button>
+                    </div>
+
+
+                </form>
+                <button id="change_screen" class="button_result" >
+                    Далее <img src="img/arrow-right_quiz.svg" alt="">
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
 
     <section class="callback">
         <div class="container">
