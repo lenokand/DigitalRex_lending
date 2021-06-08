@@ -197,30 +197,53 @@
 
       //страница контекстной рекламы
 
-     
+
       $('.gallery_clients').slick({
-        slidesToShow: 1,
-        nextArrow: `<div class="slick_arrow slick_arrow_right">
+          slidesToShow: 1,
+          nextArrow: `<div class="slick_arrow slick_arrow_right">
           <img src="img/arrow-right.svg" alt="">
           </div>  `,
-        prevArrow: `<div class="slick_arrow_left">
+          prevArrow: `<div class="slick_arrow_left">
           <img src="img/arrow-right.svg" alt="arrow">
           </div>  `,
-        //   slidesToScroll: 3,
-        dots: true,
-        fade: true,
-        dotsClass: 'slick_pug',
-        appendArrows: '.pagination',
-        appendDots: '.pagination',
-        // slide: '.carusel-item',
-        //   autoplay: true,
-        //   autoplaySpeed: 200,
-        //   fade: true,
+          //   slidesToScroll: 3,
+          dots: true,
+          fade: true,
+          dotsClass: 'slick_pug',
+          appendArrows: '.pagination',
+          appendDots: '.pagination',
+          // slide: '.carusel-item',
+          //   autoplay: true,
+          //   autoplaySpeed: 200,
+          //   fade: true,
 
-    });
+      });
+      //страница СММ
 
 
-     
+      $('.gallery_clients_SMM').slick({
+          slidesToShow: 3,
+          nextArrow: `<div class="slick_arrow slick_arrow_right">
+          <img src="img/arrow-right.svg" alt="">
+          </div>  `,
+          prevArrow: `<div class="slick_arrow_left">
+          <img src="img/arrow-right.svg" alt="arrow">
+          </div>  `,
+          //   slidesToScroll: 3,
+        //   centerMode: true,
+        //   centerPadding: 30,
+          focusOnSelect: true,
+          
+         
+          slide: '.gallery_item',
+          //   autoplay: true,
+          //   autoplaySpeed: 200,
+          //   fade: true,
+
+      });
+
+
+
 
 
 
