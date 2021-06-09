@@ -87,6 +87,11 @@ module.exports = {
             template: './src/html/dev.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin ({
+            filename: 'projTehnonic.html',
+            template: './src/html/projTehnonic.html',
+            inject: 'body'
+        }),
 
 
 

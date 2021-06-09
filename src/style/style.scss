@@ -192,7 +192,7 @@ menu {
 @media screen and (max-width: 1200px) {
     .logo_hiden {
         display: block;
-        margin-top: $gap;
+        padding-top: $gap;
     }
 
     menu {
@@ -1354,7 +1354,9 @@ input.error {
     }
 
     // кастомизированный чекбокс
-    #checkbox2, #checkbox222,  #checkbox2222  {
+    #checkbox2,
+    #checkbox222,
+    #checkbox2222 {
         margin-bottom: 0;
         opacity: 0;
         position: absolute;
@@ -2758,7 +2760,7 @@ footer {
 
 // наши работы
 .works {
-    h2 {
+    .title {
         font-weight: normal;
         font-size: 48px;
         line-height: 124.7%;
@@ -4403,7 +4405,8 @@ footer {
     .gallery_item {
         max-width: 1170px;
     }
-    .gallery_clients{
+
+    .gallery_clients {
         margin-bottom: 15px;
     }
 
@@ -5050,7 +5053,7 @@ footer {
         line-height: 124.7%;
         text-align: center;
         color: #000000;
-        margin-bottom: 64px;
+        margin-bottom: 33px;
     }
 
     .tarifs_cards {
@@ -5666,6 +5669,8 @@ footer {
     margin-bottom: 97px;
 }
 
+
+
 .methods.dev {
 
     // .method_points {
@@ -5715,6 +5720,11 @@ footer {
         }
 
     }
+}
+
+.section_wrapper {
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .tarifs.smm.dev {
@@ -5824,6 +5834,8 @@ footer {
 
 
 .callback.dev_form {
+    margin-bottom: 115px;
+
     .form-title {
         margin-left: 100px;
         font-weight: normal;
@@ -5844,6 +5856,7 @@ footer {
         padding: 24px 38px;
         max-width: 238px;
         margin-right: 9px;
+
         &::placeholder {
             font-weight: normal;
             font-size: 14px;
@@ -5853,9 +5866,193 @@ footer {
 
         }
     }
-    .btn_submit{
+
+    .btn_submit {
         padding: 24px 38px;
         width: 100%;
         max-width: 238px;
     }
+}
+
+
+// страница портфолио разработки
+
+.project_screen {
+    margin-bottom: 80px;
+
+    h1 {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 124.7%;
+        color: #FFFFFF;
+    }
+
+    #main-menu {
+        margin-bottom: 80px;
+    }
+
+    .main_menu {
+
+        a {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 124.7%;
+            color: #FFFFFF;
+
+            &:hover {
+                color: #ddd8d8;
+            }
+
+        }
+    }
+
+    .contacts {
+        a {
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 132.7%;
+            color: #FFFFFF;
+
+            &:hover {
+                color: #ddd8d8;
+            }
+        }
+
+    }
+
+    .btn:hover {
+        color: #e03a21;
+    }
+
+
+    .breadcrumb {
+        align-items: center;
+        margin-bottom: 60px;
+
+        a {
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 134.7%;
+
+        }
+
+        li {
+            padding-left: 0;
+            padding-right: 4px;
+            color: #fff;
+        }
+
+        li:before {
+            content: '';
+            display: none;
+        }
+
+        .active {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 134.7%;
+            color: #fff;
+        }
+    }
+
+    .main_cont {
+        padding-bottom: 80px;
+    }
+
+}
+
+.project_info {
+    margin-bottom: 80px;
+
+    .title {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 124.7%;
+        color: #202020;
+        margin-bottom: 54px;
+    }
+
+
+    .process {
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        .proc_col {
+            flex-basis: 33.3%;
+        }
+
+        .col_title {
+            font-weight: 900;
+            font-size: 30px;
+            line-height: 124.7%;
+            color: #000000;
+            margin-bottom: 18px;
+        }
+
+        .col_txt {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 160.7%;
+            color: #000000;
+        }
+    }
+
+    .stage {
+        .stage-title {
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 124.7%;
+            color: #000000;
+            margin-bottom: 22px;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .pointer {
+            max-width: 7px;
+            width: 7px;
+            height: 7px;
+            flex-basis: 15%;
+            background: #FF5F46;
+            border-radius: 120px;
+            margin-right: 14px;
+        }
+    }
+
+
+
+}
+.project-img{
+    margin-bottom: 140px;
+    position: relative;
+
+    .circle1, .circle2, .circle3{
+        position: absolute;
+        z-index: -1;
+    }
+
+    .circle1{
+       
+        right: 0;
+    }
+    .circle2{
+       top: 54%;
+       left: 210px;
+    }
+    .circle3{
+            bottom: 5%;
+        right: 157px;
+    }
+}
+
+.works.project{
+    margin-bottom: 125px;
 }
