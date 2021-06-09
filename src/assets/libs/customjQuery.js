@@ -98,7 +98,7 @@
 
   jQuery(function ($) {
 
-      $(".telephone").mask("+7 (000) 000-00-00");
+      $(".telephone").mask("+0 (000) 000-00-00");
 
 
   });
