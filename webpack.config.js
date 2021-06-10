@@ -92,6 +92,42 @@ module.exports = {
             template: './src/html/projTehnonic.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin ({
+            filename: 'projAlphsh.html',
+            template: './src/html/projAlphsh.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin ({
+            filename: 'projFeod.html',
+            template: './src/html/projFeod.html',
+            inject: 'body'
+        }),
+       
+        new HtmlWebpackPlugin ({
+            filename: 'projsplavslov.html',
+            template: './src/html/projsplavslov.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin ({
+            filename: 'projdiplomat.html',
+            template: './src/html/projdiplomat.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin ({
+            filename: 'projaltai.html',
+            template: './src/html/projaltai.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin ({
+            filename: 'projkitchen.html',
+            template: './src/html/projkitchen.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin ({
+            filename: 'projautolombard.html',
+            template: './src/html/projautolombard.html',
+            inject: 'body'
+        }),
 
 
 
