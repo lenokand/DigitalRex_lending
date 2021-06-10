@@ -256,7 +256,7 @@ let submenuButton = document.querySelector('.arrow_menu')
 submenuButton.addEventListener("click", function () {
 
 
- 
+
   let x = document.querySelector(".main_menu > div .submenu")
 
   x.classList.toggle("show");
@@ -288,103 +288,110 @@ submenuButton.addEventListener("click", function () {
 let switchBtn = document.querySelector('.switch_btn')
 let blockMethods = document.querySelector('.methods_block')
 
-switchBtn.addEventListener("click", function () {
+if (switchBtn) {
+  switchBtn.addEventListener("click", function () {
 
-  
-  switchBtn.classList.toggle('active')
-  blockMethods.classList.toggle('active')
-})
+    switchBtn.classList.toggle('active')
+    blockMethods.classList.toggle('active')
+  })
+}
+
 
 
 // квиз
 
 let changeScreen = document.querySelector("#change_screen") //кнопка переключения слайдов
-let arrSlides = document.querySelectorAll('.question_screen') //свыборка слайдов
+let arrSlides = document.querySelectorAll('.question_screen') //выборка слайдов
 let currentSlide = 0
 let submitBtn = document.querySelector('#quiz_submit') //кнопка отправки формы
 
 let currentQuestion = document.querySelector('.current_question') // передача номера текущего слайда
 let coloredBlock = document.querySelectorAll('.prof_item') // закрашивание блоков
 
+if (arrSlides.length > 0) {
 
 
-// изначальная блокировка кнопки
-changeScreen.setAttribute('disabled', 'disabled')
 
-unDisabledBtn(arrSlides[0])
+  // изначальная блокировка кнопки
+  changeScreen.setAttribute('disabled', 'disabled')
 
-// функция для блока кнопки
-function unDisabledBtn(item) {
+  unDisabledBtn(arrSlides[0])
 
-  
-  let listOfInput = item.querySelectorAll('input')
-  listOfInput.forEach((item, index) => {
+  // функция для блока кнопки
+  function unDisabledBtn(item) {
 
-    item.addEventListener('change', function () {
 
-      changeScreen.removeAttribute('disabled')
+    let listOfInput = item.querySelectorAll('input')
+    listOfInput.forEach((item, index) => {
 
+      item.addEventListener('change', function () {
+
+        changeScreen.removeAttribute('disabled')
+
+      })
     })
-  })
 
-}
-
-
-
-changeScreen.addEventListener('click', function () {
-
-  if ((currentSlide + 2) !== arrSlides.length) {
-
-    changeScreen.setAttribute('disabled', 'disabled')
- 
-
-
-
-    arrSlides[currentSlide].classList.remove('active')
-
-    currentSlide++
-
-    arrSlides[currentSlide].classList.add('active')
-
-    unDisabledBtn(arrSlides[currentSlide])
-
-    coloredBlock[currentSlide].style.cssText = "background-image: url(img/profit_fon.png);"
-    currentQuestion.textContent = (currentSlide + 1)
-
-
-  } else {
-    arrSlides[currentSlide].classList.remove('active')
-
-    currentSlide++
-    coloredBlock[currentSlide].style.cssText = "background-image: url(img/profit_fon.png);"
-    currentQuestion.textContent = (currentSlide + 1)
-    arrSlides[currentSlide].classList.add('active')
-
-    changeScreen.style.cssText = "display: none;"
-    currentSlide = 0
   }
 
 
-})
+
+  changeScreen.addEventListener('click', function () {
+
+    if ((currentSlide + 2) !== arrSlides.length) {
+
+      changeScreen.setAttribute('disabled', 'disabled')
 
 
-submitBtn.addEventListener('submit', function () {
-  currentSlide = 0
-
-  arrSlides[(arrSlides.length - 1)].classList.remove('active')
-
-  arrSlides[0].classList.add('active')
-  changeScreen.style.cssText = "display: block;"
 
 
-  coloredBlock.forEach((block, index) => {
+      arrSlides[currentSlide].classList.remove('active')
 
-    if (index !== 0) {
+      currentSlide++
 
-      block.style.cssText = "background-image: none;"
+      arrSlides[currentSlide].classList.add('active')
+
+      unDisabledBtn(arrSlides[currentSlide])
+
+      coloredBlock[currentSlide].style.cssText = "background-image: url(img/profit_fon.png);"
+      currentQuestion.textContent = (currentSlide + 1)
+
+
+    } else {
+      arrSlides[currentSlide].classList.remove('active')
+
+      currentSlide++
+      coloredBlock[currentSlide].style.cssText = "background-image: url(img/profit_fon.png);"
+      currentQuestion.textContent = (currentSlide + 1)
+      arrSlides[currentSlide].classList.add('active')
+
+      changeScreen.style.cssText = "display: none;"
+      currentSlide = 0
     }
 
 
   })
 
-})
+
+  submitBtn.addEventListener('submit', function () {
+    currentSlide = 0
+
+    arrSlides[(arrSlides.length - 1)].classList.remove('active')
+
+    arrSlides[0].classList.add('active')
+    changeScreen.style.cssText = "display: block;"
+
+
+    coloredBlock.forEach((block, index) => {
+
+      if (index !== 0) {
+
+        block.style.cssText = "background-image: none;"
+      }
+
+
+    })
+
+  })
+
+
+}

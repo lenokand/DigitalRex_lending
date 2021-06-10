@@ -101,7 +101,13 @@
       $(".telephone").mask("+0 (000) 000-00-00");
 
 
+
   });
+
+
+
+
+
 
 
   // slick
@@ -167,11 +173,61 @@
           //   slidesToScroll: 3,
           dots: false,
           slide: '.carusel-item',
+            autoplay: true,
+            autoplaySpeed: 3000,
+          //   fade: true,
+
+      });
+
+    //   главный экран, таб отзывы
+      $('.mainslider-review').slick({
+          slidesToShow: 3,
+          nextArrow: `<div class="slick_arrow">
+            <img src="img/arrow-right.svg" alt="">
+            </div>  `,
+          prevArrow: `<div class="slick_arrow_left">
+            <img src="img/arrow-right.svg" alt="arrow">
+            </div>  `,
+          
+          //   slidesToScroll: 3,
+          dots: false,
+          slide: '.review-item',
+        //   adaptiveHeight: true,
+        //   infinite: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
           //   autoplay: true,
           //   autoplaySpeed: 200,
           //   fade: true,
 
       });
+    //   главный экран, таб благодарственные письма
+    
+
+      $('.mainslider-letters').slick({
+        slidesToShow: 4,
+        nextArrow: `<div class="slick_arrow slick_arrow_right">
+        <img src="img/arrow-right.svg" alt="">
+        </div>  `,
+        prevArrow: `<div class="slick_arrow_left">
+        <img src="img/arrow-right.svg" alt="arrow">
+        </div>  `,
+        //   slidesToScroll: 3,
+        // centerMode: true,
+      //   centerPadding: 30,
+        focusOnSelect: true,
+        
+       
+        slide: '.letter-item',
+          autoplay: true,
+          autoplaySpeed: 3000,
+        //   fade: true,
+
+    });
+
+
+
+
 
 
 
