@@ -88,12 +88,12 @@ if (scene_cube) {
 /////////////////////
 // переход по табам, инфо о специалистах
 
-const tabContent2 = document.querySelectorAll('div[data-tabs]') //информация с фото
-const tabContent3 = document.querySelectorAll('div[data-tabsTxt]') //информация с текстом
+const tabContent2 = document.querySelectorAll('div[data-tabs]') //большое фото сотрудника
+const tabContent3 = document.querySelectorAll('div[data-tabsTxt]') //информация с текстом о сотруднике
 const tabNav = document.querySelectorAll('div[data-tabs-nav]') //навигация
 
 if (tabContent2.length > 0) {
-  tabContent2[0].classList.add('active')
+  tabContent2[0].classList.add('active', 'show')
 }
 
 if (tabContent3.length > 0) {
@@ -114,8 +114,9 @@ function makeActive(a) {
 
     if (tab.classList.contains('active') && tab != tabContent2[a]) {
 
-      tab.classList.remove('active')
-      tabContent2[a].classList.add('active')
+      tab.classList.remove('active', 'show')
+      setTimeout(tabContent2[a].classList.add('active', 'show'), 1000);
+      
     }
   })
 
@@ -352,7 +353,8 @@ if (arrSlides.length > 0) {
 
       unDisabledBtn(arrSlides[currentSlide])
 
-      coloredBlock[currentSlide].style.cssText = "background-image: url(img/profit_fon.png);"
+      // coloredBlock[currentSlide].style.cssText = "background-image: url(img/profit_fon.png);"
+      coloredBlock[currentSlide].classList.add('colored')
       currentQuestion.textContent = (currentSlide + 1)
 
 
@@ -360,7 +362,8 @@ if (arrSlides.length > 0) {
       arrSlides[currentSlide].classList.remove('active')
 
       currentSlide++
-      coloredBlock[currentSlide].style.cssText = "background-image: url(img/profit_fon.png);"
+      // coloredBlock[currentSlide].style.cssText = "background-image: url(img/profit_fon.png);"
+      coloredBlock[currentSlide].classList.add('colored')
       currentQuestion.textContent = (currentSlide + 1)
       arrSlides[currentSlide].classList.add('active')
 
@@ -384,8 +387,8 @@ if (arrSlides.length > 0) {
     coloredBlock.forEach((block, index) => {
 
       if (index !== 0) {
-
-        block.style.cssText = "background-image: none;"
+        block.classList.remove('active')
+        // block.style.cssText = "background-image: none;"
       }
 
 
