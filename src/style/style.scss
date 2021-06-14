@@ -586,6 +586,7 @@ input.error {
     text-align: center;
     position: relative;
     overflow: hidden;
+    white-space: nowrap;
 
     &:after {
         content: "";
@@ -1328,6 +1329,7 @@ input.error {
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+        display: flex;
         align-items: center;
 
 
@@ -1348,6 +1350,7 @@ input.error {
             // display: block;
             // text-align: center;
         }
+       
     }
 
     form {
@@ -1360,7 +1363,7 @@ input.error {
         background: #FFFFFF;
         border-radius: 60px;
         padding: 20px 38px;
-        // min-width: 238px;
+            // min-width: 238px;
         outline: none;
         border: none;
         margin-bottom: 18px;
@@ -1370,8 +1373,16 @@ input.error {
             font-weight: normal;
             font-size: 14px;
             line-height: 112.7%;
+           
             text-transform: uppercase;
             color: #7E7E7E;
+            // -moz-padding: 23px 38px;
+
+        }
+
+        &::-moz-placeholder {
+            line-height: 152.7%;
+            
         }
     }
 
