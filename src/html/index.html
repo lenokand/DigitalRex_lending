@@ -55,12 +55,19 @@
             <menu id="main-menu">
 
                 <div class="logo">
-                    <a href="#"><img src="img/logo_top_new.svg" alt="digitalrex"></a>
+                    <a href="#">
+                    <img src="img/logo_top_new.svg" alt="digitalrex" class="logo_white">
+                    <img src="img/logo_black.svg" alt="digitalrex" class="logo_black">
+                    </a>
                 </div>
                 <div class="main_menu">
                     <div> <a href="main.html">Главная</a></div>
                     <div> <a href="about.html">О нас</a> </div>
-                    <div><a href="">Услуги </a> <img class="arrow_menu" src="img/arrow-down.svg" alt="">
+                    <div><a href="">Услуги </a> 
+                    <span class="arrow_menu">  <img class='arrow-down'  src="img/arrow-down.svg" alt="">
+                    <img class='arrow-down_black' src="img/arrow-down_black.svg" alt=""></span>
+                  
+
                         <div class="submenu ">
                             <div class="submenu_item"><a href="main.html">СЕО</a></div>
                             <div class="submenu_item"><a href="context.html">Контекстная</a></div>
@@ -432,6 +439,7 @@
                         <div class="colum2 wow fadeInRight">
 
                             <img src="img/main_smm.png" alt="telephone">
+                            <img src="img/main_smm_sm.png" class="main_seo_sm" alt="ракета монитор">
                             <div class="like" data-relative-input="true" id="scene_like">
                                 <div data-depth-x="0.50" data-depth-y="-0.50">
                                     <img src="img/like.png" alt="like">
@@ -492,7 +500,7 @@
                         <div class="colum2 wow fadeInRight">
 
                             <img src="img/main_context.png" alt="laptop">
-
+                            <img src="img/main_context_sm.png" class="main_seo_sm" alt="laptop">
                             <div class="google " data-relative-input="true" id="scene_google">
                                 <div data-depth-x="0.50" data-depth-y="-0.50">
                                     <img src="img/google.png" alt="google">
@@ -556,7 +564,7 @@
                         <div class="colum2 wow fadeInRight">
 
                             <img src="img/main_dev.png" alt="laptop">
-
+                            <img src="img/main_dev_sm.png" class="main_seo_sm" alt="laptop">
                             <div class="key " data-relative-input="true" id="scene_key">
                                 <div data-depth-x="0.50" data-depth-y="-0.50">
                                     <img src="img/key.png" alt="key">
@@ -623,7 +631,7 @@
     <!-- отзывы -->
     <section class="main_rewies">
         <div class="container">
-            <h2>Для Казахстана <span class="bold_txt">с любовью!</span> </h2>
+            <div class="main_rewies_title">Для Казахстана <span class="bold_txt">с любовью!</span> </div>
 
             <div class="rewies_tabs">
                 <!-- навигация -->
@@ -758,16 +766,31 @@
                     <div class="content_item">
                         <div class="mainslider-review">
                             <div class="review-item">
-                                <img src="img/reweiw1.png" alt="телефон">
+                                    <a href="img/reweiw1.png" data-fancybox="gallery-phone">
+                                    <img src="img/reweiw1.png" alt="телефон">
+                                    </a>
+
+                            
                             </div>
                             <div class="review-item">
-                                <img src="img/reweiw2.png" alt="телефон">
+                                   <a href="img/reweiw2.png" data-fancybox="gallery-phone">
+                                    <img src="img/reweiw2.png" alt="телефон">
+                                    </a>
+
+                                
                             </div>
                             <div class="review-item">
-                                <img src="img/reweiw3.png" alt="телефон">
+
+                                <a href="img/reweiw3.png" data-fancybox="gallery-phone">
+                                    <img src="img/reweiw3.png" alt="телефон">
+                                    </a>
+
                             </div>
                             <div class="review-item">
-                                <img src="img/reweiw3.png" alt="телефон">
+                             <a href="img/reweiw3.png" data-fancybox="gallery-phone">
+                                    <img src="img/reweiw3.png" alt="телефон">
+                                    </a>
+                                
                             </div>
 
                         </div>
@@ -2525,8 +2548,9 @@
 
 
             <div class="map-left_item">
-                <p class="h3">Где нас найти и
-                    <br> <span class="bold_txt">как дозвониться</span> </p>
+                <p class="h3">Наши контакты и
+                   
+                    <br> <span class="bold_txt"> местоположение</span> </p>
                 <div class="map-row row_adress">
                     <div class="row_icon">
                         <img src="img/location.svg" alt="location">
@@ -2587,18 +2611,17 @@
     <section class="callback">
         <div class="container">
             <div class="title">
-                <a name="cont"></a>
-                <h2>
+               
+                
                     Остались вопросы?
                     <br> <span class="bold_txt"> Заполните заявку и мы свяжемся с Вами
                         <br> в ближайшее время</span>
 
-                </h2>
             </div>
 
             <div class="callback_form wow fadeIn" style="background-image: url(img/fon_form.png);">
 
-                <form action="mail.php" method="POST">
+                <form action="" method="POST">
                     <div class="wrapper">
                         <input type="text" minlength="3" name="name" id="name" placeholder="ВАШЕ ИМЯ" required>
                         <input class="telephone" type="text" minlength="10" name="telephone" id="telephone"
@@ -2628,7 +2651,7 @@
 
 
                 </form>
-                <img src="img/form_phone.png" alt="phone">
+                <img src="img/form_worker.png" alt="phone">
             </div>
         </div>
     </section>
