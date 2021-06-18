@@ -113,6 +113,13 @@
   // slick
   $(document).ready(function () {
 
+    // прокрутка при переходе по табам
+    
+
+
+
+
+
     // галерея работников
     $('.tabs-right_bottomn').slick({
       slidesToShow: 4,
@@ -319,6 +326,31 @@
       //   autoplay: true,
       //   autoplaySpeed: 200,
       //   fade: true,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            
+          }
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+
 
     });
 

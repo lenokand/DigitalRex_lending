@@ -34,27 +34,54 @@
 
 <body>
     <!-- первый экран -->
-    <section class="main_screen smm_screen">
+    <section class="main_screen  smm_screen">
 
 
         <div id="shadow"></div>
         <div class="container">
 
+
             <div class="logo_hiden">
                 <a href="#"><img src="img/logo_top_new.svg" alt="digitalrex"></a>
+            </div>
+            <div class="call-btn_hiden">
+                <div class="contacts"> <img src="img/phone_org.svg" alt="phone"> <a href="tel:+7 (499) 403-17-10"> +7
+                        (499)
+                        403-17-10</a></div>
+
+                <button class="btn btn-call  wow fadeInDown " data-bs-toggle="modal"
+                    data-bs-target="#CallModal">Заказать
+                    звонок</button>
             </div>
             <menu id="main-menu">
 
                 <div class="logo">
-                    <a href="#"><img src="img/logo_top_new.svg" alt="digitalrex"></a>
+                    <a href="#">
+                        <img src="img/logo_top_new.svg" alt="digitalrex" class="logo_white">
+                        <img src="img/logo_black.svg" alt="digitalrex" class="logo_black">
+                    </a>
                 </div>
                 <div class="main_menu">
                     <div> <a href="main.html">Главная</a></div>
                     <div> <a href="about.html">О нас</a> </div>
-                    <div><a href="">Услуги </a> <img class="arrow_menu" src="img/arrow-right.svg" alt="">
+                    <div><a href="">Услуги </a>
+                        <span class="arrow_menu"> <img class='arrow-down' src="img/arrow-down.svg" alt="">
+                            <img class='arrow-down_black' src="img/arrow-down_black.svg" alt=""></span>
+
+
                         <div class="submenu ">
                             <div class="submenu_item"><a href="main.html">СЕО</a></div>
                             <div class="submenu_item"><a href="context.html">Контекстная</a></div>
+                            <div class="submenu_item"><a href="smm.html">СММ</a></div>
+                            <div class="submenu_item"><a href="dev.html">Разработка</a></div>
+                            <div class="submenu_item"><a href="projTehnonic.html">Технониколь</a></div>
+                            <div class="submenu_item"><a href="projAlphsh.html">AlpShina</a></div>
+                            <div class="submenu_item"><a href="projFeod.html">projFeod</a></div>
+                            <div class="submenu_item"><a href="projsplavslov.html">projsplavslov</a></div>
+                            <div class="submenu_item"><a href="projdiplomat.html">projdiplomat</a></div>
+                            <div class="submenu_item"><a href="projaltai.html">projaltai.html</a></div>
+                            <div class="submenu_item"><a href="projkitchen.html">projkitchen.html</a></div>
+                            <div class="submenu_item"><a href="projautolombard.html">projautolombard.html</a></div>
 
                         </div>
 
@@ -76,11 +103,19 @@
 
             </menu>
 
+
             <button id="burger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <div class="wrapper">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="sign_menu">
+                    меню
+                </div>
             </button>
+
 
 
 
@@ -264,6 +299,7 @@
         </div>
 
 
+
         <!-- noslick -->
         <div class="mainsc">
             <div class="">
@@ -329,7 +365,9 @@
 
                         <div class="colum2 wow fadeIn">
 
-                            <img src="img/main_smm.png" alt="telephone">
+                            <img src="img/main_smm.png"  class="main_context" alt="telephone">
+                            <img src="img/main_smm_sm.png" class="main_context_sm" alt="telephone">
+
                             <div class="like" data-relative-input="true" id="scene_like">
                                 <div data-depth-x="0.50" data-depth-y="-0.50">
                                     <img src="img/like.png" alt="like">
@@ -902,24 +940,26 @@
                     <br> И мы гарантированно заставим ее работать на результат.
                 </div>
                 <div class="guarantee_cards">
+                    <span> <img src="img/guar_img1.png" alt="">
 
-                    <img src="img/guar_img1.png" alt="">
+                        <div class="card_txt">
+                            <span class="bold_txt">Креативное оформление </span>
+                            аккаунтов в соцсетях
+                        </div></span>
+                   
+<span>
+    <img src="img/guar_img2.png" alt="">
 
-                    <div class="card_txt">
-                        <span class="bold_txt">Креативное оформление </span>
-                        аккаунтов в соцсетях
-                    </div>
+    <div class="card_txt">
+        <span class="bold_txt">Качественный
 
-                    <img src="img/guar_img2.png" alt="">
-
-                    <div class="card_txt">
-                        <span class="bold_txt">Качественный
-
-                        </span>
-                        контент-маркетинг
-                    </div>
-
-                    <img src="img/guar_img3.png" alt="">
+        </span>
+        контент-маркетинг
+    </div>
+</span>
+                    
+<span>
+    <img src="img/guar_img3.png" alt="">
 
                     <div class="card_txt">
                         <span class="bold_txt">Увеличение
@@ -927,6 +967,8 @@
                         </span>
                         подписчиков и обращений
                     </div>
+</span>
+                    
                     <!--                    
                     <div class="guar_card">
                         <img src="img/guar_img1.png" alt="">
