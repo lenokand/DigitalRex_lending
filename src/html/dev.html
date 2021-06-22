@@ -40,21 +40,48 @@
         <div id="shadow"></div>
         <div class="container">
 
+
             <div class="logo_hiden">
                 <a href="#"><img src="img/logo_top_new.svg" alt="digitalrex"></a>
+            </div>
+            <div class="call-btn_hiden">
+                <div class="contacts"> <img src="img/phone_org.svg" alt="phone"> <a href="tel:+7 (499) 403-17-10"> +7
+                        (499)
+                        403-17-10</a></div>
+
+                <button class="btn btn-call  wow fadeInDown " data-bs-toggle="modal"
+                    data-bs-target="#CallModal">Заказать
+                    звонок</button>
             </div>
             <menu id="main-menu">
 
                 <div class="logo">
-                    <a href="#"><img src="img/logo_top_new.svg" alt="digitalrex"></a>
+                    <a href="#">
+                        <img src="img/logo_top_new.svg" alt="digitalrex" class="logo_white">
+                        <img src="img/logo_black.svg" alt="digitalrex" class="logo_black">
+                    </a>
                 </div>
                 <div class="main_menu">
                     <div> <a href="main.html">Главная</a></div>
                     <div> <a href="about.html">О нас</a> </div>
-                    <div><a href="">Услуги </a> <img class="arrow_menu" src="img/arrow-right.svg" alt="">
+                    <div><a href="">Услуги </a>
+                        <span class="arrow_menu"> <img class='arrow-down' src="img/arrow-down.svg" alt="">
+                            <img class='arrow-down_black' src="img/arrow-down_black.svg" alt=""></span>
+
+
                         <div class="submenu ">
                             <div class="submenu_item"><a href="main.html">СЕО</a></div>
                             <div class="submenu_item"><a href="context.html">Контекстная</a></div>
+                            <div class="submenu_item"><a href="smm.html">СММ</a></div>
+                            <div class="submenu_item"><a href="dev.html">Разработка</a></div>
+                            <div class="submenu_item"><a href="projTehnonic.html">Технониколь</a></div>
+                            <div class="submenu_item"><a href="projAlphsh.html">AlpShina</a></div>
+                            <div class="submenu_item"><a href="projFeod.html">projFeod</a></div>
+                            <div class="submenu_item"><a href="projsplavslov.html">projsplavslov</a></div>
+                            <div class="submenu_item"><a href="projdiplomat.html">projdiplomat</a></div>
+                            <div class="submenu_item"><a href="projaltai.html">projaltai.html</a></div>
+                            <div class="submenu_item"><a href="projkitchen.html">projkitchen.html</a></div>
+                            <div class="submenu_item"><a href="projautolombard.html">projautolombard.html</a></div>
 
                         </div>
 
@@ -76,11 +103,19 @@
 
             </menu>
 
+
             <button id="burger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <div class="wrapper">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="sign_menu">
+                    меню
+                </div>
             </button>
+
 
 
 
@@ -96,7 +131,7 @@
 
                             </p>
 
-                            <form action="mail.php" id="contactform" method="POST">
+                            <form action="" id="contactform" method="POST">
                                 <input type="text" minlength="3" name="name" id="name" placeholder="ВАШЕ ИМЯ" required>
                                 <input class="telephone" type="text" minlength="10" name="telephone" id="telephone"
                                     placeholder="ВАШ НОМЕР ТЕЛЕФОНА" required>
@@ -263,7 +298,6 @@
 
         </div>
 
-
         <!-- noslick -->
         <div class="mainsc">
             <div class="">
@@ -327,7 +361,8 @@
 
                         <div class="colum2 wow fadeIn">
 
-                            <img src="img/main_dev.png" alt="laptop">
+                            <img src="img/main_dev.png" class="main_context" alt="laptop">
+                            <img src="img/main_dev_sm.png" class="main_context_sm"  alt="laptop">
 
                             <div class="key " data-relative-input="true" id="scene_key">
                                 <div data-depth-x="0.50" data-depth-y="-0.50">
@@ -596,18 +631,22 @@
                 Мы отличаемся от друугих компаний
             </div>
 
+            <a href="#methods">
+                <button class="switch_btn">
+                    <div class="switcher">
+                        <div class="switcher_shadow"></div>
+                    </div>
+                </button>
 
-            <button class="switch_btn">
-                <div class="switcher">
-                    <div class="switcher_shadow"></div>
-                </div>
-            </button>
+            </a>
+           
 
 
             <div class="methods_block dev">
                 <!-- 1 -->
                 <div class="method_item">
                     <div class="title">
+                        <a name="methods"></a>
                         Наши <span class="bold_txt">специалисты</span>
 
                     </div>
@@ -673,6 +712,7 @@
                 <!-- 2 -->
                 <div class="method_item">
                     <div class="title">
+                      
                         Фрилансеры
                         <span class="bold_txt">и биржи</span>
 
@@ -737,7 +777,7 @@
         </div>
     </section>
 
-    <div class="section_wrapper" style="background-image: url(img/fon_content.jpg);">
+    <div class="section_wrapper" >
 
 
         <section class="tarifs smm dev">
@@ -882,7 +922,7 @@
 
 
 
-        <section class="guarantee dev">
+        <section class="guarantee dev" style="background-image: url(img/fon_content.jpg);">
             <div class="container">
                 <img src="img/dev_worker.png" alt="">
                 <div class="guarant_text">
@@ -894,30 +934,36 @@
                         И мы гарантированно заставим его работать на результат.
                     </div>
                     <div class="guarantee_cards">
+                        <span>
+                            <img src="img/guar_devimg1.png" alt="">
 
-                        <img src="img/guar_devimg1.png" alt="">
+                            <div class="card_txt">
+                                <span class="bold_txt">Красивый дизайн, </span>
+                                который будет выгодно подчеркивать тематику
+                            </div>
+                        </span>
+                       
+                        <span>
+                            <img src="img/guar_devimg2.png" alt="">
 
-                        <div class="card_txt">
-                            <span class="bold_txt">Красивый дизайн, </span>
-                            который будет выгодно подчеркивать тематику
-                        </div>
+                            <div class="card_txt">
+                                <span class="bold_txt">Понятное управление сайтом
+                                </span>
+                                для владельца
+                            </div>
+                        </span>
+                            <span>
+                                <img src="img/guar_devimg3.png" alt="">
 
-                        <img src="img/guar_devimg2.png" alt="">
-
-                        <div class="card_txt">
-                            <span class="bold_txt">Понятное управление сайтом
+                                <div class="card_txt">
+                                    <span class="bold_txt">Тщательнуя проработка
+        
+                                    </span>
+                                    всех этапов создания сайта
+                                </div>
                             </span>
-                            для владельца
-                        </div>
 
-                        <img src="img/guar_devimg3.png" alt="">
-
-                        <div class="card_txt">
-                            <span class="bold_txt">Тщательнуя проработка
-
-                            </span>
-                            всех этапов создания сайта
-                        </div>
+                       
                         <!--                    
                     <div class="guar_card">
                         <img src="img/guar_img1.png" alt="">

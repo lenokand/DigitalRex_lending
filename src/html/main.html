@@ -34,21 +34,48 @@
         <div id="shadow"></div>
         <div class="container">
 
+
             <div class="logo_hiden">
                 <a href="#"><img src="img/logo_top_new.svg" alt="digitalrex"></a>
+            </div>
+            <div class="call-btn_hiden">
+                <div class="contacts"> <img src="img/phone_org.svg" alt="phone"> <a href="tel:+7 (499) 403-17-10"> +7
+                        (499)
+                        403-17-10</a></div>
+
+                <button class="btn btn-call  wow fadeInDown " data-bs-toggle="modal"
+                    data-bs-target="#CallModal">Заказать
+                    звонок</button>
             </div>
             <menu id="main-menu">
 
                 <div class="logo">
-                    <a href="#"><img src="img/logo_top_new.svg" alt="digitalrex"></a>
+                    <a href="#">
+                        <img src="img/logo_top_new.svg" alt="digitalrex" class="logo_white">
+                        <img src="img/logo_black.svg" alt="digitalrex" class="logo_black">
+                    </a>
                 </div>
                 <div class="main_menu">
                     <div> <a href="main.html">Главная</a></div>
                     <div> <a href="about.html">О нас</a> </div>
-                    <div><a href="">Услуги </a> <img class="arrow_menu" src="img/arrow-right.svg" alt="">
+                    <div><a href="">Услуги </a>
+                        <span class="arrow_menu"> <img class='arrow-down' src="img/arrow-down.svg" alt="">
+                            <img class='arrow-down_black' src="img/arrow-down_black.svg" alt=""></span>
+
+
                         <div class="submenu ">
                             <div class="submenu_item"><a href="main.html">СЕО</a></div>
                             <div class="submenu_item"><a href="context.html">Контекстная</a></div>
+                            <div class="submenu_item"><a href="smm.html">СММ</a></div>
+                            <div class="submenu_item"><a href="dev.html">Разработка</a></div>
+                            <div class="submenu_item"><a href="projTehnonic.html">Технониколь</a></div>
+                            <div class="submenu_item"><a href="projAlphsh.html">AlpShina</a></div>
+                            <div class="submenu_item"><a href="projFeod.html">projFeod</a></div>
+                            <div class="submenu_item"><a href="projsplavslov.html">projsplavslov</a></div>
+                            <div class="submenu_item"><a href="projdiplomat.html">projdiplomat</a></div>
+                            <div class="submenu_item"><a href="projaltai.html">projaltai.html</a></div>
+                            <div class="submenu_item"><a href="projkitchen.html">projkitchen.html</a></div>
+                            <div class="submenu_item"><a href="projautolombard.html">projautolombard.html</a></div>
 
                         </div>
 
@@ -70,17 +97,19 @@
 
             </menu>
 
+
             <button id="burger-menu">
                 <div class="wrapper">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                
+
                 <div class="sign_menu">
                     меню
                 </div>
             </button>
+
 
 
 
@@ -96,7 +125,7 @@
 
                             </p>
 
-                            <form action="mail.php" id="contactform" method="POST">
+                            <form action="" id="contactform" method="POST">
                                 <input type="text" minlength="3" name="name" id="name" placeholder="ВАШЕ ИМЯ" required>
                                 <input class="telephone" type="text" minlength="10" name="telephone" id="telephone"
                                     placeholder="ВАШ НОМЕР ТЕЛЕФОНА" required>
@@ -331,7 +360,11 @@
 
                         <div class="colum2 wow fadeIn">
 
-                            <img src="img/main_seo.png" alt="ракета монитор">
+                            
+                            <img src="img/main_seo.png" class="main_context" alt="ракета монитор">
+                            <img src="img/main_seo_sm.png" class="main_context_sm" alt="ракета монитор">
+
+
 
                             <div class="piramid1 " data-relative-input="true" id="scene_piramid1">
                                 <div data-depth="0.2">
@@ -494,7 +527,7 @@
                         <div class="result_item">
                             <img src="img/result_item1.png" alt="hands">
                             <div class="item_txt">
-                                <div class="item_txt">Регулярный трафик</div>
+                                <div class="title_item">Регулярный трафик</div>
                                 <p>Благодаря SEO-продвижению на Ваш сайт будут приходить целевые посетители</p>
                             </div>
                         </div>
@@ -502,7 +535,7 @@
                         <div class="result_item">
                             <img src="img/result_item2.png" alt="hands">
                             <div class="item_txt">
-                                <div class="result_item">Рост конверсий</div>
+                                <div class="title_item">Рост конверсий</div>
                                 <p>Оптимизация сайта сделает его привлекательным для посетителей, и превратит их в Ваших
                                     потенциальных клиентов</p>
                             </div>
@@ -511,7 +544,7 @@
                         <div class="result_item">
                             <img src="img/result_item3.png" alt="hands">
                             <div class="item_txt">
-                                <div class="result_item">Увеличение прибыли</div>
+                                <div class="title_item">Увеличение прибыли</div>
                                 <p>Постоянный поток целевой аудитории на сайт обеспечит увеличение продаж </p>
                             </div>
                         </div>
@@ -1028,34 +1061,149 @@
     </section>
 
 
-
     <footer>
         <div class="container">
             <div class="logo">
                 <a href="#"><img src="img/logo_footer.svg" alt="digitalrex"></a>
             </div>
+
             <div class="footer_menu">
-                <div> <img src="img/phone.svg" alt="phone"> <a href="tel:+7 (499) 403-17-10"> +7 (499) 403-17-10</a>
+                <div class="site_menu">
+                    <div class="item-title">
+                        Меню сайта
+                    </div>
+                    <div class="item-content">
+                        <div class="content-col">
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    Главная</a>
+
+                            </div>
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    О нас</a></div>
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    Портфолио</a>
+                            </div>
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    Отзывы</a>
+                            </div>
+                        </div>
+                        <div class="content-col">
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    Вакансии</a>
+                            </div>
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    Блог</a>
+                            </div>
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    Контакты</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="site_menu">
+                    <div class="item-title">
+                        Наши услуги
+                    </div>
+                    <div class="item-content">
+                        <div class="content-col">
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    CEO продвижение</a>
+
+                            </div>
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    SMM продвижение</a></div>
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    Настройка контекстной рекламы</a>
+                            </div>
+                            <div class="content_row">
+                                <a href="#"> <img src="img/footer_arrow.svg" alt="arrow">
+                                    Разработка сайтов под ключ</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="site_menu">
+                    <div class="item-title">
+                        Наши контакты
+                    </div>
+                    <div class="item-content">
+                        <div class="content-col">
+                            <div class="content_row">
+                                <a class="mail" href="tel:+7 (499) 403-17-10"><img src="img/phone.svg" alt="phone"> +7
+                                    (499)
+                                    403-17-10</a>
+
+                            </div>
+                            <div class="content_row">
+                                <a class="mail" href="https://wa.me/79259571781"><img src="img/wapp.svg" alt="app"> +7
+                                    (925)
+                                    957-17-81</a></div>
+                            <div class="content_row">
+                                <a href="mailto:info@digitalre.ru">
+                                    <img src="img/mail.svg" alt="mail"> info@digitalre.ru</a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="site_menu">
+                    <div class="item-title">
+                        Наш офис
+                    </div>
+                    <div class="item-content">
+                        <div class="content-col">
+                            <div class="content_row location">
+                                <img src="img/location_or.svg" alt="location">
+                                <div>
+                                    г. Москва, 22-ой км.
+                                    <br> домовладение 4,
+                                    <br>Киевское ш.
+                                    <br> БЦ Румянцево
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
                 </div>
 
 
-                <div> <img src="img/wapp.svg" alt="app"> <a href="tel:+7 (925) 957-17-81"> +7 (925) 957-17-81</a></div>
 
-
-                <div> <img src="img/mail.svg" alt="mail"> <a class="mail" href="mailto:info@digitalre.ru">
-                        info@digitalre.ru</a></div>
 
 
 
             </div>
 
 
+
+        </div>
+        <div class="container ">
+            <div class="year-info">Digital Rex - Создание сайтов © 2016 - 2021</div>
             <button class="btn btn-call wow fadeInDown " data-bs-toggle="modal" data-bs-target="#CallModal2">Политика
                 конфидециальности </button>
         </div>
 
     </footer>
-
 
     <!-- стрелочка на верх страницы -->
     <div ID="toTop" style="display: flex;"> <img src="img/arrow-right.svg" alt="arrow left"> </div>
