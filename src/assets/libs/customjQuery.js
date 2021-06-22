@@ -2,7 +2,7 @@
 
   $('.slider1').owlCarousel({
     loop: true,
-    // autoplay: true,
+    autoplay: true,
     autoplayTimeout: 3000,
     stagePadding: 0,
     // center: true,
@@ -38,7 +38,7 @@
   // карусель 2
   $('.slider2').owlCarousel({
     loop: true,
-    // autoplay: true,
+    autoplay: true,
     autoplayTimeout: 3000,
     stagePadding: 0,
     // center: true,
@@ -180,8 +180,8 @@
       //   slidesToScroll: 3,
       dots: false,
       slide: '.carusel-item',
-      // autoplay: true,
-      autoplaySpeed: 3000,
+      autoplay: true,
+      autoplaySpeed: 2950,
             responsive: [
         {
           breakpoint: 1024,
@@ -226,8 +226,8 @@
       //   adaptiveHeight: true,
       //   infinite: true,
       autoplay: true,
-      autoplaySpeed: 3000,
-      //   autoplay: true,
+      autoplaySpeed: 3050,
+        autoplay: true,
       //   autoplaySpeed: 200,
       //   fade: true,
 
@@ -250,8 +250,8 @@
 
 
       slide: '.letter-item',
-      // autoplay: true,
-      autoplaySpeed: 3000,
+      autoplay: true,
+      autoplaySpeed: 2900,
       //   fade: true,
 
     });
@@ -300,8 +300,8 @@
       appendArrows: '.pagination',
       appendDots: '.pagination',
       // slide: '.carusel-item',
-      //   autoplay: true,
-      //   autoplaySpeed: 200,
+        autoplay: true,
+        autoplaySpeed: 2950,
       //   fade: true,
 
     });
@@ -323,8 +323,8 @@
 
 
       slide: '.gallery_item',
-      //   autoplay: true,
-      //   autoplaySpeed: 200,
+        autoplay: true,
+        autoplaySpeed: 2900,
       //   fade: true,
       responsive: [
         {

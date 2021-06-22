@@ -4,8 +4,10 @@ const CopyWebpackPlugin = require ('copy-webpack-plugin')
 const HtmlWebpackPlugin = require ('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const webpack = require('webpack');
+const ImageminWebpWebpackPlugin= require("imagemin-webp-webpack-plugin");
 
 module.exports = {
+    
     entry: ['./src/index.js', './src/style/style.scss'],
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -22,6 +24,7 @@ module.exports = {
         //     jQuery: 'jquery',
         //     'window.jQuery': 'jquery'
         //   }),
+     
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: 'bundle.css'
@@ -138,7 +141,23 @@ module.exports = {
                     from: './src/assets'
                 }
             ]
-        })
+        }),
+        new ImageminWebpWebpackPlugin(
+
+            {
+                config: [{
+                  test: /\.(jpe?g|png)/,
+                  options: {
+                    quality:  75
+                  }
+                }],
+                overrideExtension: true,
+                detailedLogs: false,
+                silent: false,
+                strict: true
+              }
+
+        ),
 
     ],
     module: {
@@ -178,6 +197,18 @@ module.exports = {
                 use: [
                     {
                         loader: 'file-loader',
+                        options: {
+                            outputPath: 'images',
+                            name: '[name].[ext]'
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.(png|gif|jpe?g|svg|bmp)$/,
+                use: [
+                    {
+                        loader: 'imagemin-webp-webpack-plugin',
                         options: {
                             outputPath: 'images',
                             name: '[name].[ext]'

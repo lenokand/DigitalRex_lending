@@ -253,16 +253,18 @@ function makeActiveContact(a) {
 
 // выпадающее меню
 let submenuButton = document.querySelector('.arrow_menu')
+if (submenuButton){
+  submenuButton.addEventListener("click", function () {
 
-submenuButton.addEventListener("click", function () {
 
 
+    let x = document.querySelector(".main_menu > div .submenu")
+  
+    x.classList.toggle("show");
+  
+  })
+}
 
-  let x = document.querySelector(".main_menu > div .submenu")
-
-  x.classList.toggle("show");
-
-})
 
 
 // Close the dropdown menu if the user clicks outside of it

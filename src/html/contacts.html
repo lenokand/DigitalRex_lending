@@ -34,9 +34,10 @@
 
 <body>
     <!-- первый экран -->
-    <section class=" contacts_screen" style="background-image: url(img/fon_portfolio.png);">
+    <section class=" contacts_screen light_fon" style="background-image: url(img/fon_portfolio.png);">
 
 
+        
         <div id="shadow"></div>
         <div class="container">
 
@@ -49,14 +50,35 @@
                     <a href="#"><img src="img/logo.svg" alt="digitalrex"></a>
                 </div>
                 <div class="main_menu">
-                    <div> <a href="index.html">Главная</a></div>
-                    <div> <a href="#result">О нас</a> </div>
-                    <div><a href="main.html">Услуги</a></div>
-                    <div><a href="#price">Портфолио</a></div>
-                    <div><a href="#work">Отзывы</a></div>
-                    <div><a href="#cont">Вакансии</a></div>
-                    <div><a href="#cont">Блог</a></div>
-                    <div><a href="#cont">Контакты</a></div>
+                    <div> <a href="main.html">Главная</a></div>
+                    <div> <a href="about.html">О нас</a> </div>
+                    <div><a href="">Услуги </a> 
+                    <span class="arrow_menu">  <img class='arrow-down'  src="img/arrow-down_black.svg" alt="">
+                    <img class='arrow-down_black' src="img/arrow-down_black.svg" alt=""></span>
+                  
+
+                        <div class="submenu ">
+                            <div class="submenu_item"><a href="main.html">СЕО</a></div>
+                            <div class="submenu_item"><a href="context.html">Контекстная</a></div>
+                            <div class="submenu_item"><a href="smm.html">СММ</a></div>
+                            <div class="submenu_item"><a href="dev.html">Разработка</a></div>
+                            <div class="submenu_item"><a href="projTehnonic.html">Технониколь</a></div>
+                            <div class="submenu_item"><a href="projAlphsh.html">AlpShina</a></div>
+                            <div class="submenu_item"><a href="projFeod.html">projFeod</a></div>
+                            <div class="submenu_item"><a href="projsplavslov.html">projsplavslov</a></div>
+                            <div class="submenu_item"><a href="projdiplomat.html">projdiplomat</a></div>
+                            <div class="submenu_item"><a href="projaltai.html">projaltai.html</a></div>
+                            <div class="submenu_item"><a href="projkitchen.html">projkitchen.html</a></div>
+                            <div class="submenu_item"><a href="projautolombard.html">projautolombard.html</a></div>
+
+                        </div>
+
+                    </div>
+                    <div><a href="portfolio.html">Портфолио</a></div>
+                    <div><a href="rewiews.html">Отзывы</a></div>
+                    <div><a href="vacancy.html">Вакансии</a></div>
+                    <div><a href="blog.html">Блог</a></div>
+                    <div><a href="contacts.html">Контакты</a></div>
 
                 </div>
                 <div class="contacts"> <img src="img/phone_org.svg" alt="phone"> <a href="tel:+7 (499) 403-17-10"> +7
@@ -70,9 +92,15 @@
             </menu>
 
             <button id="burger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <div class="wrapper">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <div class="sign_menu">
+                    меню
+                </div>
             </button>
 
 
@@ -84,10 +112,10 @@
                     <div class="modal-content">
                         <div class="form " style="background-image: url(img/fon_modal.jpg);">
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <h4>Оставьте заявку,
+                            <p class="h4">Оставьте заявку,
                                 <span class="bold_txt"> и мы свяжемся с Вами</span>
 
-                            </h4>
+                            </p>
 
                             <form action="mail.php" id="contactform" method="POST">
                                 <input type="text" minlength="3" name="name" id="name" placeholder="ВАШЕ ИМЯ" required>
@@ -131,7 +159,7 @@
                     <div class="modal-content">
                         <div class="wrapper_politics">
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <h3>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h3>
+                            <p class="h3">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</p>
                             <p>
                                 Данная политика конфиденциальности относится к сайту с доменным именем digitalrex.kz и
                                 его поддоменам. Страница содержит сведения о том, какую информацию администрация сайта
@@ -252,57 +280,12 @@
                 </div>
             </div>
             <!-- // -->
-            <!-- Modal Politics-->
 
-            <div class="modal fade" id="licenseModal3" tabindex="-1" aria-labelledby="licenseModal3" aria-hidden="true"
-                style="width: 90%;">
-                <div class="modal-dialog" style="width: 90%;">
-                    <div class="modal-content" style="width: 90%;">
-                        <div class="wrapper_politics" style="width: 90%;">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam maiores, explicabo,
-                                corporis magnam cupiditate dolorem minima earum, debitis est impedit sint beatae
-                                accusamus mollitia asperiores culpa odit quia! Ducimus, quibusdam.
-                                At nobis quidem, perferendis ratione voluptatem inventore culpa quis quae deleniti,
-                                dolores in corporis nisi sequi? Odio assumenda voluptates, labore rem molestias eum et
-                                distinctio iusto voluptatem! Ab, dolore molestiae?
-                                Soluta explicabo sint autem, neque eum quas ex ipsam nihil, voluptatem exercitationem
-                                harum saepe culpa? Iusto, impedit, delectus quaerat pariatur dolores dignissimos
-                                voluptas esse quo earum saepe, deserunt quisquam aliquid.
-                                Aliquid quaerat error tempore ab fuga ut iure cumque libero architecto vitae, id aperiam
-                                quo accusamus deserunt in labore molestiae! Tenetur magni earum corporis sunt impedit
-                                ipsam iste iure ab?
-                                In expedita eveniet porro, deleniti maiores quaerat similique corporis sed. Ab ullam
-                                nemo officiis doloribus, amet suscipit, quae quo minima sequi voluptatum aliquid rerum
-                                architecto dolore, sed nihil perspiciatis cum.
-                                Dignissimos pariatur quisquam perferendis labore eos ducimus, saepe nemo et cumque
-                                excepturi nulla amet sit nam voluptas quo? Totam repudiandae sapiente nemo atque labore,
-                                similique sint fuga dolor vitae ut!
-                                Facere molestiae dolores quasi atque voluptates laudantium quibusdam doloribus, fugiat
-                                sint ipsum cum enim vel quos, aut suscipit corporis maxime cumque ipsam, odit dolorem?
-                                Deleniti in accusantium maiores ut sint.
-                                Debitis voluptatem non, nam error omnis sed inventore incidunt excepturi perspiciatis
-                                quae labore, asperiores sint molestias iste doloremque odio animi cupiditate quam
-                                dolorum totam. Voluptates nihil beatae sit odio aspernatur.
-                                A aspernatur ut, saepe cum fugit harum asperiores autem labore voluptatem laudantium
-                                minima velit consequatur, rerum quos culpa tempora vitae placeat iure odio libero ad
-                                repellat ratione. Eius, doloribus ullam.
-                                Cum quisquam porro doloribus nulla sequi reprehenderit deserunt incidunt eligendi
-                                officia quo dolore voluptatum numquam iure tempora magnam deleniti est, vero at soluta
-                                hic voluptates earum impedit. Qui, reiciendis cumque!
-                            </p>
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </div>
-            <!-- // -->
 
         </div>
+
+
+
         <div class="main_cont">
             <div class="container">
                 <div class="cont-left">
@@ -333,7 +316,7 @@
 
 
                                 <div class="map-left_item">
-                                    <h1>
+                                    <h1 class="map_title">
                                         Наши контакты и
 
                                         <br> <span class="bold_txt">местоположение</span> </h1>
