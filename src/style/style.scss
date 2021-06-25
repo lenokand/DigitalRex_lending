@@ -252,7 +252,7 @@ menu {
     }
 }
 
-.main_screen .slick_main_item .colum2 {
+.main_screen .slick_main_item .colum2 picture {
     >img:first-child {
         //  display: none;
         opacity: 0;
@@ -260,7 +260,7 @@ menu {
 
 }
 
-.main_screen .slick_main_item.slick-active .colum2 {
+.main_screen .slick_main_item.slick-active .colum2 picture{
     >img:first-child {
         // display: block;
         opacity: 1;
@@ -343,7 +343,7 @@ menu {
 
     }
 
-    .main_screen .slick_main_item.slick-active .colum2>img:first-child {
+    .main_screen .slick_main_item.slick-active .colum2 picture>img:first-child {
         // display: none;
         opacity: 0;
     }
