@@ -4755,20 +4755,20 @@ footer {
 
         .tag {}
 
-        button {
+        a {
             padding: 23px 40px;
             background: #FF5F46;
             border-radius: 50px;
             outline: none;
             border: none;
-
+            display: block;
             font-weight: 600;
             font-size: 14px;
             line-height: 114.7%;
             text-align: center;
             color: #FFFFFF;
             text-transform: uppercase;
-
+            text-decoration: none;
             &:hover {
                 background: #ff5f46e3;
             }
@@ -4873,6 +4873,18 @@ footer {
         color: #FF5F46;
     }
 }
+.btn-primary.btn-more{
+    background: #ff5f46e3;
+    border:none;
+    outline:none;
+    box-shadow: none;
+}
+
+.breadcrumb .breadcrumb-item .active{
+    a{color: #000;
+        font-weight: 400;
+    }
+}
 
 // контентная
 .cont_screen {
@@ -4896,8 +4908,9 @@ footer {
             font-weight: 800;
             font-size: 14px;
             line-height: 134.7%;
-
+            color: #000;
         }
+     
 
         li {
             padding-left: 0;
