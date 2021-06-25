@@ -148,7 +148,7 @@ module.exports = {
                 config: [{
                   test: /\.(jpe?g|png)/,
                   options: {
-                    quality:  75
+                    quality:  95
                   }
                 }],
                 overrideExtension: true,

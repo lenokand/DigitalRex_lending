@@ -272,7 +272,7 @@
       infinite: true,
       centerMode: true,
       speed: 800,
-      autoplay: true,
+      // autoplay: true,
       autoplaySpeed: 3000,
       slide: '.slick_main_item',
       dots: true,

@@ -7,6 +7,7 @@ import 'bootstrap'
 const burger = document.getElementById('burger-menu')
 const shadow = document.getElementById('shadow')
 const menu = document.getElementById('main-menu')
+const body = document.getElementsByTagName('body')[0]
 
 
 
@@ -15,6 +16,7 @@ const toggleMenu = () => {
   burger.classList.toggle('open')
   menu.classList.toggle('open')
   shadow.classList.toggle('open')
+  body.classList.toggle('open')
 
 }
 burger.addEventListener('click', toggleMenu)
