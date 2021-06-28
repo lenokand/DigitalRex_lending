@@ -406,9 +406,9 @@ if (arrSlides.length > 0) {
 
 
 
-var wow = new WOW(
-  {
-    mobile: false
-  }
-);
-new WOW().init();
+// var wow = new WOW(
+//   {
+//     mobile: false
+//   }
+// );
+// wow.init();

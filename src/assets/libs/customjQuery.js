@@ -1,4 +1,7 @@
-  //  карусель 1 
+
+ 
+ 
+ //  карусель 1 
 
   $('.slider1').owlCarousel({
     loop: true,
